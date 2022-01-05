@@ -1,6 +1,6 @@
 # 实验环境安装指南
 
-## 1 Vivado 安装
+## 1  Vivado 安装
 Vivado 是一款用于查看、修改和合成 Verilog 代码的 Xilinx 工具。后续实验中将大量使用这款工具。
 这里安装的版本是 Vivado 2019.2 WebPACK，具体安装步骤如下：
 
@@ -53,7 +53,7 @@ sudo cp -r * /tools/Xilinx/Vivado/2019.2/data/boards/board_files
 
 WINDOWS：按照步骤10中的说明复制/粘贴下载的文件夹。在Windows中，您可以在以下位置找到Vivado的board_files文件夹：C:\Xilinx\Vivado\2019.2\data\boards\board_files
 
-## 2 安装VSCode
+## 2  安装VSCode
 步骤1：从以下链接下载.deb文件 https://code.visualstudio.com/Download
 
 步骤2：打开终端，通过在终端中输入以下内容来安装和执行VSCode：
@@ -64,7 +64,7 @@ code
 Windows：VSCode软件包也适用于Windows（.exe文件），网址如下：	
 https://code.visualstudio.com/Download。请遵循在这些操作系统中安装和执行应用程序的通用步骤。
 
-## 3 基于VSCode安装PlatformIO
+## 3  基于VSCode安装PlatformIO
 PlatformIO是一款面向嵌入式系统的集成开发环境（Integrated Development Environment，IDE），
 基于Microsoft的Visual Studio（VS）Code构建。它允许您使用C语言或汇编语言对RISC-V处理器（位于FPGA上）进行编程。
 PlatformIO支持跨平台使用，并且内置调试器。
@@ -87,7 +87,7 @@ Windows：Windows中不需要这一步骤。
 
 ![安装PlatformIO后立即重新载入](image_2022010503.png)
 
-## 4 安装OpenOCD
+## 4  安装OpenOCD
 OpenOCD是一个开放式片上调试器，允许用户对嵌入式目标器件进行编程和调试。按照以下步骤将RISC-V OpenOCD安装到计算机上：
 
 步骤1：使用“apt-get”安装所需的依赖文件：
@@ -110,7 +110,7 @@ sudo apt-get install libusb-1.0-0-dev
 make
 sudo make install
 
-# 附录A：在Windows中安装驱动程序以使用PlatformIO
+## 附录A：在Windows中安装驱动程序以使用PlatformIO
 要下载Zadig可执行文件，如下图所示，请浏览以下网站：https://zadig.akeo.ie/
 
 ![安装PlatformIO所使用的 Nexys4 DDR 开发板驱动程序](image_2022010504.png)
@@ -133,7 +133,7 @@ sudo make install
 
 下次使用PlatformIO时，无需重新安装驱动程序。但请注意，在Windows中，该驱动程序与Vivado不兼容。
 
-# 附录B：在Windows中从PlatformIO使用的驱动程序返回Vivado驱动程序
+## 附录B：在Windows中从PlatformIO使用的驱动程序返回Vivado驱动程序
 Windows中，由于PlatformIO使用的驱动程序与Vivado不兼容，因此安装PlatformIO驱动程序后将无法再通过Vivado下载比特流（bitstream）。如果想重新使用Vivado下载比特流（bitstream），需要将驱动程序返回Vivado的。具体步骤如下：
 
 步骤1：找开设备管理，找到 Digilent USB Device，如下图所示。
