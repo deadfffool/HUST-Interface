@@ -77,57 +77,63 @@ Windows：Windows中不需要这一步骤。
 
 步骤2：如果VSCode尚未打开，请通过以下方式将其启动：选择“Start”（开始）按钮并在搜索菜单中输入“VSCode”，然后选择VSCode；或者在终端中输入code。
 
-步骤3：在VSCode中，单击位于VSCode左侧边栏上的“Extensions”（扩展）图标 ![输入图片说明](image_2022010501.png)
+步骤3：在VSCode中，单击位于VSCode左侧边栏上的“Extensions”（扩展）图标 ![扩展图标](image_2022010501.png)
 
 步骤4：在搜索框中输入PlatformIO，然后单击PlatformIO IDE旁边的安装按钮进行安装，如下图所示。
-![输入图片说明](image_2.png)
+![PlatformIO IDE 扩展](image_2022010502.png)
 
+步骤5：底部的“OUTPUT”（输出）窗口将通知您有关安装过程的信息。安装完成后，单击右下方窗口中的“Reload Now”（立即重新载入），PlatformIO随即会安装在VSCode中，如下图所示。
+![安装PlatformIO后立即重新载入](image_2022010503.png)
 
+## 4 安装OpenOCD
+OpenOCD是一个开放式片上调试器，允许用户对嵌入式目标器件进行编程和调试。按照以下步骤将RISC-V OpenOCD安装到计算机上：
 
+步骤1：使用“apt-get”安装所需的依赖文件：
+sudo apt-get install libusb-1.* 
+sudo apt-get install pkg-config
 
+步骤2：克隆riscv-openocd github资源库：
+git clone https://github.com/riscv/riscv-openocd.git
+cd riscv-openocd
+./bootstrap 
 
-## 4 仿真
-在将 led_lights 电路正式综合和下载到开发板运行之前，需要先对设计进行仿真，以检查电路设计是否正确。
-点击Project Manager 下面 Add Source，在弹出的菜单中选择添加 Simulation Sources，如图所示。
-![添加仿真文件](https://images.gitee.com/uploads/images/2021/0911/164932_cc8a3341_9625532.png "屏幕截图.png")
+注：如果出现“command not found”（未发现命令）的错误，请尝试执行以下命令，该命令会下载另一个依赖文件：
+sudo apt-get install libtool
 
-创建一个名为 led_lights_tb 的仿真设计文件。然后，打开该文件，完成仿真程序的设计。
-led_lights_tb 程序设计好后，项目文件层次如图所示。
-![led_lights 项目文件层次](https://images.gitee.com/uploads/images/2021/0911/165740_dc4fd186_9625532.png "屏幕截图.png")
+步骤3：下载并安装用户空间USB编程库开发文件。
+sudo apt-get install libusb-1.0-0-dev
 
-为了仿真能快一些，我们需要修改一下 clock_div.v 的代码，将下面一句
-if(div_counter>=62500000) begin
-改为
-if(div_counter>=50) begin
-这样，我们用 1us 来仿真 1 秒。 在 Project Manager 中点击 Run Simulation，
-在弹出的菜单中选择 Runbehavior Simulation。
-将工具条中的仿真时间调整为 10us，重新仿真。仿真完后，得到如图所示的波形图。
-从图中我们可以明显地看到， 0.5us 后 resetn 信号无效，计数器和 3-8 译码器开始工
-作，每隔 1us，3-8 译码器在计数器的推动下，换一个输出， Y7-Y0 依次输出，周而复始。
-通过仿真，证明了我们设计的 led_lights 电路是正确的。
-![仿真波形图](https://images.gitee.com/uploads/images/2021/0911/170417_dd9ca239_9625532.png "屏幕截图.png")
+步骤4：配置OpenOCD可以连接的JTAG服务器
+./configure --enable-jtag_vpi --enable-ftdi
+make
+sudo make install
 
-## 5 添加约束文件
-首先，我们要把 clock_div.v 的代码修改回来，将下面一句
-if(div_counter>=50) begin
-改为
-if(div_counter>=62500000) begin
+# 附录A：在Windows中安装驱动程序以使用PlatformIO
+要下载Zadig可执行文件，如下图所示，请浏览以下网站：https://zadig.akeo.ie/
+![安装PlatformIO所使用的 Nexys4 DDR 开发板驱动程序](image_2022010504.png)
 
-点击 Project Manager 下面 Add Source，在弹出的菜单中选择添加 Constraints 文件，如图所示。
-![添加约束文件](https://images.gitee.com/uploads/images/2021/0911/170709_fae3ddd4_9625532.png "屏幕截图.png")
+单击Zadig 2.5并保存该可执行文件。然后找到其下载位置并运行它（zadig-2.5.exe）。或者，也可以在“Start”（开始）菜单中输入zadig找到它。系统可能会询问您是否允许Zadig对计算机进行更改，以及是否允许其检查更新。两次均单击“Yes”（是）。
 
-创建一个名为 led_lights 的约束文件。然后，打开该文件，完成引脚的绑定。
-约束文件设计完成后，项目文件层次如图所示。
-![添加约束文件后的项目层次结构](https://images.gitee.com/uploads/images/2021/0911/171100_f4a8e247_9625532.png "屏幕截图.png")
+将Nexys4 DDR 开发板连接到计算机并将其开启。在Zadig中，单击“Options → List All Devices”（选项 → 列出所有器件），如下图所示。
+![Zadig中的“List All Devices”（列出所有器件）](image_2022010505.png)
 
-## 6 生成比特流文件并下载
-在 Project Manager 中点击 Generate Bitstream。
-比特流生成后会出现图所示的对话框。点击 Cancel 取消即可。
-如果生成比特流发生错误，需要根据 Vivado 给出的错误信息，相应的修改程序，重新生成。
-![比特流生成完成](https://images.gitee.com/uploads/images/2021/0911/173108_74302f01_9625532.png "屏幕截图.png")
+如果单击下拉菜单，将列出Digilent USB设备（接口0）和Digilent USB设备（接口1）。将仅为Digilent USB设备（接口0）安装新驱动程序，如下图所示。
+![为Digilent USB设备（接口0）安装WinUSB驱动程序](image_2022010506.png)
 
-用 USB 下载线将 Pynq-Z1 开发板的 USB JTAG 与 PC 机的 USB 相连。
-如图所示，（4）即是Pynq-Z1 开发板的 USB JTAG。打开电源开关，图中所示（6）。
-![Pynq-Z1 开发板连线](https://images.gitee.com/uploads/images/2021/0911/172718_3940b47e_9625532.png "屏幕截图.png")
+现在将用WinUSB驱动程序替换FTDI驱动程序，如下图所示。针对Digilent USB设备（接口0）单击“Replace Driver”（替换驱动程序）（或“Install Driver”（安装驱动程序））。随后将为Nexys4 DDR 开发板安装驱动程序，如果之前安装了Vivado，则将用PlatformIO使用的WinUSB驱动程序替换Vivado使用的FTDI驱动程序。
+![为Nexys4 DDR 开发板安装驱动程序](image_2022010507.png)
 
-选中 Open Hardware Manager，连接 Pynq-Z1 板，下载比特流，然后观察跑马灯运行是否正确。
+一段时间后（通常是几分钟），Zadig将指示驱动程序已正确安装。单击“Close”（关闭），然后关闭Zadig窗口。
+
+下次使用PlatformIO时，无需重新安装驱动程序。但请注意，在Windows中，该驱动程序与Vivado不兼容。
+
+# 附录B：在Windows中从PlatformIO使用的驱动程序返回Vivado驱动程序
+Windows中，由于PlatformIO使用的驱动程序与Vivado不兼容，因此安装PlatformIO驱动程序后将无法再通过Vivado下载比特流（bitstream）。如果想重新使用Vivado下载比特流（bitstream），需要将驱动程序返回Vivado的。具体步骤如下：
+
+步骤1：找开设备管理，找到 Digilent USB Device，如下图所示。
+![找开设备管理](image_2022010508.png)
+
+步骤2：鼠标右键，找开属性，如下图所示。
+![Digilent USB Device驱动程序属性](image_2022010509.png)
+
+步骤3：选择“回滚驱动程序”选项。
