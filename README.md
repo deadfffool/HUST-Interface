@@ -3,7 +3,7 @@
 ## 目录
 
 + [前言](#foreword)
-+ [实验环境安装指南]()
++ [实验环境安装指南](https://gitee.com/foxtrot024/RVfpga_SoC/blob/lab0)
 + [实验1：]()
 + [实验2：]() 
 + [实验3：]()
