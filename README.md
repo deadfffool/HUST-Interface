@@ -77,10 +77,10 @@ Windows：Windows中不需要这一步骤。
 
 步骤2：如果VSCode尚未打开，请通过以下方式将其启动：选择“Start”（开始）按钮并在搜索菜单中输入“VSCode”，然后选择VSCode；或者在终端中输入code。
 
-步骤3：在VSCode中，单击位于VSCode左侧边栏上的“Extensions”（扩展）图标![输入图片说明](image.png)
+步骤3：在VSCode中，单击位于VSCode左侧边栏上的“Extensions”（扩展）图标 ![输入图片说明](image_1.png)
 
-
-
+步骤4：在搜索框中输入PlatformIO，然后单击PlatformIO IDE旁边的安装按钮进行安装，如下图所示。
+![输入图片说明](image_2.png)
 
 
 
