@@ -80,9 +80,11 @@ Windows：Windows中不需要这一步骤。
 步骤3：在VSCode中，单击位于VSCode左侧边栏上的“Extensions”（扩展）图标 ![扩展图标](image_2022010501.png)
 
 步骤4：在搜索框中输入PlatformIO，然后单击PlatformIO IDE旁边的安装按钮进行安装，如下图所示。
+
 ![PlatformIO IDE 扩展](image_2022010502.png)
 
 步骤5：底部的“OUTPUT”（输出）窗口将通知您有关安装过程的信息。安装完成后，单击右下方窗口中的“Reload Now”（立即重新载入），PlatformIO随即会安装在VSCode中，如下图所示。
+
 ![安装PlatformIO后立即重新载入](image_2022010503.png)
 
 ## 4 安装OpenOCD
@@ -110,17 +112,21 @@ sudo make install
 
 # 附录A：在Windows中安装驱动程序以使用PlatformIO
 要下载Zadig可执行文件，如下图所示，请浏览以下网站：https://zadig.akeo.ie/
+
 ![安装PlatformIO所使用的 Nexys4 DDR 开发板驱动程序](image_2022010504.png)
 
 单击Zadig 2.5并保存该可执行文件。然后找到其下载位置并运行它（zadig-2.5.exe）。或者，也可以在“Start”（开始）菜单中输入zadig找到它。系统可能会询问您是否允许Zadig对计算机进行更改，以及是否允许其检查更新。两次均单击“Yes”（是）。
 
 将Nexys4 DDR 开发板连接到计算机并将其开启。在Zadig中，单击“Options → List All Devices”（选项 → 列出所有器件），如下图所示。
+
 ![Zadig中的“List All Devices”（列出所有器件）](image_2022010505.png)
 
 如果单击下拉菜单，将列出Digilent USB设备（接口0）和Digilent USB设备（接口1）。将仅为Digilent USB设备（接口0）安装新驱动程序，如下图所示。
+
 ![为Digilent USB设备（接口0）安装WinUSB驱动程序](image_2022010506.png)
 
 现在将用WinUSB驱动程序替换FTDI驱动程序，如下图所示。针对Digilent USB设备（接口0）单击“Replace Driver”（替换驱动程序）（或“Install Driver”（安装驱动程序））。随后将为Nexys4 DDR 开发板安装驱动程序，如果之前安装了Vivado，则将用PlatformIO使用的WinUSB驱动程序替换Vivado使用的FTDI驱动程序。
+
 ![为Nexys4 DDR 开发板安装驱动程序](image_2022010507.png)
 
 一段时间后（通常是几分钟），Zadig将指示驱动程序已正确安装。单击“Close”（关闭），然后关闭Zadig窗口。
@@ -131,9 +137,11 @@ sudo make install
 Windows中，由于PlatformIO使用的驱动程序与Vivado不兼容，因此安装PlatformIO驱动程序后将无法再通过Vivado下载比特流（bitstream）。如果想重新使用Vivado下载比特流（bitstream），需要将驱动程序返回Vivado的。具体步骤如下：
 
 步骤1：找开设备管理，找到 Digilent USB Device，如下图所示。
+
 ![找开设备管理](image_2022010508.png)
 
 步骤2：鼠标右键，找开属性，如下图所示。
+
 ![Digilent USB Device驱动程序属性](image_2022010509.png)
 
 步骤3：选择“回滚驱动程序”选项。
