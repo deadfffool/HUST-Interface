@@ -26,3 +26,44 @@ Wishbone总线；SoC还具有AXI-Wishbone桥。
 
 ![SweRVolf的存储器映射地址](image_2022010502.png)
 
+在RVfpga中，介绍SweRVolfX时没有提供关于如何创建SweRVolfX的任何细节。RVfpgaSoC将介绍如何使用SweRV内核、存储器和外设等构件从头开始构建SweRVolfX SoC的
+子集。
+
+本实验将逐步介绍如何从CPU（SweRV EH1内核组合）开始，然后如何将其构建到SoC中。
+我们将使用Vivado块设计工具。Vivado的块设计工具以图形方式简化了组件布线，使流程更易于理解和可视化。
+这种可视化方法还会说明每个模块如何与其他模块连接以形成SoC。这些模块可以分为三大块或三大类：
+
+- CPU（SweRV EH1内核组合）
+- 互连（AXI互连、AXI2WB和WB互连）
+- 外设（引导ROM、GPIO控制器和系统控制器）
+
+SweRVolfX有许多不同的模块，但有些并不是准系统RISC-V SoC所必需的。
+
+## 2. 实验步骤
+### 2.1 打开Vivado
+运行Vivado（在Linux中，打开终端并输入：vivado；在Windows中，从“Start”（开始）菜单或双击Vivado图标打开Vivado）。
+Vivado欢迎屏幕随即打开。单击“Create Project”（创建项目），如下图所示。
+
+![Vivado欢迎屏幕：“Create Project”（创建项目）](image_2022010503.png)
+
+### 2.2 新建RTL项目
+“Create a New Vivado Project”（新建Vivado项目）向导随即打开（如下图所示）。单击“Next”（下一步）。
+
+![“Create a New Vivado Project”（新建Vivado项目）向导](image_2022010504.png)
+
+输入项目名称，选择项目位置路径，如下图所示。然后单击“Next”（下一步）。
+
+![项目名称](image_2022010505.png)
+
+选择“RTL Project”（RTL项目）作为项目类型，同时勾选先不添加设计资源，然后单击“Next”（下一步）（如下图所示）。
+
+![RTL项目](image_2022010506.png)
+
+### 2.3 选择Nexys4 DDR作为目标开发板
+在“Default Part”（默认部件）窗口中，单击“Boards”（电路板），然后选择Nexys4 DDR（如下图所示）。单击“Next”（下一步）。
+
+![选择目标板：Nexys4 DDR](image_2022010507.png)
+
+在“New Project Summary”（新建项目摘要）窗口中，单击“Finish”（完成）。
+
+### 2.4 添加IP仓库到工程
