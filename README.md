@@ -170,7 +170,21 @@ Vivado欢迎屏幕随即打开。单击“Create Project”（创建项目），
 导航到源文件面板，找到刚刚创建的块设计模块“swerv_soc”。右键单击该块设计，然后选择“Create HDL Wrapper”（创建HDL包装
 程序），如下图所示。
 
+![创建HDL包装程序](image_2022010528.png)
 
+选择“Let Vivado manage wrapper and auto-update”（由Vivado管理包装程序并自动更新）选项，然后单击“OK”（确定）继续操作。
 
+将看到严重警告弹出窗口，因为块设计中有几个引脚未连接，这些引脚将自动连接到“0”（地）。单击“OK”（确定）。
 
+![警告弹出窗口](image_2022010529.png)
 
+### 2.8 生成比特流
+导航到“Settings”（设置），转到“Bitstream”（比特流）选项卡，然后单击“tcl.pre”按钮。
+
+![比特流设置](image_2022010530.png)
+
+选择“New script”（新建脚本）选项，导航到相应的路径并选择“script.tcl”文件，单击“OK”（确定）并应用更改。
+
+![导入“script.tcl”文件](image_2022010531.png)
+
+单击“Flow → Generate Bitstream”（流程 → 生成比特流）。
