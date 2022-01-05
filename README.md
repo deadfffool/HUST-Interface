@@ -67,3 +67,110 @@ Vivado欢迎屏幕随即打开。单击“Create Project”（创建项目），
 在“New Project Summary”（新建项目摘要）窗口中，单击“Finish”（完成）。
 
 ### 2.4 添加IP仓库到工程
+在“Project Manager”（项目管理）中选择“Settings”，弹出“Settings”（设置）界面，选择“IP->Repository”，如下图所示。
+
+![“Settings”（设置）界面](image_2022010508.png)
+
+点击“+”（添加），找到 ip_repo 目录，如下图所示。
+
+![添加 ip_repo](image_2022010509.png)
+
+如下图所示，然后点击 2 次 OK 完成IP仓库的添加。
+
+![将IP添加到IP仓库](image_2022010510.png)
+
+### 2.5 添加RTL源文件和约束文件
+在“Project Manager”（项目管理）中选择“Add Sources”（添加源文件），在“Add Sources”（添加源文件）窗口中，单击“Add Directories”（添加目录），如下图所示。
+
+![添加源文件目录](image_2022010511.png)
+
+如下图所示，选择“rtl_src”目录。
+
+![选择“rtl_src”目录](image_2022010512.png)
+
+单击“Select”（选择），然后单击“Add Files”（添加文件）按钮，选择“All Files”（所有文件）作为文件类型。
+导航到我们刚刚添加的rtl_src目录下的LiteDRAM目录，将两个“.init”文件选中，再导航到rtl_src目录下BootROM目录，
+在该目录下的sw目录将“boot_main.mem”文件选中，的然后单击“OK”（确定）。
+
+设计文件添加完成后如下图所示，单击“Finish”（完成）。
+
+![添加RTL源文件](image_2022010513.png)
+
+现在将为系统添加约束文件。在“Add Constraints”（添加约束）窗口中，单击“Add Files”（添加文件），选择约束文件，
+如下图所示，单击“Finish”（完成）。
+
+![添加约束文件](image_2022010514.png)
+
+### 2.6 创建块设计（Block Design）
+使用Vivado的块设计功能（Block Design）来添加创建SweRVolfX子集所需的模块，然后将模块彼此连接。
+
+单击“IP Integrator”（IP集成器）标题下的“Create block design”（创建块设计），在“Flow Navigator”（流程导航器）中创建一个新的块设计，选择“swerv_soc”作为“Design name”（设计名称），如下图所示。
+
+![选择块设计的名称和目录](image_2022010515.png)
+
+将弹出一个空白的块设计图面板，如下图所示。
+
+![空白块设计](image_2022010516.png)
+
+右键单击空白块设计并选择“Add IP”（添加IP）选项，将ip_repo中的三个IP模块添加到块设计，添加完成后如下图所示。
+
+![添加IP模块](image_2022010517.png)
+
+右键单击空白块设计并选择“Add Module”（添加模块）选项，在弹出的对话框中找到“bootrom_wrapper”，如下图所示，点击“OK”完成添加。
+
+![添加“bootrom_wrapper”模块](image_2022010518.png)
+
+同样的方法再添加“syscon_wrapper”模块。完成后的块设计如下图所示。
+
+![所需的模块已添加到块设计中](image_2022010519.png)
+
+将“swerv_wrapper_verilog_0”与“axi2wb_intcon_wrapper_0”连接，如下图所示。
+
+![连接相关引脚](image_2022010520.png)
+
+将外设与“axi2wb_intcon_wrapper_0”连接。先从“bootrom_wrapper_0”模块开始，方法是连接“axi2wb_intcon_wrapper_0”的“wb_rom_xxx_x”线，如下图所示。
+
+![将BootROM模块与互连模块连接](image_2022010521.png)
+
+将“syscon_wrapper_0”模块与“axi2wb_intcon_wrapper_0”模块连接，如下图所示。
+
+![将Syscon与互连引脚连接](image_2022010522.png)
+
+“syscon_wrapper_0”的以下引脚将连接到“swerv_wrapper_verilog_0”，如下图所示。
+
+- o_timer_irq
+- o_nmi_vec[31:0]
+- o_nmi_int
+
+![将syscon_wrapper与swerv_wrapper_verilog引脚连接](image_2022010523.png)
+
+将“wb_gpio_wrapper_0”模块与“axi2wb_intcon_wrapper_0”模块连接，再将“wb_gpio_wrapper_0”模块的“wb_inta_o”引脚与“syscon_wrapper_0”模块的“gpio_irq”引脚连接。如下图所示。
+
+![将gpio_wrapper与互连引脚连接](image_2022010524.png)
+
+“swerv_wrapper_verilog_0”的其它引脚设置为外部引脚（鼠标右键，选择“Make External”）。
+
+将“clk_0”和“rst_0”外部引脚连接到其余模块，包括axi2wb_intcon_wrapper_0、syscon_wrapper_0、bootrom_wrapper_0和wb_gpio_wrapper_0。
+
+将axi2wb_intcon_wrapper_0模块的“o_ram_axi4”引脚设置为外部引脚，并更名为“ram”；再将syscon_wrapper_0模块的“AN”和“Digits_Bits”引脚、“i_ram_init_done”和“i_ram_init_error”、以及wb_gpio_wrapper_0模块的“bidir”引脚（设置后更名为“bidir”）也都设置为外部引脚，如下图所示。
+
+![设置外部引脚](image_2022010525.png)
+
+块设计完成后如下图所示。
+
+![块设计SoC完成](image_2022010526.png)
+
+点击转换到“Address Editor”窗口，按照下图所示进行地址分配。
+
+![分配地址](image_2022010527.png)
+
+按下“Ctrl + S”保存块设计。
+
+### 2.7 生成块设计模块Verilog文件
+导航到源文件面板，找到刚刚创建的块设计模块“swerv_soc”。右键单击该块设计，然后选择“Create HDL Wrapper”（创建HDL包装
+程序），如下图所示。
+
+
+
+
+
