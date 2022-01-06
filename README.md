@@ -48,28 +48,66 @@
 最后，点击Generate Bitstream按键，生成bitstream文件。
 
 ## 3. 应用程序编译、调试和执行
+### 3.1 创建RVfpga工程
+打开VSCode，如果PlatformIO没有启动，点击左侧PlatformIO图标，然后点击“Open”打开PIO Home，如下图所示。
 
+![打开PlatformIO](image_2022010611.png)
 
+如上图所示，选择新建一个工程。如下图所示进行新建工程的设置，完成后点击“Finish”。
 
+![新建工程设置](image_2022010612.png)
 
-1.进入MIPSfpga_axi4_C目录，编辑main.c文件可以进行系统外设的操作控制。编辑完成后在该目录下用鼠标右键选择打开cmd命令窗口。在该命令窗口中输入make进行编译生成elf可执行文件。使用make clean命令可以将编译的结果清除。
+在platformio.ini文件（如下图所示）中添加比特流（bitstream）文件的路径。
 
-2.连接Nexys4 DDR开发板bit文件下载线缆，同时将MIPSfpga的调试器按照下图所示连接到Nexys4 DDR开发板。连接完成后首先将比特流文件Bitstream下载到Nexys4 DDR开发板，然后按CPU_RESET按钮启动系统固化的程序运行。
+![platformio.ini文件](image_2022010613.png)
 
+platformio.ini文件修改完成后如下图所示。
 
-3.退出MIPSfpga_axi4_C目录，进入Codescape_Scripts目录，在该目录下用鼠标右键选择打开cmd命令窗口。在命令窗口中输入如下命令运行loadMIPSfpga.bat批处理文件：
-loadMIPSfpga.bat C:\workspace\MIPSfpga_Peripheral_2017\MIPSfpga_axi4_C
+![修改后的platformio.ini](image_2022010614.png)
 
-4.观察程序的运行情况。
-四、动手实践
-1.打开MIPSfpga_axi4工程，点击Open Block Design菜单进入图形化的IP集成环境，双击axi_gpio_0模块添加16个输入引脚。
+### 3.2 编辑C程序
+如下图所示，点击“File → New File”。
 
-2.
-3.点击Generate Block Design，弹出对话框后选择Generate更新MIPSfpga_system_wrapper文件。
+![向工程添加新文件](image_2022010615.png)
 
+完成程序编辑后（代码如下所示），按“CTRL-S”将程序保存到工程src目录下，并且命名为gpio_demo.c。
 
-4.添加约束文件，即将16个GPIO的输入引脚绑定到开发板的滑动开关。最后，点击Generate Bitstream按键，生成bitstream文件。Mipsfpga综合实现后观察时序能否满足CPU运行时钟的频率要求。
+```
+#define IO_LEDR     0x80100000
 
-5.参照前面“应用程序编译、调试和执行”章节编写演示程序，要求通过开关的不同输入控制LED灯的显示。
+#define READ_GPIO(dir) (*(volatile unsigned *)dir)
+#define WRITE_GPIO(dir, value) { (*(volatile unsigned *)dir) = (value); }
+
+int main ( void )
+{
+    int i, j=1, count=0xF, delay=10000000;
+
+    while (1) { 
+        WRITE_GPIO(IO_LEDR, count);
+
+        if(j == 1) {
+		    count = count << 1;
+		    if(count == 0xf000)
+		        j = 0;
+		} else {
+				count = count >> 1;
+		    if(count == 0x000f)
+		        j = 1;
+		}
+
+		for (i=0; i<delay; i++);
+    }
+
+    return(0);
+}
+
+```
+
+### 3.3 运行调试程序
+连接Nexys4 DDR开发板，按实验2的步骤对程序进行调试和运行，同时观察程序的运行情况。
+
+### 4 动手实践
+
+对gpio_demo.c程序进行修改，要求通过开关的不同输入控制LED灯的显示。
 
 
