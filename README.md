@@ -6,7 +6,7 @@
 + [实验环境安装指南](https://gitee.com/foxtrot024/RVfpga_SoC/blob/lab0)
 + [实验1：RVfpgaSoC入门](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab1/)
 + [实验2：在RVfpgaSoC上运行软件](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab2) 
-+ [实验3：]()
++ [实验3：GPIO 实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab3)
 + [实验4：]()  
 + [实验5：]() 
 + [实验6：]() 
