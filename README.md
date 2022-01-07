@@ -14,6 +14,8 @@
 + [实验8：]() 
 + [实验9：]() 
 + [实验10：]() 
++ [汇编语言实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab_asm) 
+
 
 ## <a name="foreword"></a> 前言
 
