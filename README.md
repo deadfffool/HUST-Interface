@@ -22,7 +22,11 @@
 
 ![完成连线](image_2022010704.png)
 
-然后，连接uart_top_0模块的时钟和复位引脚，同时将uart_top_0模块的stx_pad_o和stx_pad_i引脚设置为外部引脚，并将stx_pad_o的输出引脚更名为“o_uart_tx”、stx_pad_i的输入引脚更名为“i_uart_rx”。
+然后，连接uart_top_0模块的时钟和复位引脚，复位引脚要取反后连接，因此需要先添加一个非门IP，如下图所示。
+
+![连接时钟和复位引脚](image_2022010710.png)
+
+最后，将uart_top_0模块的stx_pad_o和stx_pad_i引脚设置为外部引脚，并将stx_pad_o的输出引脚更名为“o_uart_tx”、stx_pad_i的输入引脚更名为“i_uart_rx”。
 
 点击Validate Design，对设计的正确性进行校验。校验过程中如果出现警告，点击OK忽略。
 
