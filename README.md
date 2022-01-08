@@ -84,10 +84,40 @@ int main(void)
 ![启动串行监视器](image_2022010709.png)
 
 ## 4. 动手实践
+### 4.1 RVfpga_SoC硬件修改
+将上面的RVfpga_SoC工程复制，并重命名为RVfpga_SoC_uart。启动Vivado，打开刚刚复制的RVfpga_SoC_uart工程，如下图所示。
 
+![找开RVfpga工程](image_2022010801.png)
 
+点击“Open Block Design”打开块设计，将前面添加的wb_uart_wrapper_0模块删除。
 
+点击“Add IP”，添加一个AXI UART16550模块，如下图所示。
 
+![添加axi_uart16550_0模块](image_2022010802.png)
 
+双击axi_interconnect_0模块，在互连模块上增加一个AXI的主端口，如下图所示。
 
+![增加一个主端口](image_2022010803.png)
 
+点击“Add IP”，再添加一个constant模块；然后双击该模块，按下图所示进行设置。
+
+![constant模块设置](image_2022010804.png)
+
+将axi_uart16550_0模块连接到axi_interconnect_0和constant模块，如下图所示。
+
+![连接axi_uart16550_0模块](image_2022010805.png)
+
+将axi_uart16550_0模块的UART端口展开，然后将UART端口的sout输出引脚连接o_uart_tx外部引脚、sin输入引脚连接i_uart_rx外部引脚，同时连接axi_interconnect_0模块新增端口的时钟和复位引脚的连接，如下图所示。
+
+![完成连接](image_2022010806.png)
+
+打开“Address Editor”，将axi_uart16550_0模块的地址设置为0x80110000，如下图所示。
+
+![分配地址](image_2022010807.png)
+
+点击Validate Design，对设计的正确性进行校验。校验过程中如果出现警告，点击OK忽略。
+
+点击Generate Bitstream按键，生成bitstream文件。
+
+### 4.2 应用程序编译、调试和执行
+创建RVfpga工程，在串口输出“hello world”。
