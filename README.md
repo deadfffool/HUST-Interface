@@ -12,9 +12,9 @@
 
 ![添加uart目录到工程](image_2022010702.png)
 
-点击“Open Block Design”打开块设计，如下图所示，通过“Add Module”将uart_top模块添加到块设计。
+点击“Open Block Design”打开块设计，如下图所示，通过“Add Module”将wb_uart_wrapper模块添加到块设计。
 
-![添加uart_top模块](image_2022010703.png)
+![输入图片说明](image_2022010703.png)
 
 将刚刚添加的uart_top_0模块连接到块设计，连接完成后如下图所示。
 
