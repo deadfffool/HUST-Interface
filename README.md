@@ -14,19 +14,15 @@
 
 点击“Open Block Design”打开块设计，如下图所示，通过“Add Module”将wb_uart_wrapper模块添加到块设计。
 
-![输入图片说明](image_2022010703.png)
+![添加wb_uart_wrapper模块](image_2022010703.png)
 
-将刚刚添加的uart_top_0模块连接到块设计，连接完成后如下图所示。
+将刚刚添加的wb_uart_wrapper_0模块连接到块设计，连接完成后如下图所示。
 
-注：由于uart_top_0模块wb_dat_o输出引脚是7位，而互连的输入引脚是32位，为了配置需要添加24位的“0”。
+![完成模块连接](image_2022010704.png)
 
-![完成连线](image_2022010704.png)
+然后，连接wb_uart_wrapper_0模块的时钟和复位引脚。
 
-然后，连接uart_top_0模块的时钟和复位引脚，复位引脚要取反后连接，因此需要先添加一个非门IP，如下图所示。
-
-![连接时钟和复位引脚](image_2022010710.png)
-
-最后，将uart_top_0模块的stx_pad_o和stx_pad_i引脚设置为外部引脚，并将stx_pad_o的输出引脚更名为“o_uart_tx”、stx_pad_i的输入引脚更名为“i_uart_rx”。
+最后，将uart_top_0模块的i_uart_rx和o_uart_tx引脚设置为外部引脚。
 
 点击Validate Design，对设计的正确性进行校验。校验过程中如果出现警告，点击OK忽略。
 
