@@ -115,4 +115,39 @@ IP封装完成后，需要回到MIPSfpga_CustomIP工程，选择 “IP Catalog�
 
 ![打开RVfpga_SoC工程](image_2022010802.png)
 
+点击“Open Block Design”打开块设计，通过“Add IP”将PWM模块添加到块设计，如下图所示。
+
+注：如果在IP Catalog中没有找到PWM，则可以在“Settings”中将ip_repo删除，重新同添加一次解决。
+
+![添加PWM模块](image_2022010803.png)
+
+参照实验4动手实验连接UART模块的方法，将PWM模块连接到块设计；然后，将PWM模块的LEDs引脚设置为外部引脚，并更名为“PWMs”；完成后的块设计如下图所示。
+
+![完成的块设计](image_2022010804.png)
+
+打开“Address Editor”，将axi_uart16550_0模块的地址设置为0x80120000，如下图所示。
+
+![分配地址](image_2022010805.png)
+
+点击Validate Design，对设计的正确性进行校验。校验过程中如果出现警告，点击OK忽略。
+
+点击Generate Block Design，弹出对话框后选择Generate更新swerv_soc_wrapper文件。
+
+根据更新后的swerv_soc_wrapper对rvfpga.sv文件进行修改，如下图所示，将新增加的“PWMs”引脚连接到顶层设计（rvfpga）的端口。
+
+![修改rvfpga.sv文件](image_2022010806.png)
+
+修改rvfpga.xdc文件，增加“PWMs”引脚的约束信息，如下图所示。
+
+![修改rvfpga.xdc文件](image_2022010807.png)
+
+点击Generate Bitstream按键，生成bitstream文件。
+
+### 3.2 应用程序编译、调试和执行
+参照实验4，创建RVfpga工程，编写PWM的演示程序，并对程序进行运行和调试。
+
+## 4. 动手实验
+参照syscon_wrapper_0中封装的数码管显示硬件设计，自己封装一个用于数码管显示的IP模块；并将该模块添加到RVfpga_SoC工程，将RVfpga_SoC工程中原来由syscon_wrapper_0模块输出的“AN_0”和“Digits_Bits_0”引脚转接到自己封装的数码管显示的IP模块上，生成相应的比特流文件。
+
+新建一个RVfpga工程，编写一个可以用于数码管显示接口模块控制的演示程序。
 
