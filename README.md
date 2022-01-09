@@ -101,8 +101,8 @@ main函数执行以下任务：
 -  **初始化外设（在本例中，为GPIO和7段数码管）：** 调用函数GPIO_Initialization并使能八个7段数码管理。
 -  **允许中断：** 调用函数pspInterruptsEnable和宏M_PSP_SET_CSR。常量D_PSP_MIE_NUM和D_PSP_MIE_MEIE_MASK由WD的PSP定义。
 
-
-
+## 3. 动手实验
+对实验5的PWM演示程序进行修改，要求通过采用中断方式进行UART的输入，并且当PWM模块的输入值超过阈值时（阈值范围为0-9），通过中断服务程序将PWM的输入值重置为0。
 
 
 
