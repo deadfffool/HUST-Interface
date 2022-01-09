@@ -10,7 +10,7 @@
 + [实验4：UART 串行接口实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab4)  
 + [实验5：基于AXI4的自定制接口实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab5) 
 + [实验6：定时器实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab6) 
-+ [实验7：]() 
++ [实验7：中断实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab7) 
 + [实验8：]() 
 + [实验9：]() 
 + [实验10：]() 
