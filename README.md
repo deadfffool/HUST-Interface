@@ -40,17 +40,65 @@ PIC提供以下主要特性：
 
 PIC的主要功能概括为以下几个基本步骤：
 
-1. 1)允许/禁止：PIC能够允许/禁止外部中断
-1. 2)配置：可以将PIC配置为监听具有不同极性（高电平有效/低电平有效）或类型（边沿触发/电平触发）的外部中断。PIC还允许将ISR分配给不同的存储器地址。
-1. 3)过滤和优先级分配：PIC允许为中断分配优先级。当主程序运行时，PIC选择已允许的优先级最高的触发中断。
-1. 4)通知：PIC选择了优先级最高的中断后，它将通知内核停止执行主程序，以便跳转到为所选中断服务的程序。
-1. 抢占：如果允许嵌套中断，则可以抢占由另一个具有更高优先级的中断服务的
-1. 中断。
+-  **允许/禁止：** PIC能够允许/禁止外部中断
+-  **配置：** 可以将PIC配置为监听具有不同极性（高电平有效/低电平有效）或类型（边沿触发/电平触发）的外部中断。PIC还允许将ISR分配给不同的存储器地址。
+-  **过滤和优先级分配：** PIC允许为中断分配优先级。当主程序运行时，PIC选择已允许的优先级最高的触发中断。
+-  **通知：** PIC选择了优先级最高的中断后，它将通知内核停止执行主程序，以便跳转到为所选中断服务的程序。
+-  **抢占：** 如果允许嵌套中断，则可以抢占由另一个具有更高优先级的中断服务的中断。
+
+### 1.3 在SweRV EH1中配置外部中断
+与任何其他外设类似，PIC使用存储器映射寄存器进行配置，用户可通过装载/存储指令访问这些寄存器。可以在寄存器级别使用中断系统，但该过程非常复杂；幸运的是，WD的处理器支持包（Processor Support Package，PSP）和电路板支持包（BSP）包括多个函数，这些函数提供了一种更简单的方法来使用中断实现程序。
+
+下表所示为配置外部中断所需的主要函数和宏。
+
+![用于配置外部中断的基本函数和宏](image_2022010901.png)
+
+中断系统的默认初始化过程：
+
+- 在中断向量模式下，设置外部向量中断地址表的基址。使用函数pspInterruptsSetVectorTableAddress和pspExternalInterruptSetVectorTableAddress。
+- 将生成寄存器置于其初始状态。使用函数bspInitializeGenerationRegister。
+- 确保清除了外部中断触发器。使用函数bspClearExtInterrupt。
+- 设置优先级顺序（函数pspExtInterruptSetPriorityOrder）、阈值（函数pspExtInterruptsSetThreshold）和嵌套优先级阈值（函数pspExtInterruptsSetNestingPriorityThreshold）的默认值。
+
+每个中断源的初始化过程：
+
+- 对于每个中断源，使用函数pspExtInterruptSetPolarity和pspExtInterruptSetType设置极性（高电平有效/低电平有效）和类型（电平触发/边沿触发）
+- 使用函数pspExtInterruptClearPendingInt清除所有待处理的中断。
+- 使用函数pspExtInterruptSetPriority设置每个外部中断源的优先级。
+- 使用函数pspExternalInterruptEnableNumber为适当的外部中断源允许中断。
+- 在多向量模式下，对于每个外部中断源，将相应处理程序的地址写入外部向量中断地址表中。
+
+## 2. RVfpga_SoC外部中断实验
+### 2.1 修改RVfpga_SoC硬件
+启动Vivado，打开实验6的工程。点击“Open Block Design”打开块设计。
+
+在块设计中双击axi_gpio_0模块，如下图所示，勾选“Enable Interrupt”。
+
+![使能中断](image_2022010902.png)
+
+删除wb_gpio_wrapper_0模块“wb_inta_o”引脚与syscon_wrapper_0模块“gpio_irq”引脚的连线，然后将axi_gpio_0模块的“ip2intc_irpt”引脚连接到syscon_wrapper_0模块“gpio_irq”引脚，如下图所示。
+
+![重新连接中断](image_2022010903.png)
+
+接着，将wb_uart_wrapper_0模块的“uart_irq”引脚和PWM_w_Int_0模块的“Interrupt_out”引脚分别连接到xlconcat_0模块的“In0”和“In1”引脚，如下图所示。（这一步是为后面的 **动手实验** 做准备！）
+
+![连接中断信号](image_2022010904.png)
+
+点击Validate Design，对设计的正确性进行校验。校验过程中如果出现警告，点击OK忽略。
+
+点击Generate Bitstream按键，生成bitstream文件。
+
+### 2.2 应用程序编译、调试和执行
+参照前面的实验，创建RVfpga工程，编写一个程序，程序将使用中断I/O方式来读取最右侧开关的状态。
+
+main函数执行以下任务：
 
 
+- - 初始化中断系统：中断的默认初始化调用函数DefaultInitialization，通过调用函数pspExtInterruptsSetThreshold(5)设置特定的阈值。优先级不超过此阈值的外部中断将被忽略。
+- 
+- - -初始化外部中断线路IRQ4：
+- - o初始化线路IRQ4：调用函数ExternalIntLine_Initialization（第123行），用于中断线路4，优先级为6，GPIO_ISR作为中断服务程序。我们在图9中分析此函数。
+- - 将IRQ4与GPIO中断线路（第124行）连接。具体方法是设置字0x80001018的位0（在本示例中标记为Select_INT）。该系统控制器存储器映射寄存器包含2位（参见图6）：位0，称为irq_gpio_enable，设置为1时用于将GPIO中断线路与IRQ4连接；位1，称为irq_ptc_enable，设置为1时用于将定时器中断线路与IRQ3连接。目前，了解这种高级功能已足够；稍后，在练习2中，我们将详细说明Verilog实现，以便可以在练习中对其进行修改。
 
-
-
-
-
+- 
 
