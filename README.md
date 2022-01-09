@@ -93,12 +93,10 @@ PIC的主要功能概括为以下几个基本步骤：
 
 main函数执行以下任务：
 
+- 初始化中断系统：中断的默认初始化调用函数DefaultInitialization，通过调用函数pspExtInterruptsSetThreshold(5)设置特定的阈值。优先级不超过此阈值的外部中断将被忽略。
+- 初始化外部中断线路IRQ4：调用函数ExternalIntLine_Initialization初始化线路IRQ4，用于中断线路4，优先级为6，GPIO_ISR作为中断服务程序。之所以要初始化IRQ4并将IRQ4与GPIO服务程序关联，是因为RVfpga_SoC硬件中GPIO的中断请求连接在RVfpga_SoC处理器PIC的IRQ4引脚上。具体方法是设置字0x80001018的位0（在程序中标记为Select_INT）。该系统控制器存储器映射寄存器包含2位（如下图所示），位0，称为irq_gpio_enable，设置为1时用于将GPIO中断线路与IRQ4连接；位1，称为irq_ptc_enable，设置为1时用于将定时器中断线路与IRQ3连接。
 
-- - 初始化中断系统：中断的默认初始化调用函数DefaultInitialization，通过调用函数pspExtInterruptsSetThreshold(5)设置特定的阈值。优先级不超过此阈值的外部中断将被忽略。
-- 
-- - -初始化外部中断线路IRQ4：
-- - o初始化线路IRQ4：调用函数ExternalIntLine_Initialization（第123行），用于中断线路4，优先级为6，GPIO_ISR作为中断服务程序。我们在图9中分析此函数。
-- - 将IRQ4与GPIO中断线路（第124行）连接。具体方法是设置字0x80001018的位0（在本示例中标记为Select_INT）。该系统控制器存储器映射寄存器包含2位（参见图6）：位0，称为irq_gpio_enable，设置为1时用于将GPIO中断线路与IRQ4连接；位1，称为irq_ptc_enable，设置为1时用于将定时器中断线路与IRQ3连接。目前，了解这种高级功能已足够；稍后，在练习2中，我们将详细说明Verilog实现，以便可以在练习中对其进行修改。
+![输入图片说明](image_2022010905.png)
 
-- 
+
 
