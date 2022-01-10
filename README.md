@@ -1,24 +1,68 @@
-# 基于RVfpga的接口实验
+# 模拟量接口实验
 
-## 目录
+## 1. 概述
+本实验将练习如何使用Nexys4 DDR开发板上的ADXL362加速计和ADT7420温度传感器，从而掌握模块量接口技术。
 
-+ [前言](#foreword)
-+ [实验环境安装指南](https://gitee.com/foxtrot024/RVfpga_SoC/blob/lab0)
-+ [实验1：RVfpgaSoC入门](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab1/)
-+ [实验2：在RVfpgaSoC上运行软件](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab2) 
-+ [实验3：GPIO 实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab3)
-+ [实验4：UART 串行接口实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab4)  
-+ [实验5：基于AXI4的自定制接口实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab5) 
-+ [实验6：定时器实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab6) 
-+ [实验7：中断实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab7) 
-+ [实验8：]() 
-+ [实验9：]() 
-+ [实验10：]() 
-+ [汇编语言实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab_asm) 
+### 1.1 ADXL362加速计规范
+Nexys4 DDR开发板包括一个模拟器件ADXL362加速计。有关该器件的完整信息，请参看[ADXL362数据手册](https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL362.pdf)。
+
+ADXL362是一款3轴MEMS加速计，在100Hz输出数据速率下的功耗不到2μA，在运动触发唤醒模式下的功耗为270nA。
+该加速计拥有12位输出分辨率，但同时也提供8位格式化数据，以便在低分辨率即可满足要求时采用更高效的单字节传输。
+测量范围为±2g、±4g和±8g，其中±2g范围内的分辨率为1mg/LSB。当ADXL362处于测量模式时，将连续测量加速度数据并将其存储在X数据、Y数据和Z数据寄存器中。
+
+ADXL362加速计包括多个寄存器（如下表所示），用户可以使用这些寄存器对其进行配置以及读取加速度数据。
+写入控制寄存器可以配置加速计，读取器件寄存器可以获取加速计数据。与该器件通信时，必须指定一个寄存器地址以及一个用于指示通信是读操作还是写操作的标志。
+当寄存器地址与通信标志发送到器件后，即可开始传输数据。
+
+![ADXL362加速计寄存器](image_2022011001.png)
+
+该加速计是采用SPI通信方案的外设。推荐的SPI时钟频率范围为1-5MHz。SPI以SPI模式0（CPOL=0、且CPHA=0）工作。SPI端口采用多字节结构，其中第一个字节指示通信是执行寄存器读操作（0x0B）还是寄存器写操作（0x0A）。SPI数据格式如下图所示。
+
+![SPI数据格式](image_2022011002.png)
+
+下图两张图举例说明了SPI控制器（控制器）与加速计（外设）之间的通信，图一给出了寄存器读操作，图二给出了寄存器写操作。
+
+![寄存器读操作](image_2022011003.png)
 
 
-## <a name="foreword"></a> 前言
+![寄存器写操作](image_2022011004.png)
 
-基于 Imagination 大学计划开源的 RVfpgaSoC，通过讲课和实验，使学生了解和掌握接口技术，
-并采用基本的接口模块，运用EDA工具通过IP集成的方式搭建一个简单的嵌入式应用系统。
+### 1.2 ADT7420温度传感器
+Nexys4 DDR开发板还包括一个模拟器件ADT7420温度传感器。有关该器件的完整信息，请参看[ADT7420数据手册](https://www.analog.com/media/en/technical-documentation/data-sheets/ADT7420.pdf)。
+
+ADT7420是一款4mm×4mm LFCSP封装高精度数字温度传感器，可在较宽的工业温度范围内提供突破性的性能。它内置一个带隙温度基准源、一个温度传感器和一个16位ADC，用来监控温度并进行数字转换，分辨率为0.0078℃。默认ADC分辨率设置为13位(0.0625℃)。ADC分辨率为用
+户可编程模式，可通过串行接口更改。
+
+ADT7420的引脚A0和A1用于地址选择，可为ADT7420提供四个I2C地址。CT引脚属于开漏输出，当温度超过临界温度限值(可编程)时，该引脚变为有效。INT引脚也属于开漏输出，当温度超过限值(可编程)时，该引脚变为有效。INT引脚和CT引脚可在比较器模式和中断事件模式下工作。
+
+ADT7420内置14个寄存器（如下图所示）：
+
+- 9个温度寄存器
+- 1个状态寄存器
+- 1个ID寄存器
+- 1个配置寄存器
+- 1个地址指针寄存器
+- 1个软件复位
+
+![ADT7420寄存器](image_2022011005.png)
+
+该温度传感器是采用I2C通信方案的外设。其写入一个寄存器、后跟单字节数据的I2C格式如下图所示。
+
+![写入单字节数据](image_2022011006.png)
+
+写入一个寄存器、后跟两字节数据的I2C格式如下图所示。
+
+![写入双字节数据](image_2022011007.png)
+
+ 从配置寄存器读回数据的I2C格式如下图所示。
+
+![从配置寄存器读数据](image_2022011008.png)
+
+ 从温度值寄存器读回数据的I2C格式如下图所示。
+
+![从温度值寄存器读数据](image_2022011009.png)
+
+## 2. RVfpga_SoC模拟量接口实验
+### 2.1 修改RVfpga_SoC硬件
+启动Vivado，打开实验7的工程。点击“Open Block Design”打开块设计。
 
