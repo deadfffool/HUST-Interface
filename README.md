@@ -64,5 +64,56 @@ ADT7420内置14个寄存器（如下图所示）：
 
 ## 2. RVfpga_SoC模拟量接口实验
 ### 2.1 修改RVfpga_SoC硬件
-启动Vivado，打开实验7的工程。点击“Open Block Design”打开块设计。
+启动Vivado，打开实验7的工程。在“Project Manager”（项目管理）中选择“Add Sources”（添加源文件），在“Add Sources”（添加源文件）窗口中，单击“Add Directories”（添加目录），将spi目录添加到工程，如下图所示。
+
+![添加spi目录](image_2022011010.png)
+
+点击“Open Block Design”打开块设计，如下图所示，通过“Add Module”将wb_spi_wrapper模块添加到块设计。
+
+![添加wb_spi_wrapper模块](image_2022011011.png)
+
+点击“Add IP”添加一个AXI IIC模块，添加后的块设计如下图所示。
+
+![添加硬件模块后的块设计](image_2022011012.png)
+
+将wb_spi_warpper_0模块连接到块设计，如下图所示。
+
+![连接wb_spi_warpper_0模块](image_2022011013.png)
+
+双击axi_interconnect_0模块，在互连模块上增加一个AXI的主端口，然后将axi_iic_0模块连接到新增加的AXI4端口，如下图所示。
+
+![连接互连](image_2022011014.png)
+
+连接wb_spi_warpper_0模块和axi_iic_0模块的时钟和复位信号。
+
+将wb_spi_warpper_0模块的“o_accel_sclk”、“o_accel_cs_n”、“o_accel_mosi”和“i_accel_miso”引脚设置为外部引脚。再将axi_iic_0模块的IIC端口设置为外部引脚，并更名为“temp_sensor”，如下图所示。
+
+![设置外部引脚](image_2022011015.png)
+
+将wb_spi_warpper_0模块的“spi_irq”和axi_iic_0模块的“iic2intc_irpt”引脚分别连接到xlconcat_0模块的“In4”和“In5”引脚，如下图所示。
+
+![连接中断引脚](image_2022011016.png)
+
+打开“Address Editor”，将axi_iic_0模块的地址设置为0x80130000，如下图所示。
+
+![分配地址](image_2022011017.png)
+
+点击Validate Design，对设计的正确性进行校验。校验过程中如果出现警告，点击OK忽略。
+
+点击Generate Block Design，弹出对话框后选择Generate更新swerv_soc_wrapper文件。
+
+根据更新后的swerv_soc_wrapper对rvfpga.sv文件进行修改，如下图所示，添加2个输入输出端口，同时增加swerv_soc_wrapper模块的端口引用。
+
+![修改rvfpga.sv文件端口](image_2022011018.png)
+
+![修改rvfpga.sv文件](image_2022011019.png)
+
+再根据修改后的rvfpga.sv文件对rvfpga.xdc约束文件进行修改，如下图所示，增加对温度传感器引脚的约束。
+
+![修改rvfpga.xdc约束文件](image_2022011020.png)
+
+最后，点击Generate Bitstream按键，生成bitstream文件。
+
+
+
 
