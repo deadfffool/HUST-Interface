@@ -58,21 +58,12 @@
 
 最后，点击Generate Bitstream按键，生成bitstream文件。
 
+ **注：** 如果因为时钟的原因无法生成比特流（bitstream），则可以直接通过rvfpga.sv的clk_gen_nexys模块给axis_vga_ip_0提供25MHz的时钟。
 
+## 3. 应用程序
+创建RVfpga工程，编写程序，通过DMA方式给VGA接口提供显示数据，在显示器上进行图片的显示。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 4. 动手实践
+上面给出的实验能够在VGA显示器上显示640X480分辨率的图像，修改axis_vga_ip自定制IP及相应的硬件和软件，完成更高分辨率的VGA显示。
 
 
