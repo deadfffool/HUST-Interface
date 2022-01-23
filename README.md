@@ -44,8 +44,19 @@
 
 点击Validate Design，对设计的正确性进行校验。校验过程中如果出现警告，点击OK忽略。
 
+点击Generate Block Design，弹出对话框后选择Generate更新swerv_soc_wrapper文件。
 
+根据更新后的swerv_soc_wrapper对rvfpga.sv文件进行修改，如下图所示，添加VGA的输出端口，同时增加swerv_soc_wrapper模块的端口引用。
 
+![修改rvfpga.sv端口](image_2022012210.png)
+
+![修改rvfpga.sv的模块引用](image_2022012211.png)
+
+再根据修改后的rvfpga.sv文件对rvfpga.xdc约束文件进行修改，如下图所示，增加对VGA引脚的约束。
+
+![添加引脚约束](image_2022012212.png)
+
+最后，点击Generate Bitstream按键，生成bitstream文件。
 
 
 
