@@ -62,6 +62,19 @@ dump value GreyImage.dat GreyImage
 
 - 将.dat文件转换为可在系统中查看的.ppm文件
 
+在LINUX中，通过打开终端并输入以下命令来执行此操作：
+
+```
+cd ./AdditionalFiles
+gcc -o dump2ppm dump2ppm.c
+./dump2ppm GreyImage.dat GreyImage.ppm 128 128 1
+```
+
+在WINDOWS中，通过以下任一方式来执行此操作：
+直接使用AdditionalFiles中提供的dump2ppm.exe可执行文件打开命令shell，转到相应文件夹，并使用与上面相同的参数运行可执行文件：
+`dump2ppm.exe GreyImage.dat GreyImage.ppm 128 128 1`
+或者，使用Cygwin来编译dump2ppm.c程序；然后，在Cygwin终端中或命令shell中运行程序（dump2ppm.exe）。
+
 ## 4. 硬件图像处理
 创建RVfpga工程，编写程序，通过硬件对图像进行处理，如下面二个图所示，对RGB图像处理采用Canny算法进行边缘检测。用硬件进行图像处理时，需要通过DMA将待处理的图像数据从内存传送到Canny_edge硬件模块上进行边缘检测，Canny_edge硬件模块处理好的图像数据则需要同时再次通过DMA传送回内存。
 
