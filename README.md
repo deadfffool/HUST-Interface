@@ -15,7 +15,7 @@
 + [实验9：DMA 实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab_dma) 
 + [实验10：接口综合实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab9) 
 + [汇编语言实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab_asm) 
-
++ [Verilog语言实验](https://gitee.com/foxtrot024/RVfpga_SoC/tree/lab_verilog) 
 
 ## <a name="foreword"></a> 前言
 
