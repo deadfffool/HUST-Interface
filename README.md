@@ -75,6 +75,12 @@ RISC-V包含32个32位寄存器，下表列出了这32个RISC-V寄存器的名�
 
 ![在RVfpga上运行的程序](image_2022010711.png)
 
+### 2.5 Whisper模拟器上调试RISC-V汇编程序
+
+[Whisper](https://github.com/chipsalliance/SweRV-ISS)是一个RISC-V指令集模拟器(ISS)。它允许用户运行RISC-V代码，而不需要底层的RISC-V硬件。
+因此，这里可以使用Whisper在PlatformIO测试、运行和调试汇编程序，而无需Nexys4 DDR FPGA开发板。
+
+
 ## 3. 动手实验
 ### 3.1 编写一个RISC-V汇编程序，使开关的值在LED上闪烁。该值应以足够慢的速度进行脉冲开关，让人眼可以观察到值在闪烁。
 
