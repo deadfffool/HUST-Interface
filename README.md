@@ -249,48 +249,48 @@ endmodule
 
 ![完成设计的led_lights 项目](images/image_2022082129.png)
 
-## 4 仿真
+### 5.6 仿真
 在将 led_lights 电路正式综合和下载到开发板运行之前，需要先对设计进行仿真，以检查电路设计是否正确。
 点击Project Manager 下面 Add Source，在弹出的菜单中选择添加 Simulation Sources，如图所示。
-![添加仿真文件](https://images.gitee.com/uploads/images/2021/0911/164932_cc8a3341_9625532.png "屏幕截图.png")
 
-创建一个名为 led_lights_tb 的仿真设计文件。然后，打开该文件，完成仿真程序的设计。
-led_lights_tb 程序设计好后，项目文件层次如图所示。
-![led_lights 项目文件层次](https://images.gitee.com/uploads/images/2021/0911/165740_dc4fd186_9625532.png "屏幕截图.png")
+![添加仿真文件](images/image_2022082130.png)
+
+创建一个名为 led_sim 的仿真设计文件。然后，打开该文件，完成仿真程序的设计。
+led_sim 程序设计好后，项目文件层次如图所示。
+
+![led_lights 项目文件层次](images/image_2022082131.png)
 
 为了仿真能快一些，我们需要修改一下 clock_div.v 的代码，将下面一句
-if(div_counter>=62500000) begin
+`if(div_counter>=50000000) begin`
 改为
-if(div_counter>=50) begin
+`if(div_counter>=50) begin`
 这样，我们用 1us 来仿真 1 秒。 在 Project Manager 中点击 Run Simulation，
 在弹出的菜单中选择 Runbehavior Simulation。
 将工具条中的仿真时间调整为 10us，重新仿真。仿真完后，得到如图所示的波形图。
 从图中我们可以明显地看到， 0.5us 后 resetn 信号无效，计数器和 3-8 译码器开始工
 作，每隔 1us，3-8 译码器在计数器的推动下，换一个输出， Y7-Y0 依次输出，周而复始。
 通过仿真，证明了我们设计的 led_lights 电路是正确的。
-![仿真波形图](https://images.gitee.com/uploads/images/2021/0911/170417_dd9ca239_9625532.png "屏幕截图.png")
 
-## 5 添加约束文件
+![仿真波形图](images/image_2022082132.png)
+
+### 5.7 添加约束文件
 首先，我们要把 clock_div.v 的代码修改回来，将下面一句
-if(div_counter>=50) begin
+`if(div_counter>=50) begin`
 改为
-if(div_counter>=62500000) begin
+`if(div_counter>=50000000) begin`
 
 点击 Project Manager 下面 Add Source，在弹出的菜单中选择添加 Constraints 文件，如图所示。
-![添加约束文件](https://images.gitee.com/uploads/images/2021/0911/170709_fae3ddd4_9625532.png "屏幕截图.png")
+
+![添加约束文件](images/image_2022082133.png)
 
 创建一个名为 led_lights 的约束文件。然后，打开该文件，完成引脚的绑定。
 约束文件设计完成后，项目文件层次如图所示。
-![添加约束文件后的项目层次结构](https://images.gitee.com/uploads/images/2021/0911/171100_f4a8e247_9625532.png "屏幕截图.png")
 
-## 6 生成比特流文件并下载
+### 5.8 生成比特流文件并下载
 在 Project Manager 中点击 Generate Bitstream。
 比特流生成后会出现图所示的对话框。点击 Cancel 取消即可。
 如果生成比特流发生错误，需要根据 Vivado 给出的错误信息，相应的修改程序，重新生成。
-![比特流生成完成](https://images.gitee.com/uploads/images/2021/0911/173108_74302f01_9625532.png "屏幕截图.png")
 
-用 USB 下载线将 Pynq-Z1 开发板的 USB JTAG 与 PC 机的 USB 相连。
-如图所示，（4）即是Pynq-Z1 开发板的 USB JTAG。打开电源开关，图中所示（6）。
-![Pynq-Z1 开发板连线](https://images.gitee.com/uploads/images/2021/0911/172718_3940b47e_9625532.png "屏幕截图.png")
+![比特流生成完成](images/image_2022082134.png)
 
-选中 Open Hardware Manager，连接 Pynq-Z1 板，下载比特流，然后观察跑马灯运行是否正确。
+比特流生成成功后，将Nexys4 DDR 开发板连接到电脑上。在Vivado中打开 Open Hardware Manager菜单，连接 Nexys4 DDR 开发板，下载比特流，然后观察跑马灯运行是否正确。
