@@ -173,21 +173,24 @@ endmodule
 
 完成 s_38 简易 38 译码器的设计，同样通过综合和仿真验证其设计的正确性。
 
-## 3 创建跑马灯项目
-### 3.1 创建一个新的项目
+## 5 创建跑马灯项目
+### 5.1 创建一个新的项目
 参考 2.1 的步骤，创建一个新的项目，新项目名称为 led_lights，如图所示。
-![新建的led_lights项目](https://images.gitee.com/uploads/images/2021/0911/162325_b582231e_9625532.png "屏幕截图.png")
 
-### 3.2 使用 ctc8 IP 核
-#### 3.2.1 导入 ctc8 IP 核到 IP catalog
-到 C:\workspace\soc_course_2021\VivadoProject\VivadoProject.srcs\sources_1\new 路径下
+![新建的led_lights项目](images/image_2022082122.png)
+
+### 5.2 使用 ctc8 IP 核
+#### 5.2.1 导入 ctc8 IP 核到 IP catalog
+到 D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/ctc8/ctc8.srcs/sources_1/new 路径下
 将 xilinx.com_user_ctc8_1.0.zip 文件拷贝到下面的路径中。
-C:\workspace\soc_course_2021\leg_lights。
+D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\led_lights。
 然后将其解压到 xilinx.com_user_ctc8_1.0，如图所示。
-![解压后的 ctc8 IP](https://images.gitee.com/uploads/images/2021/0911/162530_0e05f5a9_9625532.png "屏幕截图.png")
+
+![解压后的 ctc8 IP](images/image_2022082123.png)
 
 点击 Project Settings，打开 Project Settings 对话框，并转到 IP 项上。如图所示添加 IP。
-![项目设置中添加 IP 核](https://images.gitee.com/uploads/images/2021/0911/162755_d287811b_9625532.png "屏幕截图.png")
+
+![项目设置中添加 IP 核](images/image_2022082124.png)
 
 #### 3.2.2 将 ctc8 IP 核导入到项目中
 在 3.2.1 中，我们已经将 ctc8 IP 核导入到了 IP Catalog 中，我们现在需要将它导入到
