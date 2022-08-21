@@ -96,25 +96,33 @@ ctc8 电路代码写好以后，需要进行综合。综合完成后，如果出
 ### 2.5 IP 封装
 点击 Project Settings。在 Project Settings 对话框中选择 IP，并进入 Packager 选项卡，
 如图所示进行设置。设置好后，点击 Apply，然后点击 OK。记住这里设置的各个属性。
-![设置 IP 封装属性](https://images.gitee.com/uploads/images/2021/0910/175044_96a81f00_9625532.png "屏幕截图.png")
+
+![设置 IP 封装属性](images/image_2022082116.png)
 
 在 Vivado 的菜单栏中选择 Tools->Create and Package IP…。在弹出的窗口中点击
 Next。在之后弹出的窗口中如图所示设置封装选项。 点击 Next。
-![设置封装选项](https://images.gitee.com/uploads/images/2021/0910/175236_5bf49793_9625532.png "屏幕截图.png")
+
+![设置封装选项](images/image_2022082117.png)
 
 在弹出的 IP Location（如图所示）中我们不做修改，点击 Next。在最后的对话框中点击 Finish。
-![IP Location](https://images.gitee.com/uploads/images/2021/0910/175450_6b7bd62d_9625532.png "屏幕截图.png")
-![封装设置完成](https://images.gitee.com/uploads/images/2021/0910/175527_52b7e61c_9625532.png "屏幕截图.png")
+
+![IP Location](images/image_2022082118.png)
+
+![封装设置完成](images/image_2022082119.png)
 
 按照下图所示，完成 IP 封装的设置。由于电路非常简单，因此这里基本上不需要进行任何设置，直接使用默认值就可以。
-![IP 封装设置](https://images.gitee.com/uploads/images/2021/0910/175733_ac013c6f_9625532.png "屏幕截图.png")
+
+![IP 封装设置](images/image_2022082120.png)
 
 接下来我们到 Review and Packaging（如图所示），点击 Package IP，完成 IP的封装。
-![IP 封装](https://images.gitee.com/uploads/images/2021/0910/175933_71da58b9_9625532.png "屏幕截图.png")
+
+![IP 封装](images/image_2022082121.png)
 
 我们可以看到 IP 生成到一个名为 xilinx.com_user_ctc8_1.0.zip 文件中， 路径是
-C:\workspace\soc_course_2021\VivadoProject\VivadoProject.srcs\sources_1\new。
+D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/ctc8/ctc8.srcs/sources_1/new。
 这样， ctc8 的 IP 核就生成了。
+
+
 
 ## 3 创建跑马灯项目
 ### 3.1 创建一个新的项目
