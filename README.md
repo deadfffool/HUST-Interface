@@ -64,14 +64,36 @@
 ![新建的 ctc8 设计文件](images/image_2022082113.png)
 
 ctc8 这段程序描述了一个 8 进制计数器，每次时钟上升沿到来，计数器减 1，减到 0 后重
-新开始计数。 Reset 为低电平的时候复位。
+新开始计数。 Reset 为低电平的时候复位。ctc8 的模块框架如下所示，请根据ctc8 的功能描述完成该电路的设计。
+
+```
+module ctc8(
+    clk,
+    resetn,
+    count
+);
+
+    input            clk, resetn;
+    output reg[2:0]  count;
+
+
+endmodule
+```
 
 ### 2.3 综合
 ctc8 电路代码写好以后，需要进行综合。综合完成后，如果出现下图所示对话框，选择 Cancel。
 如果综合失败，需要根据 Vivado 输出的错误信息，相应的修改电路，然后重新进行综合，直到设计正确为止。
-![综合结束](https://images.gitee.com/uploads/images/2021/0910/174708_f6b19ee6_9625532.png "屏幕截图.png")
 
-### 2.4 IP 封装
+![综合结束](image_2022082114.png)
+
+### 2.4 仿真
+为了验证ctc8 电路的设计是否正确，需要先对设计进行仿真。点击Project Manager 下面 Add Source，在弹出的菜单中选择添加 Simulation Sources，如图所示。
+
+![添加仿真文件](images/image_2022082115.png)
+
+按照添加设计文件类似的步骤添加一个名为ctc8_tb的仿真测试文件，添加完成后编写ctc8_tb 仿真测试文件，然后进行功能仿真以验证ctc8 电路的设计是否正确。
+
+### 2.5 IP 封装
 点击 Project Settings。在 Project Settings 对话框中选择 IP，并进入 Packager 选项卡，
 如图所示进行设置。设置好后，点击 Apply，然后点击 OK。记住这里设置的各个属性。
 ![设置 IP 封装属性](https://images.gitee.com/uploads/images/2021/0910/175044_96a81f00_9625532.png "屏幕截图.png")
