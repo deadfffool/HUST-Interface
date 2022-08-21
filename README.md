@@ -196,37 +196,58 @@ D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\led_lights。
 在 5.2.1 中，我们已经将 ctc8 IP 核导入到了 IP Catalog 中，我们现在需要将它导入到
 我们的项目中。在如图所示，选择 IP Catalog 菜单，打开 IP 库；然后双击 ctc8_v1_0，添加 ctc8 IP 核。
 
-
-![添加 ctc8 IP 核](https://images.gitee.com/uploads/images/2021/0911/163014_d52f42df_9625532.png "屏幕截图.png")
+![添加 ctc8 IP 核](images/image_2022082125.png)
 
 如图所示，弹出 ctc8_v1_0 定制窗口。
-![ctc8_v1_0 定制窗口](https://images.gitee.com/uploads/images/2021/0911/163308_3ddf549d_9625532.png "屏幕截图.png")
+
+![ctc8_v1_0 定制窗口](images/image_2022082126.png)
 
 点击 OK，弹出如图所示的 Generate Output Products 窗口，点击 Generate。
-![Generate Output Products 窗口](https://images.gitee.com/uploads/images/2021/0911/163415_e47aedbf_9625532.png "屏幕截图.png")
+
+![Generate Output Products 窗口](images/image_2022082127.png)
 
 在随后弹出的对话框中点击 OK。 此时我们在 Project Manager 的 Sources 中可以看
 到刚加进去的 ctc8_0，如图所示。
-![加入项目中的 ctc8 IP 核](https://images.gitee.com/uploads/images/2021/0911/163608_5234872c_9625532.png "屏幕截图.png")
 
-### 3.3 添加分频器的源代码
-Pynq-Z1 板上提供了一个 125MHz 的时钟，但我们的跑马灯是 1 秒一变换，因此需
-要一个分频器， 将 125MHz 降到 1Hz。通过 Add Sources….，添加 clock_div 文件。
-然后，打开该文件，实现了一个加 1 计数器，每当 125MHz 的时钟上升沿，计数器加 1，
-每次计数器到 62500000 的时候输出电平翻转，这样输出的波形的周期刚好 1 秒，频率为 1Hz。
+![加入项目中的 ctc8 IP 核](images/image_2022082128.png)
 
-### 3.4 添加简易 38 译码器的源代码
-同样步骤，添加一个 s_38 文件。然后，打开该文件，实现一个简单的 3-8 译码器。
+### 5.3 添加分频器的源代码
+通过 Add Sources… 将分频器模块的设计文件 clock_div 添加进工程。
 
-### 3.5 创建顶层文件
-同样步骤，添加一个命名为 led_lights 的文件。然后，打开该文件，完成电路的设计。
+### 5.4 添加简易 38 译码器的源代码
+同样步骤，通过 Add Sources… 将简单的 3-8 译码器模块的设计文件 s_38 添加进工程。
+
+### 5.5 创建顶层文件
+同样步骤，添加一个命名为 led_lights 的文件（led_lights 的框架如下所示）。然后，打开该文件，完成电路的设计。
 首先，对上述创建的三个模块进行了例化；然后，用 Verilog 语言将三个模块用线连
 接了起来。时钟和 resetn 控制计数器工作， resetn 还同时作为 3-8 译码器的使能端。
 计数器的三个输出分别接到 3-8 译码器的 CBA 输入上，随着计数值的变化， 3-8 译
 码器输出发生变化。顶层文件还定义了对外的接口，两个输入 clock， resetn 分别接板
 上时钟信号和复位信号， Y0-Y7 的 8 个输出分别连接板上的 LED 灯。
 到此，如图所示，所有的模块都建好了。
-![完成设计的led_lights 项目](https://images.gitee.com/uploads/images/2021/0911/164700_9e783710_9625532.png "屏幕截图.png")
+
+```
+module led_lights(
+    clock,
+    resetn,
+    y0,
+    y1,
+    y2,
+    y3,
+    y4,
+    y5,
+    y6,
+    y7,
+);
+ 
+    input     clock,resetn;
+    output    y0,y1,y2,y3,y4,y5,y6,y7;
+
+
+endmodule
+```
+
+![完成设计的led_lights 项目](images/image_2022082129.png)
 
 ## 4 仿真
 在将 led_lights 电路正式综合和下载到开发板运行之前，需要先对设计进行仿真，以检查电路设计是否正确。
