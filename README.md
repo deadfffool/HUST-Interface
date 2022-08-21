@@ -7,52 +7,61 @@
 使用。所有代码均用 Verilog HDL 语言编写。
 
 ## 2 自制一个 8 进制计数器的 IP 核
-实验前，如果 Vivado 没有添加 Pynq-Z1 开发板的信息，需要先添加再进行实验。
-添加方法为，将 board_files 目录下的文件夹复制到 Vivado 的 Xilinx/Vivado/2019.2/data/boards/board_files/ 目录中，如图所示。
-![添加开发板信息](https://images.gitee.com/uploads/images/2021/0923/154601_1e0033c3_9625532.png "屏幕截图.png")
-
 ### 2.1 创建一个新项目
 双击 Vivado 图标， 打开 Vivado 图形界面；然后，创建一个新项目，如图所示。
-![新建 Vivado 工程](https://images.gitee.com/uploads/images/2021/0910/164028_e196bbcc_9625532.png "屏幕截图.png")
 
-点击 Next，显示如图所示的界面；按图中所示命名项目名称和路径，这里项目名
-称为 VivadoProject，项目的位置是 C:/workspace/soc_course_20211/VivadoProject，点击
-Next；最后，整个项目将在 C:/workspace/soc_course_2021/VivadoProject/ 目录中。
-![项目目录和名称](https://images.gitee.com/uploads/images/2021/0910/164412_b9bb81fa_9625532.png "屏幕截图.png")
+![新建 Vivado 工程](images/image_2022082101.png)
+
+点击 Next，显示如图所示的界面；按图中所示命名项目名称和路径，这这里项目名
+称为 ctc8，项目的位置是 D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject，点击 Next。最后，
+整个项目将在 D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/ctc8 中。
+
+![项目目录和名称](images/image_2022082102.png)
 
 显示如图所示界面，点击 Next。因为不需要增加源文件，也不需要增加 IP 核和约束文件，所以图中勾选了“Do not specify at this time”。
-![选择项目类型](https://images.gitee.com/uploads/images/2021/0910/164554_0812ad33_9625532.png "屏幕截图.png")
 
-按图所示选择 PYNQ-Z1 开发板，点击 Next。
-![选择开发板](https://images.gitee.com/uploads/images/2021/0910/165219_489a075a_9625532.png "屏幕截图.png")
+![选择项目类型](images/image_2022082103.png)
+
+按图所示选择 Nexys4 DDR 开发板，点击 Next。
+
+![选择开发板](images/image_2022082104.png)
 
 显示如图所示界面，点击 Finish 完成新建工程。
-![新建工程概览](https://images.gitee.com/uploads/images/2021/0910/165342_88f773f2_9625532.png "屏幕截图.png")
+
+![新建工程概览](images/image_2022082105.png)
 
 ### 2.2 添加源代码
 在图示的窗口中点击 Add Sources。
-![添加源代码](https://images.gitee.com/uploads/images/2021/0910/171127_a6c50c3f_9625532.png "屏幕截图.png")
+
+![添加源代码](images/image_2022082106.png)
 
 如图所示，选择“Add or create design sources”，后点击 Next。
-![添加设计文件](https://images.gitee.com/uploads/images/2021/0910/171256_c69775de_9625532.png "屏幕截图.png")
+
+![添加设计文件](images/image_2022082107.png)
 
 如图所示，选择“Create File ...”。
-![新建设计文件](https://images.gitee.com/uploads/images/2021/0910/171512_741e8da8_9625532.png "屏幕截图.png")
+
+![新建设计文件](images/image_2022082108.png)
 
 在弹出的对话框中输入设计文件名，这里文件名为“ctc8”，然后点击 OK。
-![新建名为“ctc8”的设计文件](https://images.gitee.com/uploads/images/2021/0910/171743_7899458e_9625532.png "屏幕截图.png")
+
+![新建名为“ctc8”的设计文件](images/image_2022082109.png)
 
 点击 Finish 完成设计文件的添加，如图所示。
-![新设计文件创建](https://images.gitee.com/uploads/images/2021/0910/171928_3e1d8d4f_9625532.png "屏幕截图.png")
+
+![新设计文件创建](images/image_2022082110.png)
 
 在弹出的对话框中点击 OK，如图所示。
-![设计文件创建完成](https://images.gitee.com/uploads/images/2021/0910/172048_ef58865b_9625532.png "屏幕截图.png")
+
+![设计文件创建完成](images/image_2022082111.png)
 
 在接着弹出的对话框中点击 Yes，如图所示。
-![确认设计文件创建完成](https://images.gitee.com/uploads/images/2021/0910/172215_9aadf1a0_9625532.png "屏幕截图.png")
+
+![确认设计文件创建完成](images/image_2022082112.png)
 
 双击打开新建的 ctc8 文件，完成该电路的设计，如图所示。
-![新建的 ctc8 设计文件](https://images.gitee.com/uploads/images/2021/0910/172425_bbf2d247_9625532.png "屏幕截图.png")
+
+![新建的 ctc8 设计文件](images/image_2022082113.png)
 
 ctc8 这段程序描述了一个 8 进制计数器，每次时钟上升沿到来，计数器减 1，减到 0 后重
 新开始计数。 Reset 为低电平的时候复位。
