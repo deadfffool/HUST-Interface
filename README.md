@@ -192,9 +192,11 @@ D:\MIPSfpga_Fundamentals\Xilinx\VivadoProject\led_lights。
 
 ![项目设置中添加 IP 核](images/image_2022082124.png)
 
-#### 3.2.2 将 ctc8 IP 核导入到项目中
-在 3.2.1 中，我们已经将 ctc8 IP 核导入到了 IP Catalog 中，我们现在需要将它导入到
+#### 5.2.2 将 ctc8 IP 核导入到项目中
+在 5.2.1 中，我们已经将 ctc8 IP 核导入到了 IP Catalog 中，我们现在需要将它导入到
 我们的项目中。在如图所示，选择 IP Catalog 菜单，打开 IP 库；然后双击 ctc8_v1_0，添加 ctc8 IP 核。
+
+
 ![添加 ctc8 IP 核](https://images.gitee.com/uploads/images/2021/0911/163014_d52f42df_9625532.png "屏幕截图.png")
 
 如图所示，弹出 ctc8_v1_0 定制窗口。
