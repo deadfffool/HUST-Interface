@@ -122,7 +122,56 @@ Next。在之后弹出的窗口中如图所示设置封装选项。 点击 Next�
 D:/MIPSfpga_Fundamentals/Xilinx/VivadoProject/ctc8/ctc8.srcs/sources_1/new。
 这样， ctc8 的 IP 核就生成了。
 
+## 3 分频器设计
+Nexys4 DDR 开发板上提供了一个 100MHz 的时钟，但我们的跑马灯是 1 秒一变换，因此需
+要一个分频器， 将 100MHz 降到 1Hz。
 
+按照上面的步骤新建一个分频器设计的工程。工程建好后，通过 Add Sources….，创建一个名为 clock_div 的设计文件。
+
+clock_div 电路的模块框架如下所示，每当 100MHz 的时钟上升沿，计数器加 1，每次计数器到 50000000 的时候输出电平翻转，这样输出的波形的周期刚好 1 秒，频率为 1Hz。
+
+```
+module clock_div(
+    clk,     //100MHz
+    clk_sys  //1Hz
+);
+    input     clk;
+    output    clk_sys;
+
+
+endmodule
+```
+
+clock_div 分频器设计完成同样要通过综合和仿真测试，以验证设计的正确性。
+
+## 4 简易 38 译码器设计
+
+按照上面的步骤新建一个简易 38 译码器设计的工程。工程建好后，通过 Add Sources….，创建一个名为 s_38 的设计文件，其框架如下所示。
+
+```
+module s_38(
+    Y0,
+    Y1,
+    Y2,
+    Y3,
+    Y4,
+    Y5,
+    Y6,
+    Y7,
+    A,
+    B, 
+    C,
+    Enable
+);
+ 
+    input          A,B,C,Enable;
+    output reg     Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7;
+
+
+endmodule
+```
+
+完成 s_38 简易 38 译码器的设计，同样通过综合和仿真验证其设计的正确性。
 
 ## 3 创建跑马灯项目
 ### 3.1 创建一个新的项目
