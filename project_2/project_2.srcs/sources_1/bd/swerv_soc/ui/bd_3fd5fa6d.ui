@@ -1,0 +1,50 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.89465",
+   "Default View_TopLeft":"46,-476",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace inst swerv_wrapper_verilog_0 -pg 1 -lvl 1 -x -30 -y -240 -defaultsOSRD
+preplace inst axi2wb_intcon_wrapper_0 -pg 1 -lvl 2 -x 450 -y 20 -defaultsOSRD
+preplace inst wb_gpio_wrapper_0 -pg 1 -lvl 3 -x 900 -y 240 -defaultsOSRD
+preplace inst bootrom_wrapper_0 -pg 1 -lvl 3 -x 900 -y -440 -defaultsOSRD
+preplace inst syscon_wrapper_0 -pg 1 -lvl 3 -x 900 -y -140 -defaultsOSRD
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_adr_o 1 2 1 N -470
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_dat_o 1 2 1 N -450
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_sel_o 1 2 1 N -430
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_we_o 1 2 1 N -410
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_cyc_o 1 2 1 N -390
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_stb_o 1 2 1 N -370
+preplace netloc bootrom_wrapper_0_o_wb_rdt 1 1 3 230 -620 NJ -620 1100
+preplace netloc bootrom_wrapper_0_o_wb_ack 1 1 3 250 -600 NJ -600 1050
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_adr_o 1 2 1 750 -190n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_dat_o 1 2 1 740 -170n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_sel_o 1 2 1 730 -150n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_we_o 1 2 1 710 -130n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_cyc_o 1 2 1 700 -110n
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_stb_o 1 2 1 660 -90n
+preplace netloc syscon_wrapper_0_o_wb_ack 1 1 3 240 -610 NJ -610 1080
+preplace netloc syscon_wrapper_0_o_wb_rdt 1 1 3 200 -640 NJ -640 1110
+preplace netloc syscon_wrapper_0_o_nmi_vec 1 0 4 -210 -660 NJ -660 NJ -660 1130
+preplace netloc syscon_wrapper_0_o_nmi_int 1 0 4 -220 -670 NJ -670 NJ -670 1140
+preplace netloc syscon_wrapper_0_o_timer_irq 1 0 4 -200 -650 NJ -650 NJ -650 1120
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_cyc_o 1 2 1 N 210
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_adr_o 1 2 1 680 130n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_dat_o 1 2 1 670 150n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_sel_o 1 2 1 660 170n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_we_o 1 2 1 650 190n
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_stb_o 1 2 1 640 230n
+preplace netloc wb_gpio_wrapper_0_wb_dat_o 1 1 3 260 -590 NJ -590 1060
+preplace netloc wb_gpio_wrapper_0_wb_ack_o 1 1 3 220 -630 NJ -630 1090
+preplace netloc wb_gpio_wrapper_0_wb_err_o 1 1 3 210 -570 NJ -570 1070
+preplace netloc Net 1 0 3 -190 -580 NJ -580 720
+preplace netloc Net1 1 0 3 -190 610 NJ 610 690J
+preplace netloc swerv_wrapper_verilog_0_ifu_axi 1 1 1 N -270
+preplace netloc swerv_wrapper_verilog_0_lsu_axi 1 1 1 N -250
+preplace netloc swerv_wrapper_verilog_0_sb_axi 1 1 1 N -230
+levelinfo -pg 1 -790 -30 450 900 1160
+pagesize -pg 1 -db -bbox -sgen -790 -680 1220 1030
+"
+}
+

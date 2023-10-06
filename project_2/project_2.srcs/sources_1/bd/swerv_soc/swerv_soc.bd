@@ -1,0 +1,500 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../project_2.gen/sources_1/bd/swerv_soc",
+      "name": "swerv_soc",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "swerv_wrapper_verilog_0": "",
+      "axi2wb_intcon_wrapper_0": "",
+      "wb_gpio_wrapper_0": "",
+      "bootrom_wrapper_0": "",
+      "syscon_wrapper_0": ""
+    },
+    "components": {
+      "swerv_wrapper_verilog_0": {
+        "vlnv": "xilinx.com:user:swerv_wrapper_verilog:1.0",
+        "xci_name": "swerv_soc_swerv_wrapper_verilog_0_0",
+        "xci_path": "ip\\swerv_soc_swerv_wrapper_verilog_0_0\\swerv_soc_swerv_wrapper_verilog_0_0.xci",
+        "inst_hier_path": "swerv_wrapper_verilog_0",
+        "interface_ports": {
+          "ifu_axi": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "ifu_axi",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          },
+          "lsu_axi": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "lsu_axi",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          },
+          "sb_axi": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "sb_axi",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "ifu_axi": {
+              "range": "4G",
+              "width": "32"
+            },
+            "lsu_axi": {
+              "range": "4G",
+              "width": "32"
+            },
+            "sb_axi": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
+      },
+      "axi2wb_intcon_wrapper_0": {
+        "vlnv": "xilinx.com:user:axi2wb_intcon_wrapper:1.0",
+        "xci_name": "swerv_soc_axi2wb_intcon_wrapper_0_0",
+        "xci_path": "ip\\swerv_soc_axi2wb_intcon_wrapper_0_0\\swerv_soc_axi2wb_intcon_wrapper_0_0.xci",
+        "inst_hier_path": "axi2wb_intcon_wrapper_0",
+        "interface_ports": {
+          "o_ram_axi4": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "o_ram_axi4",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          },
+          "o_user_axi4": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "o_user_axi4",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "o_ram_axi4": {
+              "range": "4G",
+              "width": "32"
+            },
+            "o_user_axi4": {
+              "range": "4G",
+              "width": "32"
+            }
+          }
+        }
+      },
+      "wb_gpio_wrapper_0": {
+        "vlnv": "xilinx.com:user:wb_gpio_wrapper:1.0",
+        "xci_name": "swerv_soc_wb_gpio_wrapper_0_0",
+        "xci_path": "ip\\swerv_soc_wb_gpio_wrapper_0_0\\swerv_soc_wb_gpio_wrapper_0_0.xci",
+        "inst_hier_path": "wb_gpio_wrapper_0"
+      },
+      "bootrom_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:bootrom_wrapper:1.0",
+        "xci_name": "swerv_soc_bootrom_wrapper_0_0",
+        "xci_path": "ip\\swerv_soc_bootrom_wrapper_0_0\\swerv_soc_bootrom_wrapper_0_0.xci",
+        "inst_hier_path": "bootrom_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bootrom_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "i_wb_adr": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_wb_dat": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_wb_sel": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_wb_we": {
+            "direction": "I"
+          },
+          "i_wb_cyc": {
+            "direction": "I"
+          },
+          "i_wb_stb": {
+            "direction": "I"
+          },
+          "o_wb_ack": {
+            "direction": "O"
+          },
+          "o_wb_rdt": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "syscon_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:syscon_wrapper:1.0",
+        "xci_name": "swerv_soc_syscon_wrapper_0_0",
+        "xci_path": "ip\\swerv_soc_syscon_wrapper_0_0\\swerv_soc_syscon_wrapper_0_0.xci",
+        "inst_hier_path": "syscon_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "syscon_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "gpio_irq": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "ptc_irq": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "o_timer_irq": {
+            "type": "intr",
+            "direction": "O",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "i_ram_init_done": {
+            "direction": "I"
+          },
+          "i_ram_init_error": {
+            "direction": "I"
+          },
+          "o_nmi_vec": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "o_nmi_int": {
+            "direction": "O"
+          },
+          "i_wb_adr": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_wb_dat": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_wb_sel": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_wb_we": {
+            "direction": "I"
+          },
+          "i_wb_cyc": {
+            "direction": "I"
+          },
+          "i_wb_stb": {
+            "direction": "I"
+          },
+          "o_wb_rdt": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "o_wb_ack": {
+            "direction": "O"
+          },
+          "AN": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "Digits_Bits": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "swerv_wrapper_verilog_0_ifu_axi": {
+        "interface_ports": [
+          "swerv_wrapper_verilog_0/ifu_axi",
+          "axi2wb_intcon_wrapper_0/i_ifu_axi4"
+        ]
+      },
+      "swerv_wrapper_verilog_0_lsu_axi": {
+        "interface_ports": [
+          "swerv_wrapper_verilog_0/lsu_axi",
+          "axi2wb_intcon_wrapper_0/i_lsu_axi4"
+        ]
+      },
+      "swerv_wrapper_verilog_0_sb_axi": {
+        "interface_ports": [
+          "swerv_wrapper_verilog_0/sb_axi",
+          "axi2wb_intcon_wrapper_0/i_sb_axi4"
+        ]
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "swerv_wrapper_verilog_0/clk",
+          "bootrom_wrapper_0/i_clk",
+          "syscon_wrapper_0/i_clk",
+          "wb_gpio_wrapper_0/wb_clk_i"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "swerv_wrapper_verilog_0/rst",
+          "bootrom_wrapper_0/i_rst",
+          "syscon_wrapper_0/i_rst",
+          "wb_gpio_wrapper_0/wb_rst_i"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_gpio_adr_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_gpio_adr_o",
+          "wb_gpio_wrapper_0/wb_adr_i"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_gpio_cyc_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_gpio_cyc_o",
+          "wb_gpio_wrapper_0/wb_cyc_i"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_gpio_dat_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_gpio_dat_o",
+          "wb_gpio_wrapper_0/wb_dat_i"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_gpio_sel_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_gpio_sel_o",
+          "wb_gpio_wrapper_0/wb_sel_i"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_gpio_stb_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_gpio_stb_o",
+          "wb_gpio_wrapper_0/wb_stb_i"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_gpio_we_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_gpio_we_o",
+          "wb_gpio_wrapper_0/wb_we_i"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_rom_adr_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_rom_adr_o",
+          "bootrom_wrapper_0/i_wb_adr"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_rom_cyc_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_rom_cyc_o",
+          "bootrom_wrapper_0/i_wb_cyc"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_rom_dat_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_rom_dat_o",
+          "bootrom_wrapper_0/i_wb_dat"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_rom_sel_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_rom_sel_o",
+          "bootrom_wrapper_0/i_wb_sel"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_rom_stb_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_rom_stb_o",
+          "bootrom_wrapper_0/i_wb_stb"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_rom_we_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_rom_we_o",
+          "bootrom_wrapper_0/i_wb_we"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_sys_adr_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_sys_adr_o",
+          "syscon_wrapper_0/i_wb_adr"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_sys_cyc_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_sys_cyc_o",
+          "syscon_wrapper_0/i_wb_cyc"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_sys_dat_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_sys_dat_o",
+          "syscon_wrapper_0/i_wb_dat"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_sys_sel_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_sys_sel_o",
+          "syscon_wrapper_0/i_wb_sel"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_sys_stb_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_sys_stb_o",
+          "syscon_wrapper_0/i_wb_stb"
+        ]
+      },
+      "axi2wb_intcon_wrapper_0_wb_sys_we_o": {
+        "ports": [
+          "axi2wb_intcon_wrapper_0/wb_sys_we_o",
+          "syscon_wrapper_0/i_wb_we"
+        ]
+      },
+      "bootrom_wrapper_0_o_wb_ack": {
+        "ports": [
+          "bootrom_wrapper_0/o_wb_ack",
+          "axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i"
+        ]
+      },
+      "bootrom_wrapper_0_o_wb_rdt": {
+        "ports": [
+          "bootrom_wrapper_0/o_wb_rdt",
+          "axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i"
+        ]
+      },
+      "syscon_wrapper_0_o_nmi_int": {
+        "ports": [
+          "syscon_wrapper_0/o_nmi_int",
+          "swerv_wrapper_verilog_0/nmi_int"
+        ]
+      },
+      "syscon_wrapper_0_o_nmi_vec": {
+        "ports": [
+          "syscon_wrapper_0/o_nmi_vec",
+          "swerv_wrapper_verilog_0/nmi_vec"
+        ]
+      },
+      "syscon_wrapper_0_o_timer_irq": {
+        "ports": [
+          "syscon_wrapper_0/o_timer_irq",
+          "swerv_wrapper_verilog_0/timer_int"
+        ]
+      },
+      "syscon_wrapper_0_o_wb_ack": {
+        "ports": [
+          "syscon_wrapper_0/o_wb_ack",
+          "axi2wb_intcon_wrapper_0/wb_sys_ack_i"
+        ]
+      },
+      "syscon_wrapper_0_o_wb_rdt": {
+        "ports": [
+          "syscon_wrapper_0/o_wb_rdt",
+          "axi2wb_intcon_wrapper_0/wb_sys_dat_i"
+        ]
+      },
+      "wb_gpio_wrapper_0_wb_ack_o": {
+        "ports": [
+          "wb_gpio_wrapper_0/wb_ack_o",
+          "axi2wb_intcon_wrapper_0/wb_gpio_ack_i"
+        ]
+      },
+      "wb_gpio_wrapper_0_wb_dat_o": {
+        "ports": [
+          "wb_gpio_wrapper_0/wb_dat_o",
+          "axi2wb_intcon_wrapper_0/wb_gpio_dat_i"
+        ]
+      },
+      "wb_gpio_wrapper_0_wb_err_o": {
+        "ports": [
+          "wb_gpio_wrapper_0/wb_err_o",
+          "axi2wb_intcon_wrapper_0/wb_gpio_err_i"
+        ]
+      }
+    }
+  }
+}
