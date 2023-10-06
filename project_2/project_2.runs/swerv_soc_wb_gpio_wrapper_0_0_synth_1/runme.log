@@ -1,0 +1,229 @@
+
+*** Running vivado
+    with args -log swerv_soc_wb_gpio_wrapper_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_wb_gpio_wrapper_0_0.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source swerv_soc_wb_gpio_wrapper_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 472.246 ; gain = 200.578
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface Technology Lab/lab_src'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_wb_gpio_wrapper_0_0
+Command: synth_design -top swerv_soc_wb_gpio_wrapper_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7200
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 919.645 ; gain = 407.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/synth/swerv_soc_wb_gpio_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'wb_gpio_wrapper' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/736f/gpio_top.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/736f/gpio_top.v:115]
+WARNING: [Synth 8-7071] port 'aux_i' of module 'gpio_top' is unconnected for instance 'gpio' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+WARNING: [Synth 8-7071] port 'clk_pad_i' of module 'gpio_top' is unconnected for instance 'gpio' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+WARNING: [Synth 8-7023] instance 'gpio' of module 'gpio_top' has 17 connections declared, but only 15 given [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'wb_gpio_wrapper' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_wb_gpio_wrapper_0_0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/synth/swerv_soc_wb_gpio_wrapper_0_0.v:53]
+WARNING: [Synth 8-7129] Port wb_adr_i[7] in module wb_gpio_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[6] in module wb_gpio_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[1] in module wb_gpio_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[0] in module wb_gpio_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[3] in module wb_gpio_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[2] in module wb_gpio_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[1] in module wb_gpio_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[0] in module wb_gpio_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1012.930 ; gain = 500.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1012.930 ; gain = 500.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1012.930 ; gain = 500.477
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1012.930 ; gain = 500.477
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port wb_adr_i[7] in module swerv_soc_wb_gpio_wrapper_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[6] in module swerv_soc_wb_gpio_wrapper_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[1] in module swerv_soc_wb_gpio_wrapper_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[0] in module swerv_soc_wb_gpio_wrapper_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[3] in module swerv_soc_wb_gpio_wrapper_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[2] in module swerv_soc_wb_gpio_wrapper_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[1] in module swerv_soc_wb_gpio_wrapper_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[0] in module swerv_soc_wb_gpio_wrapper_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |    65|
+|3     |LUT3 |    35|
+|4     |LUT4 |     8|
+|5     |LUT5 |   113|
+|6     |LUT6 |    98|
+|7     |FDCE |   420|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |   740|
+|2     |  inst   |wb_gpio_wrapper |   740|
+|3     |    gpio |gpio_top        |   740|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1231.684 ; gain = 719.230
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1240.945 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1336.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ad66ccf5
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 20 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 1336.555 ; gain = 831.051
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1675.230 ; gain = 338.676
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/swerv_soc_wb_gpio_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_wb_gpio_wrapper_0_0_utilization_synth.rpt -pb swerv_soc_wb_gpio_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  6 14:23:44 2023...
