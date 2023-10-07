@@ -3,18 +3,18 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sat Oct  7 19:21:59 2023
-# Process ID: 4432
-# Current directory: C:/Users/Miles/Desktop/Interface Technology Lab/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1
+# Start of session at: Sat Oct  7 20:42:46 2023
+# Process ID: 3188
+# Current directory: C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1
 # Command line: vivado.exe -log swerv_soc_syscon_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_syscon_wrapper_0_0.tcl
-# Log file: C:/Users/Miles/Desktop/Interface Technology Lab/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/swerv_soc_syscon_wrapper_0_0.vds
-# Journal file: C:/Users/Miles/Desktop/Interface Technology Lab/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1\vivado.jou
+# Log file: C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/swerv_soc_syscon_wrapper_0_0.vds
+# Journal file: C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1\vivado.jou
 # Running On: Chenxuan-RazerBlade, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
 #-----------------------------------------------------------
 source swerv_soc_syscon_wrapper_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 470.316 ; gain = 198.777
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 472.172 ; gain = 199.676
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface Technology Lab/lab_src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_syscon_wrapper_0_0
 Command: synth_design -top swerv_soc_syscon_wrapper_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
@@ -24,33 +24,33 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19736
-WARNING: [Synth 8-6901] identifier 'Enables_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:220]
-WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:223]
-WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:224]
-WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:225]
-WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:226]
-WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:295]
+INFO: [Synth 8-7075] Helper process launched with PID 12124
+WARNING: [Synth 8-6901] identifier 'Enables_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:220]
+WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:223]
+WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:224]
+WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:225]
+WARNING: [Synth 8-6901] identifier 'Digits_Reg' is used before its declaration [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:226]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:295]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 918.965 ; gain = 407.258
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 919.316 ; gain = 406.051
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'swerv_soc_syscon_wrapper_0_0' [c:/Users/Miles/Desktop/Interface Technology Lab/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/synth/swerv_soc_syscon_wrapper_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'syscon_wrapper' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/syscon_wrapper.v:23]
-INFO: [Synth 8-6157] synthesizing module 'swervolf_syscon' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:26]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:163]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:230]
-INFO: [Synth 8-6157] synthesizing module 'SevSegDisplays_Controller' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:297]
-INFO: [Synth 8-6157] synthesizing module 'SevenSegDecoder' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:346]
-INFO: [Synth 8-226] default block is never used [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:349]
-INFO: [Synth 8-6155] done synthesizing module 'SevenSegDecoder' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:346]
-INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/counter.sv:14]
-INFO: [Synth 8-6157] synthesizing module 'delta_counter' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/delta_counter.sv:13]
-INFO: [Synth 8-6155] done synthesizing module 'delta_counter' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/delta_counter.sv:13]
-INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/counter.sv:14]
-INFO: [Synth 8-6155] done synthesizing module 'SevSegDisplays_Controller' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:297]
-INFO: [Synth 8-6155] done synthesizing module 'swervolf_syscon' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'syscon_wrapper' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/SystemController/syscon_wrapper.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_syscon_wrapper_0_0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/synth/swerv_soc_syscon_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_syscon_wrapper_0_0' [c:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/synth/swerv_soc_syscon_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'syscon_wrapper' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/syscon_wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'swervolf_syscon' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:26]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:163]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:230]
+INFO: [Synth 8-6157] synthesizing module 'SevSegDisplays_Controller' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:297]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegDecoder' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:346]
+INFO: [Synth 8-226] default block is never used [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegDecoder' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:346]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/counter.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'delta_counter' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/counter.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'SevSegDisplays_Controller' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:297]
+INFO: [Synth 8-6155] done synthesizing module 'swervolf_syscon' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'syscon_wrapper' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/syscon_wrapper.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_syscon_wrapper_0_0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/synth/swerv_soc_syscon_wrapper_0_0.v:53]
 WARNING: [Synth 8-7129] Port i_wb_adr[1] in module swervolf_syscon is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_adr[0] in module swervolf_syscon is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_adr[31] in module syscon_wrapper is either unconnected or has no load
@@ -80,21 +80,21 @@ WARNING: [Synth 8-7129] Port i_wb_adr[8] in module syscon_wrapper is either unco
 WARNING: [Synth 8-7129] Port i_wb_adr[7] in module syscon_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_adr[6] in module syscon_wrapper is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.027 ; gain = 501.320
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.879 ; gain = 500.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.027 ; gain = 501.320
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.879 ; gain = 500.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.027 ; gain = 501.320
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.879 ; gain = 500.613
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.027 ; gain = 501.320
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.879 ; gain = 500.613
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -168,20 +168,20 @@ WARNING: [Synth 8-7129] Port i_wb_adr[8] in module swerv_soc_syscon_wrapper_0_0 
 WARNING: [Synth 8-7129] Port i_wb_adr[7] in module swerv_soc_syscon_wrapper_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_adr[6] in module swerv_soc_syscon_wrapper_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -199,37 +199,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -269,18 +269,18 @@ Report Instance Areas:
 |6     |          i_counter |delta_counter             |    54|
 +------+--------------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1228.234 ; gain = 716.527
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1231.262 ; gain = 717.996
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1236.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1240.160 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1330.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1332.855 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -288,12 +288,12 @@ Synth Design complete | Checksum: 24796eca
 INFO: [Common 17-83] Releasing license: Synthesis
 34 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1330.211 ; gain = 826.398
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.855 ; gain = 826.855
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface Technology Lab/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/swerv_soc_syscon_wrapper_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1671.406 ; gain = 341.195
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP swerv_soc_syscon_wrapper_0_0, cache-ID = 959bb496d92e1e96
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/swerv_soc_syscon_wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1677.441 ; gain = 344.586
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP swerv_soc_syscon_wrapper_0_0, cache-ID = cbb7e927b232ab0e
 INFO: [Coretcl 2-1174] Renamed 5 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface Technology Lab/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/swerv_soc_syscon_wrapper_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/swerv_soc_syscon_wrapper_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_syscon_wrapper_0_0_utilization_synth.rpt -pb swerv_soc_syscon_wrapper_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Oct  7 19:22:31 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  7 20:43:24 2023...

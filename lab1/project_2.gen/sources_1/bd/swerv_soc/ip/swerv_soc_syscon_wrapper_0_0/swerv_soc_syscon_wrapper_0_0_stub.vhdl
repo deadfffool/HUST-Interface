@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Sat Oct  7 19:22:31 2023
+-- Date        : Sat Oct  7 20:43:23 2023
 -- Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub {c:/Users/Miles/Desktop/Interface Technology
---               Lab/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_stub.vhdl}
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_stub.vhdl
 -- Design      : swerv_soc_syscon_wrapper_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

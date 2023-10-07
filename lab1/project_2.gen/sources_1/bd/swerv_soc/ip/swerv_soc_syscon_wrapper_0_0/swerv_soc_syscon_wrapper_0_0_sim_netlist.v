@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Sat Oct  7 19:22:31 2023
+// Date        : Sat Oct  7 20:43:23 2023
 // Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Users/Miles/Desktop/Interface Technology
-//               Lab/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim
+//               c:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_sim_netlist.v
 // Design      : swerv_soc_syscon_wrapper_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

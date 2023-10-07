@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Oct  7 19:36:48 2023" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Oct  7 20:42:41 2023" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys4_ddr:part0:1.1" DEVICE="7a100t" NAME="swerv_soc" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -237,9 +237,9 @@
     <PORT DIR="I" NAME="rst_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="swerv_wrapper_verilog_0" PORT="rst"/>
-        <CONNECTION INSTANCE="bootrom_wrapper_0" PORT="i_rst"/>
         <CONNECTION INSTANCE="wb_gpio_wrapper_0" PORT="wb_rst_i"/>
         <CONNECTION INSTANCE="axi2wb_intcon_wrapper_0" PORT="rst_ni_wrapper"/>
+        <CONNECTION INSTANCE="bootrom_wrapper_0" PORT="i_rst"/>
         <CONNECTION INSTANCE="syscon_wrapper_0" PORT="i_rst"/>
       </CONNECTIONS>
     </PORT>
@@ -261,9 +261,9 @@
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="swerv_wrapper_verilog_0" PORT="clk"/>
-        <CONNECTION INSTANCE="bootrom_wrapper_0" PORT="i_clk"/>
         <CONNECTION INSTANCE="wb_gpio_wrapper_0" PORT="wb_clk_i"/>
         <CONNECTION INSTANCE="axi2wb_intcon_wrapper_0" PORT="clk_i_wrapper"/>
+        <CONNECTION INSTANCE="bootrom_wrapper_0" PORT="i_clk"/>
         <CONNECTION INSTANCE="syscon_wrapper_0" PORT="i_clk"/>
       </CONNECTIONS>
     </PORT>

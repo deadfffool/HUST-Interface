@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/liteDRAM.xdc} rfile:../../../../lab_src/rtl_src/rtl_src/liteDRAM.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:{C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/rvfpga.xdc} rfile:../../../../lab_src/rtl_src/rtl_src/rvfpga.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/liteDRAM.xdc rfile:../../../../lab_src/rtl_src/rtl_src/liteDRAM.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/rvfpga.xdc rfile:../../../../lab_src/rtl_src/rtl_src/rvfpga.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC M4 [get_ports ddram_a[0]]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

@@ -908,9 +908,9 @@
         "ports": [
           "clk_0",
           "swerv_wrapper_verilog_0/clk",
-          "bootrom_wrapper_0/i_clk",
           "wb_gpio_wrapper_0/wb_clk_i",
           "axi2wb_intcon_wrapper_0/clk_i_wrapper",
+          "bootrom_wrapper_0/i_clk",
           "syscon_wrapper_0/i_clk"
         ]
       },
@@ -966,9 +966,9 @@
         "ports": [
           "rst_0",
           "swerv_wrapper_verilog_0/rst",
-          "bootrom_wrapper_0/i_rst",
           "wb_gpio_wrapper_0/wb_rst_i",
           "axi2wb_intcon_wrapper_0/rst_ni_wrapper",
+          "bootrom_wrapper_0/i_rst",
           "syscon_wrapper_0/i_rst"
         ]
       },

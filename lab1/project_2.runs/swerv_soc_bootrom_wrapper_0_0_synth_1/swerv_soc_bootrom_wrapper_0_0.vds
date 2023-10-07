@@ -3,18 +3,18 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Oct  6 14:23:00 2023
-# Process ID: 27332
-# Current directory: C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1
+# Start of session at: Sat Oct  7 20:42:46 2023
+# Process ID: 16028
+# Current directory: C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1
 # Command line: vivado.exe -log swerv_soc_bootrom_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_bootrom_wrapper_0_0.tcl
-# Log file: C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/swerv_soc_bootrom_wrapper_0_0.vds
-# Journal file: C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1\vivado.jou
+# Log file: C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/swerv_soc_bootrom_wrapper_0_0.vds
+# Journal file: C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1\vivado.jou
 # Running On: Chenxuan-RazerBlade, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
 #-----------------------------------------------------------
 source swerv_soc_bootrom_wrapper_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 469.426 ; gain = 198.660
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 470.227 ; gain = 199.758
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface Technology Lab/lab_src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_bootrom_wrapper_0_0
 Command: synth_design -top swerv_soc_bootrom_wrapper_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
@@ -24,19 +24,19 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25124
+INFO: [Synth 8-7075] Helper process launched with PID 17556
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 918.211 ; gain = 407.211
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 918.734 ; gain = 407.141
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'swerv_soc_bootrom_wrapper_0_0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/synth/swerv_soc_bootrom_wrapper_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'bootrom_wrapper' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v:23]
-INFO: [Synth 8-6157] synthesizing module 'wb_mem_wrapper' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v:25]
-INFO: [Synth 8-6157] synthesizing module 'dpram64' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/BootROM/dpram64.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'dpram64' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/BootROM/dpram64.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'wb_mem_wrapper' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v:25]
-WARNING: [Synth 8-689] width (32) of port connection 'i_wb_adr' does not match port width (10) of module 'wb_mem_wrapper' [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'bootrom_wrapper' (0#1) [C:/Users/Miles/Desktop/Interface Technology Lab/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_bootrom_wrapper_0_0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/synth/swerv_soc_bootrom_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_bootrom_wrapper_0_0' [c:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/synth/swerv_soc_bootrom_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bootrom_wrapper' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wb_mem_wrapper' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v:25]
+INFO: [Synth 8-6157] synthesizing module 'dpram64' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/dpram64.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dpram64' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/dpram64.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'wb_mem_wrapper' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v:25]
+WARNING: [Synth 8-689] width (32) of port connection 'i_wb_adr' does not match port width (10) of module 'wb_mem_wrapper' [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'bootrom_wrapper' (0#1) [C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_bootrom_wrapper_0_0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/synth/swerv_soc_bootrom_wrapper_0_0.v:53]
 WARNING: [Synth 8-7129] Port waddr[2] in module dpram64 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port waddr[1] in module dpram64 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port waddr[0] in module dpram64 is either unconnected or has no load
@@ -66,21 +66,21 @@ WARNING: [Synth 8-7129] Port i_wb_adr[12] in module bootrom_wrapper is either un
 WARNING: [Synth 8-7129] Port i_wb_adr[11] in module bootrom_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_adr[10] in module bootrom_wrapper is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1008.633 ; gain = 497.633
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1010.168 ; gain = 498.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1008.633 ; gain = 497.633
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1010.168 ; gain = 498.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1008.633 ; gain = 497.633
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1010.168 ; gain = 498.574
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1008.633 ; gain = 497.633
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1010.168 ; gain = 498.574
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -137,7 +137,7 @@ WARNING: [Synth 8-7129] Port i_wb_adr[12] in module swerv_soc_bootrom_wrapper_0_
 WARNING: [Synth 8-7129] Port i_wb_adr[11] in module swerv_soc_bootrom_wrapper_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port i_wb_adr[10] in module swerv_soc_bootrom_wrapper_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1217.320 ; gain = 706.320
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1215.938 ; gain = 704.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -159,7 +159,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1217.320 ; gain = 706.320
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1215.938 ; gain = 704.344
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -181,7 +181,7 @@ Start Technology Mapping
 INFO: [Synth 8-7052] The timing for the instance inst/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1217.395 ; gain = 706.395
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1215.992 ; gain = 704.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -199,37 +199,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.172 ; gain = 707.172
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.172 ; gain = 707.172
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.172 ; gain = 707.172
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.172 ; gain = 707.172
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.188 ; gain = 707.188
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.188 ; gain = 707.188
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -262,18 +262,18 @@ Report Instance Areas:
 |4     |      ram   |dpram64         |     9|
 +------+------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.188 ; gain = 707.188
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.188 ; gain = 707.188
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1218.188 ; gain = 707.188
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1216.848 ; gain = 705.254
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1230.273 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1228.910 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1326.781 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1324.691 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -281,12 +281,12 @@ Synth Design complete | Checksum: 9fa6a3f9
 INFO: [Common 17-83] Releasing license: Synthesis
 27 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1326.781 ; gain = 823.172
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1324.691 ; gain = 820.660
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/swerv_soc_bootrom_wrapper_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1592.762 ; gain = 265.980
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP swerv_soc_bootrom_wrapper_0_0, cache-ID = aff46fc31d775a23
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/swerv_soc_bootrom_wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1588.602 ; gain = 263.910
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP swerv_soc_bootrom_wrapper_0_0, cache-ID = 4640d28e99cacf07
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/swerv_soc_bootrom_wrapper_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/swerv_soc_bootrom_wrapper_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_bootrom_wrapper_0_0_utilization_synth.rpt -pb swerv_soc_bootrom_wrapper_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Oct  6 14:23:43 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  7 20:43:20 2023...
