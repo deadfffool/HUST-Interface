@@ -314,9 +314,7 @@ module SevSegDisplays_Controller(
 
   counter #(COUNT_MAX)  counter20(clk, ~rst_n, 1'b0, 1'b1, 1'b0, 1'b0, 16'b0, countSelection, overflow_o_count);
 
-
-
-  wire [ 7:0] [7:0] enable;
+  wire [7:0] enable [7:0] ;
 
   assign enable[0] = (Enables_Reg | 8'hfe);
   assign enable[1] = (Enables_Reg | 8'hfd);
@@ -326,21 +324,10 @@ module SevSegDisplays_Controller(
   assign enable[5] = (Enables_Reg | 8'hdf);
   assign enable[6] = (Enables_Reg | 8'hbf);
   assign enable[7] = (Enables_Reg | 8'h7f);
+  assign AN = enable[countSelection[(COUNT_MAX-1):(COUNT_MAX-3)]];
+  
 
-  SevSegMux
-  #(
-    .DATA_WIDTH(8),
-    .N_IN(8)
-  )
-  Select_Enables
-  (
-    .IN_DATA(enable),
-    .OUT_DATA(AN),
-    .SEL(countSelection[(COUNT_MAX-1):(COUNT_MAX-3)])
-  );
-
-
-  wire [ 7:0] [3:0] digits_concat;
+  wire   [3:0] digits_concat [7:0];
 
   assign digits_concat[0] = Digits_Reg[3:0];
   assign digits_concat[1] = Digits_Reg[7:4];
@@ -350,18 +337,7 @@ module SevSegDisplays_Controller(
   assign digits_concat[5] = Digits_Reg[23:20];
   assign digits_concat[6] = Digits_Reg[27:24];
   assign digits_concat[7] = Digits_Reg[31:28];
-
-  SevSegMux
-  #(
-    .DATA_WIDTH(4),
-    .N_IN(8)
-  )
-  Select_Digits
-  (
-    .IN_DATA(digits_concat),
-    .OUT_DATA(DecNumber),
-    .SEL(countSelection[(COUNT_MAX-1):(COUNT_MAX-3)])
-  );
+  assign DecNumber = digits_concat[countSelection[(COUNT_MAX-1):(COUNT_MAX-3)]];
 
 endmodule
 
@@ -395,19 +371,19 @@ endmodule
 
 
 
-module SevSegMux
-#(
-    parameter DATA_WIDTH = 64,
-    parameter N_IN       = 16,
-    parameter SEL_WIDTH  = $clog2(N_IN)
-)
-(
-    input  wire [N_IN-1:0][DATA_WIDTH-1:0]   IN_DATA,
-    output wire [DATA_WIDTH-1:0]             OUT_DATA,
-    input  wire [SEL_WIDTH-1:0]              SEL
-);
+//module SevSegMux
+//#(
+//    parameter DATA_WIDTH = 64,
+//    parameter N_IN       = 16,
+//    parameter SEL_WIDTH  = $clog2(N_IN)
+//)
+//(
+//    input  wire [DATA_WIDTH-1:0] IN_DATA [N_IN-1:0],
+//    output wire [DATA_WIDTH-1:0]             OUT_DATA,
+//    input  wire [SEL_WIDTH-1:0]              SEL
+//);
 
 
-  assign OUT_DATA = IN_DATA[SEL];
+//  assign OUT_DATA = IN_DATA[SEL];
 
-endmodule
+//endmodule

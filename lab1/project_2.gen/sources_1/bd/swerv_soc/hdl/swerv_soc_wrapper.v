@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Fri Oct  6 14:22:52 2023
+//Date        : Sat Oct  7 19:36:47 2023
 //Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 //Command     : generate_target swerv_soc_wrapper.bd
 //Design      : swerv_soc_wrapper
@@ -22,6 +22,8 @@ module swerv_soc_wrapper
     dmi_reg_wdata_0,
     dmi_reg_wr_en_0,
     extintsrc_req_0,
+    i_ram_init_done_0,
+    i_ram_init_error_0,
     ram_araddr,
     ram_arburst,
     ram_arcache,
@@ -73,6 +75,8 @@ module swerv_soc_wrapper
   input [31:0]dmi_reg_wdata_0;
   input dmi_reg_wr_en_0;
   input [8:1]extintsrc_req_0;
+  input i_ram_init_done_0;
+  input i_ram_init_error_0;
   output [31:0]ram_araddr;
   output [1:0]ram_arburst;
   output [3:0]ram_arcache;
@@ -125,6 +129,8 @@ module swerv_soc_wrapper
   wire [31:0]dmi_reg_wdata_0;
   wire dmi_reg_wr_en_0;
   wire [8:1]extintsrc_req_0;
+  wire i_ram_init_done_0;
+  wire i_ram_init_error_0;
   wire [31:0]ram_araddr;
   wire [1:0]ram_arburst;
   wire [3:0]ram_arcache;
@@ -178,6 +184,8 @@ module swerv_soc_wrapper
         .dmi_reg_wdata_0(dmi_reg_wdata_0),
         .dmi_reg_wr_en_0(dmi_reg_wr_en_0),
         .extintsrc_req_0(extintsrc_req_0),
+        .i_ram_init_done_0(i_ram_init_done_0),
+        .i_ram_init_error_0(i_ram_init_error_0),
         .ram_araddr(ram_araddr),
         .ram_arburst(ram_arburst),
         .ram_arcache(ram_arcache),

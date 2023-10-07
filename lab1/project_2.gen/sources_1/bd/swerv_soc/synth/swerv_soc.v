@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Fri Oct  6 14:22:52 2023
+//Date        : Sat Oct  7 19:36:47 2023
 //Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 //Command     : generate_target swerv_soc.bd
 //Design      : swerv_soc
@@ -23,6 +23,8 @@ module swerv_soc
     dmi_reg_wdata_0,
     dmi_reg_wr_en_0,
     extintsrc_req_0,
+    i_ram_init_done_0,
+    i_ram_init_error_0,
     ram_araddr,
     ram_arburst,
     ram_arcache,
@@ -74,45 +76,47 @@ module swerv_soc
   input [31:0]dmi_reg_wdata_0;
   input dmi_reg_wr_en_0;
   input [8:1]extintsrc_req_0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ram, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN swerv_soc_clk_0, DATA_WIDTH 64, FREQ_HZ 100000000, HAS_BRESP 1, HAS_BURST 1, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 1, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 6, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 1, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [31:0]ram_araddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [1:0]ram_arburst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [3:0]ram_arcache;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [5:0]ram_arid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [7:0]ram_arlen;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output ram_arlock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [2:0]ram_arprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [3:0]ram_arqos;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input ram_arready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [3:0]ram_arregion;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [2:0]ram_arsize;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output ram_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [31:0]ram_awaddr;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [1:0]ram_awburst;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [3:0]ram_awcache;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [5:0]ram_awid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [7:0]ram_awlen;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output ram_awlock;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [2:0]ram_awprot;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [3:0]ram_awqos;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input ram_awready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [3:0]ram_awregion;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [2:0]ram_awsize;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output ram_awvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input [5:0]ram_bid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output ram_bready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input [1:0]ram_bresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input ram_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input [63:0]ram_rdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input [5:0]ram_rid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input ram_rlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output ram_rready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input [1:0]ram_rresp;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input ram_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [63:0]ram_wdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output ram_wlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) input ram_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output [7:0]ram_wstrb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram " *) output ram_wvalid;
+  input i_ram_init_done_0;
+  input i_ram_init_error_0;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ram, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN swerv_soc_clk_0, DATA_WIDTH 64, FREQ_HZ 100000000, HAS_BRESP 1, HAS_BURST 1, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 1, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 6, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 1, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [31:0]ram_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARBURST" *) output [1:0]ram_arburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARCACHE" *) output [3:0]ram_arcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARID" *) output [5:0]ram_arid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARLEN" *) output [7:0]ram_arlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARLOCK" *) output ram_arlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARPROT" *) output [2:0]ram_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARQOS" *) output [3:0]ram_arqos;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARREADY" *) input ram_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARREGION" *) output [3:0]ram_arregion;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARSIZE" *) output [2:0]ram_arsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram ARVALID" *) output ram_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWADDR" *) output [31:0]ram_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWBURST" *) output [1:0]ram_awburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWCACHE" *) output [3:0]ram_awcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWID" *) output [5:0]ram_awid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWLEN" *) output [7:0]ram_awlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWLOCK" *) output ram_awlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWPROT" *) output [2:0]ram_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWQOS" *) output [3:0]ram_awqos;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWREADY" *) input ram_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWREGION" *) output [3:0]ram_awregion;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWSIZE" *) output [2:0]ram_awsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram AWVALID" *) output ram_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram BID" *) input [5:0]ram_bid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram BREADY" *) output ram_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram BRESP" *) input [1:0]ram_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram BVALID" *) input ram_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram RDATA" *) input [63:0]ram_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram RID" *) input [5:0]ram_rid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram RLAST" *) input ram_rlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram RREADY" *) output ram_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram RRESP" *) input [1:0]ram_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram RVALID" *) input ram_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram WDATA" *) output [63:0]ram_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram WLAST" *) output ram_wlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram WREADY" *) input ram_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram WSTRB" *) output [7:0]ram_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram WVALID" *) output ram_wvalid;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RST_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RST_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input rst_0;
 
   wire [31:0]axi2wb_intcon_wrapper_0_o_ram_axi4_ARADDR;
@@ -181,6 +185,8 @@ module swerv_soc
   wire [31:0]dmi_reg_wdata_0_1;
   wire dmi_reg_wr_en_0_1;
   wire [8:1]extintsrc_req_0_1;
+  wire i_ram_init_done_0_1;
+  wire i_ram_init_error_0_1;
   wire rst_0_1;
   wire [31:0]swerv_wrapper_verilog_0_dmi_reg_rdata;
   wire [31:0]swerv_wrapper_verilog_0_ifu_axi_ARADDR;
@@ -314,6 +320,8 @@ module swerv_soc
   assign dmi_reg_wdata_0_1 = dmi_reg_wdata_0[31:0];
   assign dmi_reg_wr_en_0_1 = dmi_reg_wr_en_0;
   assign extintsrc_req_0_1 = extintsrc_req_0[8:1];
+  assign i_ram_init_done_0_1 = i_ram_init_done_0;
+  assign i_ram_init_error_0_1 = i_ram_init_error_0;
   assign ram_araddr[31:0] = axi2wb_intcon_wrapper_0_o_ram_axi4_ARADDR;
   assign ram_arburst[1:0] = axi2wb_intcon_wrapper_0_o_ram_axi4_ARBURST;
   assign ram_arcache[3:0] = axi2wb_intcon_wrapper_0_o_ram_axi4_ARCACHE;
@@ -660,8 +668,8 @@ module swerv_soc
         .Digits_Bits(syscon_wrapper_0_Digits_Bits),
         .gpio_irq(wb_gpio_wrapper_0_wb_inta_o),
         .i_clk(clk_0_1),
-        .i_ram_init_done(1'b0),
-        .i_ram_init_error(1'b0),
+        .i_ram_init_done(i_ram_init_done_0_1),
+        .i_ram_init_error(i_ram_init_error_0_1),
         .i_rst(rst_0_1),
         .i_wb_adr(axi2wb_intcon_wrapper_0_wb_sys_adr_o),
         .i_wb_cyc(axi2wb_intcon_wrapper_0_wb_sys_cyc_o),

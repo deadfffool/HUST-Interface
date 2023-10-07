@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x1089887F3E8181FA",
+      "boundary_crc": "0x7EF10A73D7619C59",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../project_2.gen/sources_1/bd/swerv_soc",
       "name": "swerv_soc",
@@ -459,6 +459,12 @@
             "value_src": "default"
           }
         }
+      },
+      "i_ram_init_done_0": {
+        "direction": "I"
+      },
+      "i_ram_init_error_0": {
+        "direction": "I"
       }
     },
     "components": {
@@ -902,10 +908,10 @@
         "ports": [
           "clk_0",
           "swerv_wrapper_verilog_0/clk",
-          "syscon_wrapper_0/i_clk",
           "bootrom_wrapper_0/i_clk",
           "wb_gpio_wrapper_0/wb_clk_i",
-          "axi2wb_intcon_wrapper_0/clk_i_wrapper"
+          "axi2wb_intcon_wrapper_0/clk_i_wrapper",
+          "syscon_wrapper_0/i_clk"
         ]
       },
       "dmi_hard_reset_0_1": {
@@ -944,14 +950,26 @@
           "swerv_wrapper_verilog_0/extintsrc_req"
         ]
       },
+      "i_ram_init_done_0_1": {
+        "ports": [
+          "i_ram_init_done_0",
+          "syscon_wrapper_0/i_ram_init_done"
+        ]
+      },
+      "i_ram_init_error_0_1": {
+        "ports": [
+          "i_ram_init_error_0",
+          "syscon_wrapper_0/i_ram_init_error"
+        ]
+      },
       "rst_0_1": {
         "ports": [
           "rst_0",
           "swerv_wrapper_verilog_0/rst",
-          "syscon_wrapper_0/i_rst",
           "bootrom_wrapper_0/i_rst",
           "wb_gpio_wrapper_0/wb_rst_i",
-          "axi2wb_intcon_wrapper_0/rst_ni_wrapper"
+          "axi2wb_intcon_wrapper_0/rst_ni_wrapper",
+          "syscon_wrapper_0/i_rst"
         ]
       },
       "swerv_wrapper_verilog_0_dmi_reg_rdata": {

@@ -23,4 +23,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==swerv_soc_b
 # IP: bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==swerv_soc_syscon_wrapper_0_0 || ORIG_REF_NAME==swerv_soc_syscon_wrapper_0_0} -quiet] -quiet
 
-# XDC: c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/swerv_soc_ooc.xdc
+# XDC: c:/Users/Miles/Desktop/Interface Technology Lab/lab1/project_2.gen/sources_1/bd/swerv_soc/swerv_soc_ooc.xdc
