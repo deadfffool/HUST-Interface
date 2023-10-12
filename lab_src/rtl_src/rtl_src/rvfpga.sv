@@ -257,6 +257,8 @@ module rvfpga(
 		.i_ram_init_done_0  (litedram_init_done),
 		.i_ram_init_error_0 (litedram_init_error),
 		.bidir				({gpio_out, gpio_out2}),
+		.i_sw               (i_sw),
+		.o_led              (o_led),
 		.AN_0            	(AN),
 		.Digits_Bits_0   	({CA,CB,CC,CD,CE,CF,CG})
 //      .o_accel_sclk   (accel_sclk),
@@ -265,9 +267,9 @@ module rvfpga(
 //      .i_accel_miso   (i_accel_miso)
 	);
 
-	always @(posedge clk_core) begin
-		o_led[15:0] <= gpio_out2[15:0];
-	end
+//	always @(posedge clk_core) begin
+//		o_led[15:0] <= gpio_out2[15:0];
+//	end
 	
 	assign o_uart_tx = 1'b0 ? litedram_tx : cpu_tx;
 
