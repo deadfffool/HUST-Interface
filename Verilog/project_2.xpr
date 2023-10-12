@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="63" Path="C:/Users/Miles/Desktop/Interface_Technology/lab1/project_2.xpr">
+<Project Product="Vivado" Version="7" Minor="63" Path="C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4399b9b09a9e4cf084d631af70b6d308"/>
@@ -146,20 +146,8 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0.xci">
-          <Proxy FileSetName="swerv_soc_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0.xci">
-          <Proxy FileSetName="swerv_soc_wb_gpio_wrapper_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0.xci">
           <Proxy FileSetName="swerv_soc_bootrom_wrapper_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0.xci">
-          <Proxy FileSetName="swerv_soc_swerv_wrapper_verilog_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0.xci">
-          <Proxy FileSetName="swerv_soc_axi2wb_intcon_wrapper_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0.xci">
           <Proxy FileSetName="swerv_soc_syscon_wrapper_0_0"/>
@@ -169,6 +157,18 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0.xci">
           <Proxy FileSetName="swerv_soc_auto_pc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_axi2wb_intcon_wrapper_0_0/swerv_soc_axi2wb_intcon_wrapper_0_0.xci">
+          <Proxy FileSetName="swerv_soc_axi2wb_intcon_wrapper_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0.xci">
+          <Proxy FileSetName="swerv_soc_swerv_wrapper_verilog_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_wb_gpio_wrapper_0_0/swerv_soc_wb_gpio_wrapper_0_0.xci">
+          <Proxy FileSetName="swerv_soc_wb_gpio_wrapper_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="swerv_soc.bd" FileRelPathName="ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0.xci">
+          <Proxy FileSetName="swerv_soc_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PPRDIR/../lab_src/rtl_src/rtl_src/clk_gen_nexys.v">
@@ -597,9 +597,7 @@
     </Run>
     <Run Id="swerv_soc_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="swerv_soc_axi_gpio_0_0" Part="xc7a100tcsg324-1" ConstrsSet="swerv_soc_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/swerv_soc_axi_gpio_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/swerv_soc_axi_gpio_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/swerv_soc_axi_gpio_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -609,9 +607,7 @@
     </Run>
     <Run Id="swerv_soc_auto_ds_0_synth_1" Type="Ft3:Synth" SrcSet="swerv_soc_auto_ds_0" Part="xc7a100tcsg324-1" ConstrsSet="swerv_soc_auto_ds_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/swerv_soc_auto_ds_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/swerv_soc_auto_ds_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/swerv_soc_auto_ds_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -621,9 +617,7 @@
     </Run>
     <Run Id="swerv_soc_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="swerv_soc_auto_pc_0" Part="xc7a100tcsg324-1" ConstrsSet="swerv_soc_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/swerv_soc_auto_pc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/swerv_soc_auto_pc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/swerv_soc_auto_pc_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -736,9 +730,7 @@
     </Run>
     <Run Id="swerv_soc_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="swerv_soc_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="swerv_soc_axi_gpio_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/swerv_soc_axi_gpio_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/swerv_soc_axi_gpio_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -755,9 +747,7 @@
     </Run>
     <Run Id="swerv_soc_auto_ds_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="swerv_soc_auto_ds_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="swerv_soc_auto_ds_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/swerv_soc_auto_ds_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/swerv_soc_auto_ds_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -774,9 +764,7 @@
     </Run>
     <Run Id="swerv_soc_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="swerv_soc_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="swerv_soc_auto_pc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/swerv_soc_auto_pc_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/swerv_soc_auto_pc_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
