@@ -1,0 +1,643 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct  6 14:23:00 2023
+# Process ID: 11468
+# Current directory: C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1
+# Command line: vivado.exe -log swerv_soc_axi2wb_intcon_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_axi2wb_intcon_wrapper_0_0.tcl
+# Log file: C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1/swerv_soc_axi2wb_intcon_wrapper_0_0.vds
+# Journal file: C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1\vivado.jou
+# Running On: Chenxuan-RazerBlade, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
+#-----------------------------------------------------------
+source swerv_soc_axi2wb_intcon_wrapper_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 470.520 ; gain = 200.426
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface Technology Lab/lab_src'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+Command: synth_design -top swerv_soc_axi2wb_intcon_wrapper_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25212
+WARNING: [Synth 8-11065] parameter 'STATESIZE' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:83]
+WARNING: [Synth 8-11065] parameter 'IDLE' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:86]
+WARNING: [Synth 8-11065] parameter 'AWACK' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:87]
+WARNING: [Synth 8-11065] parameter 'WBWACK' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:88]
+WARNING: [Synth 8-11065] parameter 'WBRACK1' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:89]
+WARNING: [Synth 8-11065] parameter 'WBR2' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:90]
+WARNING: [Synth 8-11065] parameter 'WBRACK2' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:91]
+WARNING: [Synth 8-11065] parameter 'BAXI' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:92]
+WARNING: [Synth 8-11065] parameter 'RRAXI' becomes localparam in 'axi2wb' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:93]
+WARNING: [Synth 8-11065] parameter 'slave_sel_bits' becomes localparam in 'wb_mux' with formal parameter declaration list [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/wb_mux.v:87]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 918.777 ; gain = 407.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_axi2wb_intcon_wrapper_0_0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/synth/swerv_soc_axi2wb_intcon_wrapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi2wb_intcon_wrapper' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:1]
+INFO: [Synth 8-6157] synthesizing module 'axi_intercon_wr' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon_wr.v:21]
+INFO: [Synth 8-6157] synthesizing module 'axi_intercon' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'axi_xbar' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_xbar.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'addr_decode' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/addr_decode.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'addr_decode' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/addr_decode.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'axi_demux' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'spill_register' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'axi_demux_id_counters' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:539]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-6157] synthesizing module 'delta_counter' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/delta_counter.sv:13]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:589]
+INFO: [Synth 8-6155] done synthesizing module 'axi_demux_id_counters' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:539]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized1' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'lzc' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/lzc.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'lzc' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/lzc.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized2' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized3' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'axi_demux' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'axi_err_slv' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_err_slv.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized1' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized2' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'counter' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/counter.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/counter.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'axi_err_slv' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_err_slv.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'axi_mux' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_mux.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'axi_id_prepend' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_id_prepend.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'axi_id_prepend' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_id_prepend.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized1' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/lzc.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/lzc.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized3' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized4' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized4' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized5' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized5' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized2' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized6' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized6' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized7' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized7' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mux' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_mux.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'axi_xbar' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_xbar.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'axi_intercon' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'axi_intercon_wr' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon_wr.v:21]
+INFO: [Synth 8-6157] synthesizing module 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:25]
+WARNING: [Synth 8-693] zero replication count - replication ignored [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:133]
+WARNING: [Synth 8-693] zero replication count - replication ignored [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:134]
+INFO: [Synth 8-6155] done synthesizing module 'axi2wb' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:25]
+WARNING: [Synth 8-689] width (32) of port connection 'i_awaddr' does not match port width (16) of module 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:603]
+WARNING: [Synth 8-689] width (32) of port connection 'i_araddr' does not match port width (16) of module 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:607]
+WARNING: [Synth 8-7071] port 'i_awid' of module 'axi2wb' is unconnected for instance 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:589]
+WARNING: [Synth 8-7071] port 'i_arid' of module 'axi2wb' is unconnected for instance 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:589]
+WARNING: [Synth 8-7071] port 'o_bid' of module 'axi2wb' is unconnected for instance 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:589]
+WARNING: [Synth 8-7071] port 'o_bresp' of module 'axi2wb' is unconnected for instance 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:589]
+WARNING: [Synth 8-7071] port 'o_rid' of module 'axi2wb' is unconnected for instance 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:589]
+WARNING: [Synth 8-7071] port 'o_rresp' of module 'axi2wb' is unconnected for instance 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:589]
+WARNING: [Synth 8-7071] port 'o_rlast' of module 'axi2wb' is unconnected for instance 'axi2wb' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:589]
+WARNING: [Synth 8-7023] instance 'axi2wb' of module 'axi2wb' has 33 connections declared, but only 26 given [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:589]
+INFO: [Synth 8-6157] synthesizing module 'wb_intercon' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/wb_intercon.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wb_mux' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/wb_mux.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'wb_mux' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/wb_mux.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'wb_intercon' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/wb_intercon.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'wb_gpio_adr_o' does not match port width (32) of module 'wb_intercon' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:690]
+WARNING: [Synth 8-7071] port 'wb_rom_cti_o' of module 'wb_intercon' is unconnected for instance 'wb_intercon0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:626]
+WARNING: [Synth 8-7071] port 'wb_rom_bte_o' of module 'wb_intercon' is unconnected for instance 'wb_intercon0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:626]
+WARNING: [Synth 8-7071] port 'wb_rom_err_i' of module 'wb_intercon' is unconnected for instance 'wb_intercon0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:626]
+WARNING: [Synth 8-7071] port 'wb_rom_rty_i' of module 'wb_intercon' is unconnected for instance 'wb_intercon0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:626]
+WARNING: [Synth 8-7071] port 'wb_gpio_cti_o' of module 'wb_intercon' is unconnected for instance 'wb_intercon0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:626]
+WARNING: [Synth 8-7071] port 'wb_gpio_bte_o' of module 'wb_intercon' is unconnected for instance 'wb_intercon0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:626]
+WARNING: [Synth 8-7071] port 'wb_gpio_rty_i' of module 'wb_intercon' is unconnected for instance 'wb_intercon0' [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:626]
+WARNING: [Synth 8-7023] instance 'wb_intercon0' of module 'wb_intercon' has 98 connections declared, but only 91 given [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:626]
+INFO: [Synth 8-6155] done synthesizing module 'axi2wb_intcon_wrapper' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'swerv_soc_axi2wb_intcon_wrapper_0_0' (0#1) [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/synth/swerv_soc_axi2wb_intcon_wrapper_0_0.v:53]
+WARNING: [Synth 8-3848] Net masters_req[2][aw][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net masters_req[2][w][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net masters_req[2][ar][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net masters_req[1][aw][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net masters_req[1][w][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net masters_req[1][ar][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net masters_req[0][aw][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net masters_req[0][w][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net masters_req[0][ar][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:281]
+WARNING: [Synth 8-3848] Net slaves_resp[2][b][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:284]
+WARNING: [Synth 8-3848] Net slaves_resp[2][r][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:284]
+WARNING: [Synth 8-3848] Net slaves_resp[1][b][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:284]
+WARNING: [Synth 8-3848] Net slaves_resp[1][r][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:284]
+WARNING: [Synth 8-3848] Net slaves_resp[0][b][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:284]
+WARNING: [Synth 8-3848] Net slaves_resp[0][r][user] in module/entity axi_intercon does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element aw_req_reg was removed.  [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:130]
+WARNING: [Synth 8-6014] Unused sequential element w_req_reg was removed.  [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:131]
+WARNING: [Synth 8-6014] Unused sequential element ar_req_reg was removed.  [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:132]
+WARNING: [Synth 8-6014] Unused sequential element hi_32b_w_reg was removed.  [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb.v:171]
+WARNING: [Synth 8-3848] Net io_bresp in module/entity axi2wb_intcon_wrapper does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:311]
+WARNING: [Synth 8-3848] Net io_rresp in module/entity axi2wb_intcon_wrapper does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:316]
+WARNING: [Synth 8-3848] Net wb_io_cti_i in module/entity axi2wb_intcon_wrapper does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:339]
+WARNING: [Synth 8-3848] Net wb_io_bte_i in module/entity axi2wb_intcon_wrapper does not have driver. [c:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v:340]
+WARNING: [Synth 8-7129] Port wb_rst_i in module wb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_awaddr[2] in module axi2wb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_awaddr[1] in module axi2wb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_awaddr[0] in module axi2wb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_araddr[1] in module axi2wb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_araddr[0] in module axi2wb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_i in module spill_register__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_ni in module spill_register__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rr_i[1] in module rr_arb_tree__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rr_i[0] in module rr_arb_tree__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_i in module spill_register__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_ni in module spill_register__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_i in module spill_register__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst_ni in module spill_register__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testmode_i in module fifo_v3__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rr_i[1] in module rr_arb_tree__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rr_i[0] in module rr_arb_tree__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mst_b_chans_i[0][id][5] in module axi_id_prepend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mst_b_chans_i[0][id][4] in module axi_id_prepend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mst_r_chans_i[0][id][5] in module axi_id_prepend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mst_r_chans_i[0][id][4] in module axi_id_prepend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testmode_i in module fifo_v3__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testmode_i in module fifo_v3__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port testmode_i in module fifo_v3__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][31] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][30] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][29] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][28] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][27] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][26] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][25] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][24] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][23] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][22] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][21] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][20] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][19] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][18] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][17] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][16] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][15] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][14] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][13] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][12] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][11] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][10] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][9] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][8] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][7] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][6] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][5] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][4] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][3] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][2] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][addr][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][len][7] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][len][6] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][len][5] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][len][4] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][len][3] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][len][2] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][len][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][len][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][size][2] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][size][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][size][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][burst][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][burst][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][lock] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][cache][3] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][cache][2] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][cache][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][cache][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][prot][2] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][prot][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][prot][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][qos][3] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][qos][2] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][qos][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][qos][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][region][3] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][region][2] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][region][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][region][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][atop][5] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][atop][4] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][atop][3] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][atop][2] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][atop][1] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][atop][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[aw][user][0] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[w][data][63] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[w][data][62] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[w][data][61] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[w][data][60] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[w][data][59] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[w][data][58] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[w][data][57] in module axi_err_slv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port slv_req_i[w][data][56] in module axi_err_slv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1046.012 ; gain = 535.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.012 ; gain = 535.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.012 ; gain = 535.035
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'axi2wb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                   AWACK |                              001 |                             0001
+                  WBWACK |                              010 |                             0010
+                    BAXI |                              011 |                             0110
+                 WBRACK1 |                              100 |                             0011
+                    WBR2 |                              101 |                             0100
+                 WBRACK2 |                              110 |                             0101
+                   RRAXI |                              111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'axi2wb'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1250.141 ; gain = 739.164
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    9 Bit       Adders := 3     
+	   3 Input    5 Bit       Adders := 96    
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 9     
+	   2 Input    3 Bit       Adders := 15    
+	   2 Input    2 Bit       Adders := 15    
+	   2 Input    1 Bit       Adders := 6     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 26    
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 36    
+	                6 Bit    Registers := 26    
+	                5 Bit    Registers := 99    
+	                4 Bit    Registers := 130   
+	                3 Bit    Registers := 66    
+	                2 Bit    Registers := 209   
+	                1 Bit    Registers := 111   
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 9     
+	   3 Input   64 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 25    
+	   2 Input   14 Bit        Muxes := 2     
+	   8 Input   14 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 9     
+	   2 Input    8 Bit        Muxes := 24    
+	   4 Input    8 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 30    
+	   2 Input    5 Bit        Muxes := 291   
+	   2 Input    4 Bit        Muxes := 167   
+	   4 Input    4 Bit        Muxes := 6     
+	   8 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 119   
+	   8 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 117   
+	   6 Input    2 Bit        Muxes := 96    
+	   3 Input    2 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 528   
+	   6 Input    1 Bit        Muxes := 192   
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:17 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:19 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:22 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:26 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:26 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:27 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:27 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:27 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:27 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    90|
+|2     |LUT1   |   117|
+|3     |LUT2   |   705|
+|4     |LUT3   |   721|
+|5     |LUT4   |   493|
+|6     |LUT5   |   827|
+|7     |LUT6   |   920|
+|8     |MUXF7  |     5|
+|9     |MUXF8  |     1|
+|10    |FDCE   |  2214|
+|11    |FDPE   |     2|
+|12    |FDRE   |   145|
+|13    |FDSE   |    25|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+-----------------------------------+------+
+|      |Instance                                         |Module                             |Cells |
++------+-------------------------------------------------+-----------------------------------+------+
+|1     |top                                              |                                   |  6265|
+|2     |  inst                                           |axi2wb_intcon_wrapper              |  6265|
+|3     |    axi2wb                                       |axi2wb                             |   299|
+|4     |    axi_intercon3                                |axi_intercon_wr                    |  5953|
+|5     |      axi_intercon2                              |axi_intercon                       |  5953|
+|6     |        axi_xbar                                 |axi_xbar                           |  5953|
+|7     |          \gen_mst_port_mux[0].i_axi_mux         |axi_mux                            |   327|
+|8     |            \gen_mux.i_ar_arbiter                |rr_arb_tree__parameterized2_109    |    30|
+|9     |            \gen_mux.i_ar_spill_reg              |spill_register__parameterized6_110 |    74|
+|10    |            \gen_mux.i_aw_arbiter                |rr_arb_tree__parameterized1_111    |     9|
+|11    |            \gen_mux.i_aw_spill_reg              |spill_register__parameterized4_112 |    71|
+|12    |            \gen_mux.i_w_fifo                    |fifo_v3__parameterized3_113        |   142|
+|13    |          \gen_mst_port_mux[1].i_axi_mux         |axi_mux_0                          |   647|
+|14    |            \gen_mux.i_ar_arbiter                |rr_arb_tree__parameterized2_104    |    77|
+|15    |            \gen_mux.i_ar_spill_reg              |spill_register__parameterized6_105 |   211|
+|16    |            \gen_mux.i_aw_arbiter                |rr_arb_tree__parameterized1_106    |     9|
+|17    |            \gen_mux.i_aw_spill_reg              |spill_register__parameterized4_107 |   215|
+|18    |            \gen_mux.i_w_fifo                    |fifo_v3__parameterized3_108        |   134|
+|19    |          \gen_mst_port_mux[2].i_axi_mux         |axi_mux_1                          |   644|
+|20    |            \gen_mux.i_ar_arbiter                |rr_arb_tree__parameterized2        |    75|
+|21    |            \gen_mux.i_ar_spill_reg              |spill_register__parameterized6     |   211|
+|22    |            \gen_mux.i_aw_arbiter                |rr_arb_tree__parameterized1        |     9|
+|23    |            \gen_mux.i_aw_spill_reg              |spill_register__parameterized4     |   213|
+|24    |            \gen_mux.i_w_fifo                    |fifo_v3__parameterized3            |   135|
+|25    |          \gen_slv_port_demux[0].i_axi_demux     |axi_demux                          |   743|
+|26    |            \gen_demux.i_ar_id_counter           |axi_demux_id_counters_85           |   225|
+|27    |              \gen_counters[0].i_in_flight_cnt   |delta_counter_88                   |    13|
+|28    |              \gen_counters[10].i_in_flight_cnt  |delta_counter_89                   |    11|
+|29    |              \gen_counters[11].i_in_flight_cnt  |delta_counter_90                   |    11|
+|30    |              \gen_counters[12].i_in_flight_cnt  |delta_counter_91                   |    11|
+|31    |              \gen_counters[13].i_in_flight_cnt  |delta_counter_92                   |    11|
+|32    |              \gen_counters[14].i_in_flight_cnt  |delta_counter_93                   |    18|
+|33    |              \gen_counters[15].i_in_flight_cnt  |delta_counter_94                   |    11|
+|34    |              \gen_counters[1].i_in_flight_cnt   |delta_counter_95                   |    13|
+|35    |              \gen_counters[2].i_in_flight_cnt   |delta_counter_96                   |    13|
+|36    |              \gen_counters[3].i_in_flight_cnt   |delta_counter_97                   |    13|
+|37    |              \gen_counters[4].i_in_flight_cnt   |delta_counter_98                   |    13|
+|38    |              \gen_counters[5].i_in_flight_cnt   |delta_counter_99                   |    15|
+|39    |              \gen_counters[6].i_in_flight_cnt   |delta_counter_100                  |    14|
+|40    |              \gen_counters[7].i_in_flight_cnt   |delta_counter_101                  |    14|
+|41    |              \gen_counters[8].i_in_flight_cnt   |delta_counter_102                  |    11|
+|42    |              \gen_counters[9].i_in_flight_cnt   |delta_counter_103                  |    12|
+|43    |            \gen_demux.i_ar_spill_reg            |spill_register__parameterized2_86  |   401|
+|44    |            \gen_demux.i_r_mux                   |rr_arb_tree__parameterized0_87     |   116|
+|45    |          \gen_slv_port_demux[0].i_axi_err_slv   |axi_err_slv                        |   101|
+|46    |            i_r_counter                          |counter_82                         |    23|
+|47    |              i_counter                          |delta_counter__parameterized0_84   |    23|
+|48    |            i_r_fifo                             |fifo_v3__parameterized2_83         |    77|
+|49    |          \gen_slv_port_demux[1].i_axi_demux     |axi_demux_2                        |  1735|
+|50    |            \gen_demux.i_ar_id_counter           |axi_demux_id_counters_43           |   250|
+|51    |              \gen_counters[0].i_in_flight_cnt   |delta_counter_66                   |    15|
+|52    |              \gen_counters[10].i_in_flight_cnt  |delta_counter_67                   |    13|
+|53    |              \gen_counters[11].i_in_flight_cnt  |delta_counter_68                   |    14|
+|54    |              \gen_counters[12].i_in_flight_cnt  |delta_counter_69                   |    12|
+|55    |              \gen_counters[13].i_in_flight_cnt  |delta_counter_70                   |    13|
+|56    |              \gen_counters[14].i_in_flight_cnt  |delta_counter_71                   |    12|
+|57    |              \gen_counters[15].i_in_flight_cnt  |delta_counter_72                   |    13|
+|58    |              \gen_counters[1].i_in_flight_cnt   |delta_counter_73                   |    13|
+|59    |              \gen_counters[2].i_in_flight_cnt   |delta_counter_74                   |    13|
+|60    |              \gen_counters[3].i_in_flight_cnt   |delta_counter_75                   |    15|
+|61    |              \gen_counters[4].i_in_flight_cnt   |delta_counter_76                   |    12|
+|62    |              \gen_counters[5].i_in_flight_cnt   |delta_counter_77                   |    13|
+|63    |              \gen_counters[6].i_in_flight_cnt   |delta_counter_78                   |    12|
+|64    |              \gen_counters[7].i_in_flight_cnt   |delta_counter_79                   |    14|
+|65    |              \gen_counters[8].i_in_flight_cnt   |delta_counter_80                   |    12|
+|66    |              \gen_counters[9].i_in_flight_cnt   |delta_counter_81                   |    12|
+|67    |            \gen_demux.i_ar_spill_reg            |spill_register__parameterized2_44  |   482|
+|68    |            \gen_demux.i_aw_id_counter           |axi_demux_id_counters_45           |   265|
+|69    |              \gen_counters[0].i_in_flight_cnt   |delta_counter_50                   |    13|
+|70    |              \gen_counters[10].i_in_flight_cnt  |delta_counter_51                   |    13|
+|71    |              \gen_counters[11].i_in_flight_cnt  |delta_counter_52                   |    16|
+|72    |              \gen_counters[12].i_in_flight_cnt  |delta_counter_53                   |    15|
+|73    |              \gen_counters[13].i_in_flight_cnt  |delta_counter_54                   |    15|
+|74    |              \gen_counters[14].i_in_flight_cnt  |delta_counter_55                   |    14|
+|75    |              \gen_counters[15].i_in_flight_cnt  |delta_counter_56                   |    15|
+|76    |              \gen_counters[1].i_in_flight_cnt   |delta_counter_57                   |    13|
+|77    |              \gen_counters[2].i_in_flight_cnt   |delta_counter_58                   |    13|
+|78    |              \gen_counters[3].i_in_flight_cnt   |delta_counter_59                   |    13|
+|79    |              \gen_counters[4].i_in_flight_cnt   |delta_counter_60                   |    13|
+|80    |              \gen_counters[5].i_in_flight_cnt   |delta_counter_61                   |    15|
+|81    |              \gen_counters[6].i_in_flight_cnt   |delta_counter_62                   |    13|
+|82    |              \gen_counters[7].i_in_flight_cnt   |delta_counter_63                   |    13|
+|83    |              \gen_counters[8].i_in_flight_cnt   |delta_counter_64                   |    15|
+|84    |              \gen_counters[9].i_in_flight_cnt   |delta_counter_65                   |    14|
+|85    |            \gen_demux.i_aw_spill_reg            |spill_register_46                  |   494|
+|86    |            \gen_demux.i_b_mux                   |rr_arb_tree_47                     |    47|
+|87    |            \gen_demux.i_r_mux                   |rr_arb_tree__parameterized0_48     |   118|
+|88    |            \gen_demux.i_w_fifo                  |fifo_v3_49                         |    77|
+|89    |          \gen_slv_port_demux[1].i_axi_err_slv   |axi_err_slv_3                      |   173|
+|90    |            i_b_fifo                             |fifo_v3__parameterized1_38         |    22|
+|91    |            i_r_counter                          |counter_39                         |    23|
+|92    |              i_counter                          |delta_counter__parameterized0_42   |    23|
+|93    |            i_r_fifo                             |fifo_v3__parameterized2_40         |    83|
+|94    |            i_w_fifo                             |fifo_v3__parameterized0_41         |    44|
+|95    |          \gen_slv_port_demux[2].i_axi_demux     |axi_demux_4                        |  1435|
+|96    |            \gen_demux.i_ar_id_counter           |axi_demux_id_counters              |   188|
+|97    |              \gen_counters[0].i_in_flight_cnt   |delta_counter_22                   |    13|
+|98    |              \gen_counters[10].i_in_flight_cnt  |delta_counter_23                   |    11|
+|99    |              \gen_counters[11].i_in_flight_cnt  |delta_counter_24                   |    11|
+|100   |              \gen_counters[12].i_in_flight_cnt  |delta_counter_25                   |    11|
+|101   |              \gen_counters[13].i_in_flight_cnt  |delta_counter_26                   |    12|
+|102   |              \gen_counters[14].i_in_flight_cnt  |delta_counter_27                   |    11|
+|103   |              \gen_counters[15].i_in_flight_cnt  |delta_counter_28                   |    11|
+|104   |              \gen_counters[1].i_in_flight_cnt   |delta_counter_29                   |    13|
+|105   |              \gen_counters[2].i_in_flight_cnt   |delta_counter_30                   |    11|
+|106   |              \gen_counters[3].i_in_flight_cnt   |delta_counter_31                   |    11|
+|107   |              \gen_counters[4].i_in_flight_cnt   |delta_counter_32                   |    13|
+|108   |              \gen_counters[5].i_in_flight_cnt   |delta_counter_33                   |    11|
+|109   |              \gen_counters[6].i_in_flight_cnt   |delta_counter_34                   |    11|
+|110   |              \gen_counters[7].i_in_flight_cnt   |delta_counter_35                   |    11|
+|111   |              \gen_counters[8].i_in_flight_cnt   |delta_counter_36                   |    11|
+|112   |              \gen_counters[9].i_in_flight_cnt   |delta_counter_37                   |    12|
+|113   |            \gen_demux.i_ar_spill_reg            |spill_register__parameterized2     |   363|
+|114   |            \gen_demux.i_aw_id_counter           |axi_demux_id_counters_6            |   188|
+|115   |              \gen_counters[0].i_in_flight_cnt   |delta_counter                      |    13|
+|116   |              \gen_counters[10].i_in_flight_cnt  |delta_counter_7                    |    12|
+|117   |              \gen_counters[11].i_in_flight_cnt  |delta_counter_8                    |    11|
+|118   |              \gen_counters[12].i_in_flight_cnt  |delta_counter_9                    |    11|
+|119   |              \gen_counters[13].i_in_flight_cnt  |delta_counter_10                   |    11|
+|120   |              \gen_counters[14].i_in_flight_cnt  |delta_counter_11                   |    11|
+|121   |              \gen_counters[15].i_in_flight_cnt  |delta_counter_12                   |    11|
+|122   |              \gen_counters[1].i_in_flight_cnt   |delta_counter_13                   |    13|
+|123   |              \gen_counters[2].i_in_flight_cnt   |delta_counter_14                   |    14|
+|124   |              \gen_counters[3].i_in_flight_cnt   |delta_counter_15                   |    11|
+|125   |              \gen_counters[4].i_in_flight_cnt   |delta_counter_16                   |    11|
+|126   |              \gen_counters[5].i_in_flight_cnt   |delta_counter_17                   |    11|
+|127   |              \gen_counters[6].i_in_flight_cnt   |delta_counter_18                   |    11|
+|128   |              \gen_counters[7].i_in_flight_cnt   |delta_counter_19                   |    11|
+|129   |              \gen_counters[8].i_in_flight_cnt   |delta_counter_20                   |    11|
+|130   |              \gen_counters[9].i_in_flight_cnt   |delta_counter_21                   |    11|
+|131   |            \gen_demux.i_aw_spill_reg            |spill_register                     |   441|
+|132   |            \gen_demux.i_b_mux                   |rr_arb_tree                        |    54|
+|133   |            \gen_demux.i_r_mux                   |rr_arb_tree__parameterized0        |   116|
+|134   |            \gen_demux.i_w_fifo                  |fifo_v3                            |    83|
+|135   |          \gen_slv_port_demux[2].i_axi_err_slv   |axi_err_slv_5                      |   138|
+|136   |            i_b_fifo                             |fifo_v3__parameterized1            |    20|
+|137   |            i_r_counter                          |counter                            |    23|
+|138   |              i_counter                          |delta_counter__parameterized0      |    23|
+|139   |            i_r_fifo                             |fifo_v3__parameterized2            |    67|
+|140   |            i_w_fifo                             |fifo_v3__parameterized0            |    27|
+|141   |    wb_intercon0                                 |wb_intercon                        |     1|
+|142   |      wb_mux_io                                  |wb_mux                             |     1|
++------+-------------------------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:27 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 666 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:27 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:27 . Memory (MB): peak = 1533.270 ; gain = 1022.293
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1533.270 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1533.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d20764d7
+INFO: [Common 17-83] Releasing license: Synthesis
+110 Infos, 155 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:31 . Memory (MB): peak = 1533.270 ; gain = 1029.777
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1/swerv_soc_axi2wb_intcon_wrapper_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1698.184 ; gain = 164.914
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP swerv_soc_axi2wb_intcon_wrapper_0_0, cache-ID = 772e3450b24b51cf
+INFO: [Coretcl 2-1174] Renamed 141 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface Technology Lab/project_2/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1/swerv_soc_axi2wb_intcon_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_axi2wb_intcon_wrapper_0_0_utilization_synth.rpt -pb swerv_soc_axi2wb_intcon_wrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  6 14:24:54 2023...
