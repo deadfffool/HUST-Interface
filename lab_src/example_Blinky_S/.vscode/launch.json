@@ -12,9 +12,9 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "c:/workspace/Peripheral_course_2022/example_Blinky_S/.pio/build/swervolf_nexys/firmware.elf",
+            "executable": "C:/Users/Miles/Desktop/Interface_Technology/lab_src/example_Blinky_S/.pio/build/swervolf_nexys/firmware.elf",
             "projectEnvName": "swervolf_nexys",
-            "toolchainBinDir": "C:/Users/foxtrot024/.platformio/packages/toolchain-riscv/bin",
+            "toolchainBinDir": "C:/Users/Miles/.platformio/packages/toolchain-riscv/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": {
                 "type": "PlatformIO",
@@ -25,18 +25,18 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "c:/workspace/Peripheral_course_2022/example_Blinky_S/.pio/build/swervolf_nexys/firmware.elf",
+            "executable": "C:/Users/Miles/Desktop/Interface_Technology/lab_src/example_Blinky_S/.pio/build/swervolf_nexys/firmware.elf",
             "projectEnvName": "swervolf_nexys",
-            "toolchainBinDir": "C:/Users/foxtrot024/.platformio/packages/toolchain-riscv/bin",
+            "toolchainBinDir": "C:/Users/Miles/.platformio/packages/toolchain-riscv/bin",
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "c:/workspace/Peripheral_course_2022/example_Blinky_S/.pio/build/swervolf_nexys/firmware.elf",
+            "executable": "C:/Users/Miles/Desktop/Interface_Technology/lab_src/example_Blinky_S/.pio/build/swervolf_nexys/firmware.elf",
             "projectEnvName": "swervolf_nexys",
-            "toolchainBinDir": "C:/Users/foxtrot024/.platformio/packages/toolchain-riscv/bin",
+            "toolchainBinDir": "C:/Users/Miles/.platformio/packages/toolchain-riscv/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "loadMode": "manual"
         }
