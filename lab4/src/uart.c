@@ -7,16 +7,16 @@
 #endif
 #include <psp_api.h>
 
-int main(void)
+int main(void) 
 {
-   int i=0;
+   int i;
 
    /* Initialize Uart */
    uartInit();
 
    while(1){
       /* Print "hello world" message on the serial output (be carrefoul not all the printf formats are supported) */
-      printfNexys("hello");
+      printfNexys("hello world\n");
       /* Delay */
       for (i=0;i<10000000;i++){};
    }
