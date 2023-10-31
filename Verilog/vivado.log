@@ -1,0 +1,814 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Oct 31 14:39:15 2023
+# Process ID: 20476
+# Current directory: C:/Users/Miles/Desktop/Interface_Technology/Verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5896 C:\Users\Miles\Desktop\Interface_Technology\Verilog\project_2.xpr
+# Log file: C:/Users/Miles/Desktop/Interface_Technology/Verilog/vivado.log
+# Journal file: C:/Users/Miles/Desktop/Interface_Technology/Verilog\vivado.jou
+# Running On: Chenxuan-RazerBlade, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.2 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.2 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/APP/Vivado/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [BD 41-2576] File 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh' referenced by design 'swerv_soc' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/swerv_soc.bda' referenced by design 'swerv_soc' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef' referenced by design 'swerv_soc' could not be found.
+WARNING: [BD 41-2576] File 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.protoinst' referenced by design 'swerv_soc' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/common_defines.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_types.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_gpr_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_trigger.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dma/dma_ctrl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_alu_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_div_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ic_mem.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_addrcheck.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_bus_buffer.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_bus_intf.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_clkdomain.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_dccm_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_dccm_mem.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_ecc.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_lsc_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_stbuf.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_trigger.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/mem.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/mem_lib.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/pic/pic_ctrl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_dmi.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/common_defines.vh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_types.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_gpr_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_trigger.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dma/dma_ctrl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_alu_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_div_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ic_mem.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_addrcheck.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_bus_buffer.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_bus_intf.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_clkdomain.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_dccm_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_dccm_mem.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_ecc.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_lsc_ctl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_stbuf.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lsu/lsu_trigger.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/mem.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/mem_lib.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/pic/pic_ctrl.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_dmi.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_swerv_wrapper_verilog_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/swerv_soc_swerv_wrapper_verilog_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/cf_math_pkg.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/addr_decode.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_pkg.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_atop_filter.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/typedef.svh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/assign.svh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/registers.svh'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_demux.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_err_slv.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_id_prepend.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_intercon.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_mux.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/axi_xbar.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/counter.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/delta_counter.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/fifo_v3.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/lzc.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/rr_arb_tree.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/spill_register.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/stream_register.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/cf_math_pkg.sv'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'swerv_soc_axi2wb_intcon_wrapper_0_0' generated file not found 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/9426/addr_decode.sv'. Please regenerate to continue.
+INFO: [Common 17-14] Message 'IP_Flow 19-3664' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1575.934 ; gain = 468.637
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v
+export_ip_user_files -of_objects  [get_files C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/syscon_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/syscon_wrapper.v
+open_bd_design {C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+Reading block design file <C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>...
+Adding component instance block -- xilinx.com:user:swerv_wrapper_verilog:1.0 - swerv_wrapper_verilog_0
+Adding component instance block -- xilinx.com:user:axi2wb_intcon_wrapper:1.0 - axi2wb_intcon_wrapper_0
+Adding component instance block -- xilinx.com:user:wb_gpio_wrapper:1.0 - wb_gpio_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:bootrom_wrapper:1.0 - bootrom_wrapper_0
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/bootrom_wrapper_0'.
+Given inputs for module-source, Top-module name : bootrom_wrapper, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:module_ref:syscon_wrapper:1.0 - syscon_wrapper_0
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/syscon_wrapper_0'.
+Given inputs for module-source, Top-module name : syscon_wrapper, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Successfully read diagram <swerv_soc> from block design file <C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1686.281 ; gain = 53.570
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uart16550:2.0 axi_uart16550_0
+endgroup
+startgroup
+set_property CONFIG.NUM_MI {2} [get_bd_cells axi_interconnect_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property location {1.5 -57 533} [get_bd_cells xlconstant_0]
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_0]
+connect_bd_intf_net [get_bd_intf_pins axi_uart16550_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins axi_uart16550_0/freeze]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_uart16550_0/s_axi_aclk]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_uart16550_0/s_axi_aresetn]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uart16550_0/sout]
+WARNING: [BD 41-1306] The connection to interface pin </axi_uart16550_0/sout> is being overridden by the user with net <axi_uart16550_0_sout>. This pin will not be connected as a part of interface connection <UART>.
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_uart16550_0/sin]
+WARNING: [BD 41-1306] The connection to interface pin </axi_uart16550_0/sin> is being overridden by the user with net <sin_0_1>. This pin will not be connected as a part of interface connection <UART>.
+endgroup
+set_property name o_uart_tx [get_bd_ports sin_0]
+set_property name i_uart_rx [get_bd_ports sout_0]
+startgroup
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_interconnect_0/M01_ACLK]
+endgroup
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_interconnect_0/M01_ARESETN]
+set_property location {2 632 987} [get_bd_cells axi_uart16550_0]
+set_property location {2 428 23} [get_bd_cells axi_gpio_0]
+assign_bd_address -target_address_space /axi2wb_intcon_wrapper_0/o_user_axi4 [get_bd_addr_segs axi_uart16550_0/S_AXI/Reg] -force
+Slave segment '/axi_uart16550_0/S_AXI/Reg' is being assigned into address space '/axi2wb_intcon_wrapper_0/o_user_axi4' at <0x44A0_0000 [ 64K ]>.
+set_property offset 0x80110000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_uart16550_0_Reg}]
+save_bd_design
+Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+update_module_reference swerv_soc_bootrom_wrapper_0_0
+ERROR: [filemgmt 56-587] Failed to resolve reference. Nothing was found in the project to match the name bootrom_wrapper Try changing the compile order from manual to automatic. 
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+validate_bd_design
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block swerv_wrapper_verilog_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi2wb_intcon_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uart16550_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Hardware Definition File c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2080.898 ; gain = 242.172
+catch { config_ip_cache -export [get_ips -all swerv_soc_swerv_wrapper_verilog_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi2wb_intcon_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_uart16550_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_uart16550_0_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+reset_run swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1
+reset_run swerv_soc_axi_gpio_0_0_synth_1
+reset_run swerv_soc_bootrom_wrapper_0_0_synth_1
+reset_run swerv_soc_swerv_wrapper_verilog_0_0_synth_1
+reset_run swerv_soc_syscon_wrapper_0_0_synth_1
+reset_run swerv_soc_wb_gpio_wrapper_0_0_synth_1
+launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1 swerv_soc_axi_gpio_0_0_synth_1 swerv_soc_axi_uart16550_0_0_synth_1 swerv_soc_bootrom_wrapper_0_0_synth_1 swerv_soc_swerv_wrapper_verilog_0_0_synth_1 swerv_soc_syscon_wrapper_0_0_synth_1 swerv_soc_wb_gpio_wrapper_0_0_synth_1 swerv_soc_xbar_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_uart16550_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0
+ERROR: [filemgmt 56-587] Failed to resolve reference. Nothing was found in the project to match the name bootrom_wrapper Try changing the compile order from manual to automatic. 
+ERROR: [Runs 36-346] File 'C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/swerv_soc_bootrom_wrapper_0_0.xci' needed for run contains invalid reference(s).
+add_files -norecurse -scan_for_includes {C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/sw/boot_main.mem C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/litedram_core.init C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/mem_1.init}
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/sw/boot_main.mem' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/litedram_core.init' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/mem_1.init' cannot be added to the project because it already exists in the project, skipping this file
+add_files -scan_for_includes {C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/binary_to_gray.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/rvfpga.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/axi_pkg.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/bootrom_wrapper.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/litedram_core.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/syscon_wrapper.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/registers.svh C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/sw/boot_main.vh C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/axi_cdc.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/dpram64.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/clk_gen_nexys.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/bscan_tap.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/gray_to_binary.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/counter.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/cdc_fifo_gray.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/litedram_top.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/delta_counter.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/assign.svh C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/spill_register.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/typedef.svh C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/sync.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/axi_intf.sv C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v}
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_mem_if.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_shift.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/binary_to_gray.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/rvfpga.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/axi_pkg.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/litedram_core.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_decode.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/swervolf_syscon.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/registers.svh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_state.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/wb_mem_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/sw/boot_main.vh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/axi_cdc.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/BootROM/dpram64.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/clk_gen_nexys.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/bscan_tap.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/gray_to_binary.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/counter.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/cdc_fifo_gray.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/litedram_top.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_if.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/SystemController/delta_counter.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/assign.svh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_ctrl.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_bufreg.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/spill_register.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_alu.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_top.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_params.vh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/typedef.svh' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/sync.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_top.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_csr.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/axi_intf.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/rtl_src/rtl_src/LiteDRAM/serv_1.0.2/rtl/serv_rf_ram_if.v' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'swerv_soc' - hence not re-generating.
+catch { config_ip_cache -export [get_ips -all swerv_soc_swerv_wrapper_verilog_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi2wb_intcon_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_gpio_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_gpio_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ca3827c8d196a25c) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi_gpio_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_uart16550_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_uart16550_0_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+reset_run swerv_soc_auto_ds_0_synth_1
+reset_run swerv_soc_auto_pc_0_synth_1
+reset_run swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1
+reset_run swerv_soc_axi_gpio_0_0_synth_1
+reset_run swerv_soc_axi_uart16550_0_0_synth_1
+launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1 swerv_soc_axi_gpio_0_0_synth_1 swerv_soc_axi_uart16550_0_0_synth_1 swerv_soc_bootrom_wrapper_0_0_synth_1 swerv_soc_swerv_wrapper_verilog_0_0_synth_1 swerv_soc_syscon_wrapper_0_0_synth_1 swerv_soc_wb_gpio_wrapper_0_0_synth_1 swerv_soc_xbar_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_gpio_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ca3827c8d196a25c) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi_gpio_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_uart16550_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0
+[Tue Oct 31 14:56:44 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1, swerv_soc_axi_gpio_0_0_synth_1, swerv_soc_axi_uart16550_0_0_synth_1, swerv_soc_bootrom_wrapper_0_0_synth_1, swerv_soc_swerv_wrapper_verilog_0_0_synth_1, swerv_soc_syscon_wrapper_0_0_synth_1, swerv_soc_wb_gpio_wrapper_0_0_synth_1, swerv_soc_xbar_0_synth_1...
+Run output will be captured here:
+swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log
+swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log
+swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1/runme.log
+swerv_soc_axi_gpio_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/runme.log
+swerv_soc_axi_uart16550_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_uart16550_0_0_synth_1/runme.log
+swerv_soc_bootrom_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/runme.log
+swerv_soc_swerv_wrapper_verilog_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/runme.log
+swerv_soc_syscon_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/runme.log
+swerv_soc_wb_gpio_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/runme.log
+swerv_soc_xbar_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_xbar_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files -ipstatic_source_dir C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/modelsim} {questa=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/questa} {riviera=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/riviera} {activehdl=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'swerv_soc' - hence not re-generating.
+catch { config_ip_cache -export [get_ips -all swerv_soc_swerv_wrapper_verilog_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi2wb_intcon_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_wb_gpio_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_wb_gpio_wrapper_0_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_bootrom_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_bootrom_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 4640d28e99cacf07) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_bootrom_wrapper_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_syscon_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_syscon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID cbb7e927b232ab0e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_syscon_wrapper_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_gpio_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_gpio_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ca3827c8d196a25c) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi_gpio_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_uart16550_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_uart16550_0_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+create_ip_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2150.961 ; gain = 0.000
+launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1 swerv_soc_axi_gpio_0_0_synth_1 swerv_soc_axi_uart16550_0_0_synth_1 swerv_soc_bootrom_wrapper_0_0_synth_1 swerv_soc_swerv_wrapper_verilog_0_0_synth_1 swerv_soc_syscon_wrapper_0_0_synth_1 swerv_soc_wb_gpio_wrapper_0_0_synth_1 swerv_soc_xbar_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_gpio_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ca3827c8d196a25c) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi_gpio_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_uart16550_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_bootrom_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 4640d28e99cacf07) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_bootrom_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_syscon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID cbb7e927b232ab0e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_syscon_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_wb_gpio_wrapper_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0
+[Tue Oct 31 14:57:09 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1, swerv_soc_axi_gpio_0_0_synth_1, swerv_soc_axi_uart16550_0_0_synth_1, swerv_soc_bootrom_wrapper_0_0_synth_1, swerv_soc_swerv_wrapper_verilog_0_0_synth_1, swerv_soc_syscon_wrapper_0_0_synth_1, swerv_soc_wb_gpio_wrapper_0_0_synth_1, swerv_soc_xbar_0_synth_1...
+Run output will be captured here:
+swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log
+swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log
+swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1/runme.log
+swerv_soc_axi_gpio_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/runme.log
+swerv_soc_axi_uart16550_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_uart16550_0_0_synth_1/runme.log
+swerv_soc_bootrom_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/runme.log
+swerv_soc_swerv_wrapper_verilog_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/runme.log
+swerv_soc_syscon_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/runme.log
+swerv_soc_wb_gpio_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/runme.log
+swerv_soc_xbar_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_xbar_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files -ipstatic_source_dir C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/modelsim} {questa=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/questa} {riviera=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/riviera} {activehdl=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Hardware Definition File c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+catch { config_ip_cache -export [get_ips -all swerv_soc_swerv_wrapper_verilog_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi2wb_intcon_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_wb_gpio_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_wb_gpio_wrapper_0_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_bootrom_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_bootrom_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 4640d28e99cacf07) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_bootrom_wrapper_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_syscon_wrapper_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_syscon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID cbb7e927b232ab0e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_syscon_wrapper_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_gpio_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_gpio_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ca3827c8d196a25c) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi_gpio_0_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_uart16550_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_uart16550_0_0
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+create_ip_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2150.961 ; gain = 0.000
+launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1 swerv_soc_axi_gpio_0_0_synth_1 swerv_soc_axi_uart16550_0_0_synth_1 swerv_soc_bootrom_wrapper_0_0_synth_1 swerv_soc_swerv_wrapper_verilog_0_0_synth_1 swerv_soc_syscon_wrapper_0_0_synth_1 swerv_soc_wb_gpio_wrapper_0_0_synth_1 swerv_soc_xbar_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_gpio_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ca3827c8d196a25c) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi_gpio_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_uart16550_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_bootrom_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 4640d28e99cacf07) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_bootrom_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_syscon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID cbb7e927b232ab0e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_syscon_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_wb_gpio_wrapper_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0
+[Tue Oct 31 14:57:53 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1, swerv_soc_axi_gpio_0_0_synth_1, swerv_soc_axi_uart16550_0_0_synth_1, swerv_soc_bootrom_wrapper_0_0_synth_1, swerv_soc_swerv_wrapper_verilog_0_0_synth_1, swerv_soc_syscon_wrapper_0_0_synth_1, swerv_soc_wb_gpio_wrapper_0_0_synth_1, swerv_soc_xbar_0_synth_1...
+Run output will be captured here:
+swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log
+swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log
+swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1/runme.log
+swerv_soc_axi_gpio_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/runme.log
+swerv_soc_axi_uart16550_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_uart16550_0_0_synth_1/runme.log
+swerv_soc_bootrom_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_bootrom_wrapper_0_0_synth_1/runme.log
+swerv_soc_swerv_wrapper_verilog_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/runme.log
+swerv_soc_syscon_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_syscon_wrapper_0_0_synth_1/runme.log
+swerv_soc_wb_gpio_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_wb_gpio_wrapper_0_0_synth_1/runme.log
+swerv_soc_xbar_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_xbar_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files -ipstatic_source_dir C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/modelsim} {questa=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/questa} {riviera=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/riviera} {activehdl=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/utils_1/imports/synth_1/rvfpga.dcp with file C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/synth_1/rvfpga.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_ds_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_axi2wb_intcon_wrapper_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_swerv_wrapper_verilog_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi2wb_intcon_wrapper_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 772e3450b24b51cf) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi2wb_intcon_wrapper_0_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
+[Tue Oct 31 14:59:07 2023] Launched swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1, swerv_soc_swerv_wrapper_verilog_0_0_synth_1, swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi2wb_intcon_wrapper_0_0_synth_1/runme.log
+swerv_soc_swerv_wrapper_verilog_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/runme.log
+swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log
+swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log
+synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/synth_1/runme.log
+[Tue Oct 31 14:59:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/impl_1/runme.log
+WARNING: [Common 17-9] Error reading message records.
+open_bd_design {C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+set_property location {1978 1042} [get_bd_ports o_uart_tx]
+set_property name i_uart_tx [get_bd_ports o_uart_tx]
+set_property name o_uart_tx [get_bd_ports i_uart_rx]
+set_property name i_uart_rx [get_bd_ports i_uart_tx]
+validate_bd_design
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_dat_i
+/axi2wb_intcon_wrapper_0/wb_uart_ack_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_dat_i
+/axi2wb_intcon_wrapper_0/wb_ptc_ack_i
+/axi2wb_intcon_wrapper_0/wb_ptc_err_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+/syscon_wrapper_0/ptc_irq
+
+Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v
+Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Hardware Definition File c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+[Tue Oct 31 15:14:43 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1...
+Run output will be captured here:
+swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log
+swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files -ipstatic_source_dir C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/modelsim} {questa=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/questa} {riviera=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/riviera} {activehdl=C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.srcs/utils_1/imports/synth_1/rvfpga.dcp with file C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/synth_1/rvfpga.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_ds_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_pc_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ffa265a5644924ea) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_ds_0]'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 20322c53692c0b6e) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_auto_pc_0]'
+[Tue Oct 31 15:15:25 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log
+swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log
+synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/synth_1/runme.log
+[Tue Oct 31 15:15:25 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2499.590 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1555 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2541.301 ; gain = 340.035
+INFO: [Common 17-344] 'open_run' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 15:45:21 2023...
