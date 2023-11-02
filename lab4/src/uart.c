@@ -1,94 +1,56 @@
 #if defined(D_NEXYS_A7)
-   #include <bsp_printf.h>
-   #include <bsp_mem_map.h>
-   #include <bsp_version.h>
+#include <bsp_printf.h>
+#include <bsp_mem_map.h>
+#include <bsp_version.h>
 #else
-   PRE_COMPILED_MSG("no platform was defined")
+PRE_COMPILED_MSG("no platform was defined")
 #endif
 #include <psp_api.h>
+#define READ(dir) (*(volatile unsigned *)dir)
+#define WRITE(dir, value) { (*(volatile unsigned *)dir) = (value); }
+#define UART_BASE  0x80111000
+#define THR 0x0
+#define RBR 0x0
+#define LSR 0x14//Line Status Register
+#define LCR 0xc //Line Control Register
+#define IER 0x4 //Interrupt Enable Register
+#define DLM 0x4 //Divisor Latch (Most Significant Byte) Register
+#define DLL 0x0 //Divisor Latch (Least Significant Byte) Register
+#define va_start(v,l)	__builtin_va_start(v,l)
+#define va_end(v)	__builtin_va_end(v)
 
-#define UART_BASE 0x80111000
-// with 1000 offset that axi_uart16550 has
-#define rbr 0*4
-#define ier 1*4
-#define fcr 2*4
-#define lcr 3*4
-#define mcr 4*4
-#define lsr 5*4
-#define msr 6*4
-#define scr 7*4
-#define thr rbr
-#define iir fcr
-#define dll rbr
-#define dlm ier
-#define WRITE_IO(addr) ((volatile unsigned int*)(addr))
-
-void delay(){
-   for (volatile int i=0;i<1000000;i++){};
+void delay() 
+{
+	volatile unsigned int j;
+	for (j = 0; j < (1000000); j++) ;	// delay 
 }
+int main(void)
+{
+   /* Initialize Uart */
+   //uartInit();
 
-int main() {
-*WRITE_IO(UART_BASE + lcr) = 0x00000080; 
-delay();
-*WRITE_IO(UART_BASE + dll) = 27;
-delay();
-// *WRITE_IO(UART_BASE + dlm) = 0x00000000; 
-// delay();
-*WRITE_IO(UART_BASE + lcr) = 0x00000003;
-delay();
-*WRITE_IO(UART_BASE + ier) = 0x00000000;
-delay();
+   WRITE((UART_BASE+LCR),0x80); //access to divisor reg
+   delay();
+   WRITE((UART_BASE+DLL),27); // devisor = 0000027
+   delay();
+   // WRITE((UART_BASE+DLM),0); 
+   // delay();
+   WRITE((UART_BASE+LCR),0x3); //8bit data 1bit stop access to rbr
+   delay();
+   WRITE((UART_BASE+IER),0x00); //disable interrupts
+   delay();
+   char s[12]="hello world\n";
+   char* tmp=s;
+   while(1){
+      while((READ(UART_BASE +LSR) & 0x10) == 0);
+      WRITE((UART_BASE+THR),*tmp);
+      if(*tmp == '\n') 
+      {
+         tmp=s;
+      }
+      else  tmp++;
+      delay();
+   }
+   return 0;
 
-while(1){
-*WRITE_IO(UART_BASE + thr) = (int)'h';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'e';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'l';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'l';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'o';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)' ';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'w';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'o';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'r';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'l';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'d';
-delay();
-*WRITE_IO(UART_BASE + thr) = (int)'\n';
-delay();
 }
-return 0;}
-
-
-// #if defined(D_NEXYS_A7)
-//    #include <bsp_printf.h>
-//    #include <bsp_mem_map.h>
-//    #include <bsp_version.h>
-// #else
-//    PRE_COMPILED_MSG("no platform was defined")
-// #endif
-// #include <psp_api.h>
-
-// int main(void)
-// {
-//    int i;
-
-//    /* Initialize Uart */
-//    uartInit();
-
-//    while(1){
-//       /* Print "hello world" message on the serial output (be carrefoul not all the printf formats are supported) */
-//       printfNexys("hello world\n");
-//       /* Delay */
-//       for (i=0;i<10000000;i++){};
-//    }
-
-// }
