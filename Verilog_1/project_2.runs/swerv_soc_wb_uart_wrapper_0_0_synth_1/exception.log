@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\Miles\Desktop\Verilog\project_2.runs\swerv_soc_wb_uart_wrapper_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限
