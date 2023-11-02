@@ -257,8 +257,8 @@ module rvfpga(
 		.i_ram_init_done_0  (litedram_init_done),
 		.i_ram_init_error_0 (litedram_init_error),
 		.bidir				({gpio_out, gpio_out2}),
-		.AN_0            	(AN),
-		.Digits_Bits_0   	({CA,CB,CC,CD,CE,CF,CG})
+		.AN            	    (AN),
+		.Digits_Bits   	    ({CA,CB,CC,CD,CE,CF,CG})
 //      .o_accel_sclk   (accel_sclk),
 //      .o_accel_cs_n   (o_accel_cs_n),
 //      .o_accel_mosi   (o_accel_mosi),

@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='c:/users/miles/desktop/interface_technology/ip_repo/edit_PWM_w_Int_v1_0.runs/synth_1'
+HD_PWD='C:/Users/Miles/Desktop/Interface_Technology/ip_repo/edit_PWM_w_Int_v1_0.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

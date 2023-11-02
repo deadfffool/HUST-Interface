@@ -1,6 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../lab_src/PWM_Controller_Int.v" \
+"../../../../PWM_Controller_Int.v" \
 
 verilog   \
 "../../../../PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0_S00_AXI.v" \
