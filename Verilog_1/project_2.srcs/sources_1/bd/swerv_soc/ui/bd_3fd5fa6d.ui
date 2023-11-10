@@ -1,11 +1,11 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.986614",
-   "Default View_TopLeft":"-76,221",
+   "Default View_ScaleFactor":"0.801378",
+   "Default View_TopLeft":"-769,-438",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port ram -pg 1 -lvl 4 -x 2110 -y -510 -defaultsOSRD
+preplace port ram -pg 1 -lvl 4 -x 2120 -y -510 -defaultsOSRD
 preplace port port-id_dmi_hard_reset_0 -pg 1 -lvl 0 -x -820 -y -100 -defaultsOSRD
 preplace port port-id_dmi_reg_en_0 -pg 1 -lvl 0 -x -820 -y -220 -defaultsOSRD
 preplace port port-id_dmi_reg_wr_en_0 -pg 1 -lvl 0 -x -820 -y -260 -defaultsOSRD
@@ -14,16 +14,16 @@ preplace port port-id_clk_0 -pg 1 -lvl 0 -x -820 -y -360 -defaultsOSRD
 preplace port port-id_i_ram_init_done_0 -pg 1 -lvl 0 -x -820 -y -170 -defaultsOSRD
 preplace port port-id_i_ram_init_error_0 -pg 1 -lvl 0 -x -820 -y -150 -defaultsOSRD
 preplace port port-id_i_uart_rx -pg 1 -lvl 0 -x -820 -y 790 -defaultsOSRD
-preplace port port-id_o_uart_tx -pg 1 -lvl 4 -x 2110 -y 480 -defaultsOSRD
+preplace port port-id_o_uart_tx -pg 1 -lvl 4 -x 2120 -y 480 -defaultsOSRD
 preplace portBus dmi_reg_addr_0 -pg 1 -lvl 0 -x -820 -y -200 -defaultsOSRD
-preplace portBus dmi_reg_rdata_0 -pg 1 -lvl 4 -x 2110 -y -210 -defaultsOSRD
+preplace portBus dmi_reg_rdata_0 -pg 1 -lvl 4 -x 2120 -y -210 -defaultsOSRD
 preplace portBus dmi_reg_wdata_0 -pg 1 -lvl 0 -x -820 -y -120 -defaultsOSRD
 preplace portBus extintsrc_req_0 -pg 1 -lvl 0 -x -820 -y -240 -defaultsOSRD
-preplace portBus bidir -pg 1 -lvl 4 -x 2110 -y 260 -defaultsOSRD
-preplace portBus o_led -pg 1 -lvl 4 -x 2110 -y 280 -defaultsOSRD
+preplace portBus bidir -pg 1 -lvl 4 -x 2120 -y 260 -defaultsOSRD
+preplace portBus o_led -pg 1 -lvl 4 -x 2120 -y 280 -defaultsOSRD
 preplace portBus i_sw -pg 1 -lvl 0 -x -820 -y 320 -defaultsOSRD
-preplace portBus AN -pg 1 -lvl 4 -x 2110 -y 570 -defaultsOSRD
-preplace portBus Digits_Bits -pg 1 -lvl 4 -x 2110 -y 590 -defaultsOSRD
+preplace portBus AN -pg 1 -lvl 4 -x 2120 -y 570 -defaultsOSRD
+preplace portBus Digits_Bits -pg 1 -lvl 4 -x 2120 -y 590 -defaultsOSRD
 preplace inst swerv_wrapper_verilog_0 -pg 1 -lvl 1 -x 399 -y -240 -defaultsOSRD
 preplace inst axi2wb_intcon_wrapper_0 -pg 1 -lvl 2 -x 953 -y 200 -defaultsOSRD
 preplace inst wb_gpio_wrapper_0 -pg 1 -lvl 3 -x 1793 -y 220 -defaultsOSRD
@@ -33,6 +33,8 @@ preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 399 -y 360 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 399 -y 20 -defaultsOSRD
 preplace inst wb_uart_wrapper_0 -pg 1 -lvl 3 -x 1793 -y 470 -defaultsOSRD
 preplace inst PWM_w_Int_v1_0_0 -pg 1 -lvl 1 -x 399 -y 570 -defaultsOSRD
+preplace netloc PWM_w_Int_v1_0_0_AN 1 1 3 660J 790 NJ 790 2030J
+preplace netloc PWM_w_Int_v1_0_0_Digits_Bits 1 1 3 640J 800 NJ 800 2090J
 preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_adr_o 1 2 1 1613 210n
 preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_cyc_o 1 2 1 1200 190n
 preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_dat_o 1 2 1 1623 230n
@@ -86,16 +88,14 @@ preplace netloc wb_gpio_wrapper_0_wb_inta_o 1 2 2 1643 30 1950
 preplace netloc wb_uart_wrapper_0_o_uart_tx 1 3 1 N 480
 preplace netloc wb_uart_wrapper_0_wb_ack_o 1 1 3 723 -490 1230J -630 1970
 preplace netloc wb_uart_wrapper_0_wb_dat_o 1 1 3 763 -450 1270J -590 1960
-preplace netloc PWM_w_Int_v1_0_0_AN 1 1 3 660J 790 NJ 790 2030J
-preplace netloc PWM_w_Int_v1_0_0_Digits_Bits 1 1 3 640J 800 NJ 800 2090J
 preplace netloc S00_AXI_1 1 0 3 209 -570 NJ -570 1150
 preplace netloc axi2wb_intcon_wrapper_0_o_ram_axi4 1 2 2 1573 -310 2070J
 preplace netloc axi_interconnect_0_M00_AXI 1 0 2 239 -70 570
+preplace netloc axi_interconnect_0_M01_AXI 1 0 2 239 220 560
 preplace netloc swerv_wrapper_verilog_0_ifu_axi 1 1 1 693 -270n
 preplace netloc swerv_wrapper_verilog_0_lsu_axi 1 1 1 673 -250n
 preplace netloc swerv_wrapper_verilog_0_sb_axi 1 1 1 580 -230n
-preplace netloc axi_interconnect_0_M01_AXI 1 0 2 239 220 560
-levelinfo -pg 1 -820 399 953 1793 2110
+levelinfo -pg 1 -820 399 953 1793 2120
 pagesize -pg 1 -db -bbox -sgen -1020 -870 2740 1740
 "
 }

@@ -161,7 +161,6 @@ vcom -work xil_defaultlib  -93  \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" \
 "../../../bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/sim/swerv_soc_wb_uart_wrapper_0_0.v" \
-"../../../bd/swerv_soc/sim/swerv_soc.v" \
 "../../../bd/swerv_soc/ipshared/03cb/PWM_Controller_Int.v" \
 "../../../bd/swerv_soc/ipshared/03cb/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0_S00_AXI.v" \
 "../../../bd/swerv_soc/ipshared/03cb/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0.v" \
@@ -182,6 +181,7 @@ vlog -work axi_dwidth_converter_v2_1_28  -incr -mfcu  "+incdir+../../../bd/swerv
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" \
 "../../../bd/swerv_soc/ip/swerv_soc_auto_ds_0/sim/swerv_soc_auto_ds_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_auto_pc_0/sim/swerv_soc_auto_pc_0.v" \
+"../../../bd/swerv_soc/sim/swerv_soc.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

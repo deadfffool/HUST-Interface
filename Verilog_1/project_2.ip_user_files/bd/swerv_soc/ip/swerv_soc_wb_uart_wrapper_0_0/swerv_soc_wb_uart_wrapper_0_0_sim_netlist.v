@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
 // Date        : Thu Nov  2 18:59:34 2023
 // Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/Miles/Desktop/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top swerv_soc_wb_uart_wrapper_0_0 -prefix
+//               swerv_soc_wb_uart_wrapper_0_0_ swerv_soc_wb_uart_wrapper_0_0_sim_netlist.v
 // Design      : swerv_soc_wb_uart_wrapper_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,94 +13,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "swerv_soc_wb_uart_wrapper_0_0,wb_uart_wrapper,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
-(* X_CORE_INFO = "wb_uart_wrapper,Vivado 2023.1" *) 
-(* NotValidForBitStream *)
-module swerv_soc_wb_uart_wrapper_0_0
-   (wb_clk_i,
-    wb_rst_i,
-    wb_adr_i,
-    wb_dat_i,
-    wb_dat_o,
-    wb_we_i,
-    wb_stb_i,
-    wb_cyc_i,
-    wb_sel_i,
-    wb_ack_o,
-    i_uart_rx,
-    o_uart_tx,
-    uart_irq);
-  input wb_clk_i;
-  input wb_rst_i;
-  input [31:0]wb_adr_i;
-  input [31:0]wb_dat_i;
-  output [31:0]wb_dat_o;
-  input wb_we_i;
-  input wb_stb_i;
-  input wb_cyc_i;
-  input [3:0]wb_sel_i;
-  output wb_ack_o;
-  input i_uart_rx;
-  output o_uart_tx;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 uart_irq INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME uart_irq, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) output uart_irq;
-
-  wire \<const0> ;
-  wire i_uart_rx;
-  wire o_uart_tx;
-  wire uart_irq;
-  wire wb_ack_o;
-  wire [31:0]wb_adr_i;
-  wire wb_clk_i;
-  wire wb_cyc_i;
-  wire [31:0]wb_dat_i;
-  wire [7:0]\^wb_dat_o ;
-  wire wb_rst_i;
-  wire wb_stb_i;
-  wire wb_we_i;
-
-  assign wb_dat_o[31] = \<const0> ;
-  assign wb_dat_o[30] = \<const0> ;
-  assign wb_dat_o[29] = \<const0> ;
-  assign wb_dat_o[28] = \<const0> ;
-  assign wb_dat_o[27] = \<const0> ;
-  assign wb_dat_o[26] = \<const0> ;
-  assign wb_dat_o[25] = \<const0> ;
-  assign wb_dat_o[24] = \<const0> ;
-  assign wb_dat_o[23] = \<const0> ;
-  assign wb_dat_o[22] = \<const0> ;
-  assign wb_dat_o[21] = \<const0> ;
-  assign wb_dat_o[20] = \<const0> ;
-  assign wb_dat_o[19] = \<const0> ;
-  assign wb_dat_o[18] = \<const0> ;
-  assign wb_dat_o[17] = \<const0> ;
-  assign wb_dat_o[16] = \<const0> ;
-  assign wb_dat_o[15] = \<const0> ;
-  assign wb_dat_o[14] = \<const0> ;
-  assign wb_dat_o[13] = \<const0> ;
-  assign wb_dat_o[12] = \<const0> ;
-  assign wb_dat_o[11] = \<const0> ;
-  assign wb_dat_o[10] = \<const0> ;
-  assign wb_dat_o[9] = \<const0> ;
-  assign wb_dat_o[8] = \<const0> ;
-  assign wb_dat_o[7:0] = \^wb_dat_o [7:0];
-  GND GND
-       (.G(\<const0> ));
-  swerv_soc_wb_uart_wrapper_0_0_wb_uart_wrapper inst
-       (.i_uart_rx(i_uart_rx),
-        .o_uart_tx(o_uart_tx),
-        .uart_irq(uart_irq),
-        .wb_ack_o(wb_ack_o),
-        .wb_adr_i(wb_adr_i[4:2]),
-        .wb_clk_i(wb_clk_i),
-        .wb_cyc_i(wb_cyc_i),
-        .wb_dat_i(wb_dat_i[7:0]),
-        .wb_dat_o(\^wb_dat_o ),
-        .wb_rst_i(wb_rst_i),
-        .wb_stb_i(wb_stb_i),
-        .wb_we_i(wb_we_i));
-endmodule
-
-(* ORIG_REF_NAME = "raminfr" *) 
 module swerv_soc_wb_uart_wrapper_0_0_raminfr
    (wb_clk_i_0,
     D,
@@ -658,7 +570,93 @@ module swerv_soc_wb_uart_wrapper_0_0_raminfr_0
         .S(\wb_dat_o_reg[0] [2]));
 endmodule
 
-(* ORIG_REF_NAME = "uart_receiver" *) 
+(* CHECK_LICENSE_TYPE = "swerv_soc_wb_uart_wrapper_0_0,wb_uart_wrapper,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
+(* X_CORE_INFO = "wb_uart_wrapper,Vivado 2023.1" *) 
+(* NotValidForBitStream *)
+module swerv_soc_wb_uart_wrapper_0_0
+   (wb_clk_i,
+    wb_rst_i,
+    wb_adr_i,
+    wb_dat_i,
+    wb_dat_o,
+    wb_we_i,
+    wb_stb_i,
+    wb_cyc_i,
+    wb_sel_i,
+    wb_ack_o,
+    i_uart_rx,
+    o_uart_tx,
+    uart_irq);
+  input wb_clk_i;
+  input wb_rst_i;
+  input [31:0]wb_adr_i;
+  input [31:0]wb_dat_i;
+  output [31:0]wb_dat_o;
+  input wb_we_i;
+  input wb_stb_i;
+  input wb_cyc_i;
+  input [3:0]wb_sel_i;
+  output wb_ack_o;
+  input i_uart_rx;
+  output o_uart_tx;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 uart_irq INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME uart_irq, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) output uart_irq;
+
+  wire \<const0> ;
+  wire i_uart_rx;
+  wire o_uart_tx;
+  wire uart_irq;
+  wire wb_ack_o;
+  wire [31:0]wb_adr_i;
+  wire wb_clk_i;
+  wire wb_cyc_i;
+  wire [31:0]wb_dat_i;
+  wire [7:0]\^wb_dat_o ;
+  wire wb_rst_i;
+  wire wb_stb_i;
+  wire wb_we_i;
+
+  assign wb_dat_o[31] = \<const0> ;
+  assign wb_dat_o[30] = \<const0> ;
+  assign wb_dat_o[29] = \<const0> ;
+  assign wb_dat_o[28] = \<const0> ;
+  assign wb_dat_o[27] = \<const0> ;
+  assign wb_dat_o[26] = \<const0> ;
+  assign wb_dat_o[25] = \<const0> ;
+  assign wb_dat_o[24] = \<const0> ;
+  assign wb_dat_o[23] = \<const0> ;
+  assign wb_dat_o[22] = \<const0> ;
+  assign wb_dat_o[21] = \<const0> ;
+  assign wb_dat_o[20] = \<const0> ;
+  assign wb_dat_o[19] = \<const0> ;
+  assign wb_dat_o[18] = \<const0> ;
+  assign wb_dat_o[17] = \<const0> ;
+  assign wb_dat_o[16] = \<const0> ;
+  assign wb_dat_o[15] = \<const0> ;
+  assign wb_dat_o[14] = \<const0> ;
+  assign wb_dat_o[13] = \<const0> ;
+  assign wb_dat_o[12] = \<const0> ;
+  assign wb_dat_o[11] = \<const0> ;
+  assign wb_dat_o[10] = \<const0> ;
+  assign wb_dat_o[9] = \<const0> ;
+  assign wb_dat_o[8] = \<const0> ;
+  assign wb_dat_o[7:0] = \^wb_dat_o [7:0];
+  GND GND
+       (.G(\<const0> ));
+  swerv_soc_wb_uart_wrapper_0_0_wb_uart_wrapper inst
+       (.i_uart_rx(i_uart_rx),
+        .o_uart_tx(o_uart_tx),
+        .uart_irq(uart_irq),
+        .wb_ack_o(wb_ack_o),
+        .wb_adr_i(wb_adr_i[4:2]),
+        .wb_clk_i(wb_clk_i),
+        .wb_cyc_i(wb_cyc_i),
+        .wb_dat_i(wb_dat_i[7:0]),
+        .wb_dat_o(\^wb_dat_o ),
+        .wb_rst_i(wb_rst_i),
+        .wb_stb_i(wb_stb_i),
+        .wb_we_i(wb_we_i));
+endmodule
+
 module swerv_soc_wb_uart_wrapper_0_0_uart_receiver
    (AR,
     lsr1,
@@ -2172,7 +2170,6 @@ module swerv_soc_wb_uart_wrapper_0_0_uart_receiver
         .O(ti_int_d_i_3_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "uart_regs" *) 
 module swerv_soc_wb_uart_wrapper_0_0_uart_regs
    (wb_rst_i_0,
     lsr5r_reg_0,
@@ -3868,7 +3865,6 @@ module swerv_soc_wb_uart_wrapper_0_0_uart_regs
         .O(\wb_dat_o[7]_i_4_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "uart_rfifo" *) 
 module swerv_soc_wb_uart_wrapper_0_0_uart_rfifo
    (overrun_reg_0,
     wb_rst_i_0,
@@ -6224,7 +6220,6 @@ module swerv_soc_wb_uart_wrapper_0_0_uart_rfifo
         .O(wb_rst_i_0));
 endmodule
 
-(* ORIG_REF_NAME = "uart_sync_flops" *) 
 module swerv_soc_wb_uart_wrapper_0_0_uart_sync_flops
    (srx_pad,
     serial_in,
@@ -6275,7 +6270,6 @@ module swerv_soc_wb_uart_wrapper_0_0_uart_sync_flops
         .Q(srx_pad));
 endmodule
 
-(* ORIG_REF_NAME = "uart_tfifo" *) 
 module swerv_soc_wb_uart_wrapper_0_0_uart_tfifo
    (wb_clk_i_0,
     lsr6r0,
@@ -6710,7 +6704,6 @@ module swerv_soc_wb_uart_wrapper_0_0_uart_tfifo
         .Q(a[3]));
 endmodule
 
-(* ORIG_REF_NAME = "uart_top" *) 
 module swerv_soc_wb_uart_wrapper_0_0_uart_top
    (wb_ack_o,
     wb_dat_o,
@@ -6866,7 +6859,6 @@ module swerv_soc_wb_uart_wrapper_0_0_uart_top
         .wre_reg_1(scratch0));
 endmodule
 
-(* ORIG_REF_NAME = "uart_transmitter" *) 
 module swerv_soc_wb_uart_wrapper_0_0_uart_transmitter
    (stx_o_tmp_reg_0,
     \mcr_reg[4] ,
@@ -7424,7 +7416,6 @@ module swerv_soc_wb_uart_wrapper_0_0_uart_transmitter
         .Q(tf_pop_reg_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "uart_wb" *) 
 module swerv_soc_wb_uart_wrapper_0_0_uart_wb
    (wb_ack_o,
     \block_cnt_reg[0] ,
@@ -8007,7 +7998,6 @@ module swerv_soc_wb_uart_wrapper_0_0_uart_wb
         .Q(wre_reg_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "wb_uart_wrapper" *) 
 module swerv_soc_wb_uart_wrapper_0_0_wb_uart_wrapper
    (wb_ack_o,
     wb_dat_o,

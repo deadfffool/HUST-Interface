@@ -3,18 +3,19 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Oct 31 14:56:48 2023
-# Process ID: 23020
-# Current directory: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1
+# Start of session at: Fri Nov 10 13:37:32 2023
+# Process ID: 14760
+# Current directory: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1
 # Command line: vivado.exe -log swerv_soc_swerv_wrapper_verilog_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_swerv_wrapper_verilog_0_0.tcl
-# Log file: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.vds
-# Journal file: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1\vivado.jou
+# Log file: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.vds
+# Journal file: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1\vivado.jou
 # Running On: Chenxuan-RazerBlade, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
 #-----------------------------------------------------------
 source swerv_soc_swerv_wrapper_verilog_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 471.898 ; gain = 199.906
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 471.121 ; gain = 200.449
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_swerv_wrapper_verilog_0_0
 WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 79b7cfd83c4a6b9d) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_swerv_wrapper_verilog_0_0]'
@@ -25,230 +26,230 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19140
+INFO: [Synth 8-7075] Helper process launched with PID 15644
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1311.492 ; gain = 410.605
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1309.547 ; gain = 410.168
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'swerv_soc_swerv_wrapper_verilog_0_0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/synth/swerv_soc_swerv_wrapper_verilog_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_verilog' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_verilog.v:21]
-INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_dmi' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_dmi.sv:26]
-INFO: [Synth 8-6157] synthesizing module 'swerv' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'rvoclkhdr' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:159]
-INFO: [Synth 8-6155] done synthesizing module 'rvoclkhdr' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:159]
-INFO: [Synth 8-6157] synthesizing module 'dbg' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:24]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized3' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized3' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffsc' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:60]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffsc' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:60]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized4' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized4' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized4' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized4' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized5' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized5' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized5' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized5' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6155] done synthesizing module 'dbg' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:24]
-INFO: [Synth 8-6157] synthesizing module 'ifu' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv:22]
-INFO: [Synth 8-6157] synthesizing module 'ifu_ifc_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized6' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized6' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized6' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized6' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_ifc_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'ifu_bp_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:27]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized7' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized7' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized7' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized7' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6157] synthesizing module 'rvbtb_addr_hash' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:353]
-INFO: [Synth 8-6155] done synthesizing module 'rvbtb_addr_hash' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:353]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized8' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized8' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-226] default block is never used [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:1075]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized3' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized8' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized9' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized9' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized8' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvbradder' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:256]
-INFO: [Synth 8-6155] done synthesizing module 'rvbradder' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:256]
-INFO: [Synth 8-6157] synthesizing module 'rvbtb_tag_hash' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:333]
-INFO: [Synth 8-6155] done synthesizing module 'rvbtb_tag_hash' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:333]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized10' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized10' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvbtb_ghr_hash' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:368]
-INFO: [Synth 8-6155] done synthesizing module 'rvbtb_ghr_hash' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:368]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_bp_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:27]
-INFO: [Synth 8-6157] synthesizing module 'ifu_aln_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv:21]
-INFO: [Synth 8-6157] synthesizing module 'rveven_paritycheck' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:416]
-INFO: [Synth 8-6155] done synthesizing module 'rveven_paritycheck' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:416]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized4' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized9' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized11' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized11' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized9' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized4' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized5' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized10' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized12' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized12' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized10' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized5' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized13' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized13' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized6' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized11' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized11' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized6' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized7' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized12' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized14' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized14' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized12' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized7' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'ifu_compress_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv:20]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_compress_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv:20]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_aln_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv:21]
-INFO: [Synth 8-6157] synthesizing module 'ifu_mem_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:24]
-INFO: [Synth 8-6157] synthesizing module 'rveven_paritygen' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:407]
-INFO: [Synth 8-6155] done synthesizing module 'rveven_paritygen' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:407]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized15' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized15' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized13' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized13' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized3' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized16' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized16' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized8' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized14' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized14' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized8' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized9' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized15' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized17' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized17' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized15' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized9' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'ifu_mem_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:24]
-INFO: [Synth 8-6155] done synthesizing module 'ifu' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv:22]
-INFO: [Synth 8-6157] synthesizing module 'dec' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec.sv:30]
-INFO: [Synth 8-6157] synthesizing module 'dec_ib_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv:16]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized10' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized16' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized18' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized18' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized16' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized10' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized11' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized17' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized19' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized19' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized17' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized11' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'dec_ib_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv:16]
-INFO: [Synth 8-6157] synthesizing module 'dec_decode_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized20' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized20' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'dec_dec_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:2497]
-INFO: [Synth 8-6155] done synthesizing module 'dec_dec_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:2497]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized12' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized18' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized21' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized21' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized18' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized12' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized13' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized19' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized22' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized22' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized19' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized13' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'dec_decode_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:17]
-INFO: [Synth 8-6157] synthesizing module 'dec_tlu_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:26]
-INFO: [Synth 8-6157] synthesizing module 'dec_timer_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:2644]
-INFO: [Synth 8-6155] done synthesizing module 'dec_timer_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:2644]
-INFO: [Synth 8-6157] synthesizing module 'rvsyncss' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:211]
-INFO: [Synth 8-6155] done synthesizing module 'rvsyncss' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:211]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized23' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized23' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized24' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized24' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized25' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized25' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized26' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized26' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized14' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized20' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'swerv_soc_swerv_wrapper_verilog_0_0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/synth/swerv_soc_swerv_wrapper_verilog_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_verilog' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_verilog.v:21]
+INFO: [Synth 8-6157] synthesizing module 'swerv_wrapper_dmi' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_dmi.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'swerv' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/swerv.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rvoclkhdr' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:159]
+INFO: [Synth 8-6155] done synthesizing module 'rvoclkhdr' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:159]
+INFO: [Synth 8-6157] synthesizing module 'dbg' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized3' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized3' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffsc' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffsc' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:60]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized4' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized4' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized4' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized4' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized5' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized5' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized5' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized5' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'dbg' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'ifu' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'ifu_ifc_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized6' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized6' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized6' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized6' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_ifc_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_ifc_ctl.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ifu_bp_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:27]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized7' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized7' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized7' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized7' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6157] synthesizing module 'rvbtb_addr_hash' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:353]
+INFO: [Synth 8-6155] done synthesizing module 'rvbtb_addr_hash' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:353]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized8' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized8' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-226] default block is never used [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:1075]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized3' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized8' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized9' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized9' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized8' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvbradder' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:256]
+INFO: [Synth 8-6155] done synthesizing module 'rvbradder' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:256]
+INFO: [Synth 8-6157] synthesizing module 'rvbtb_tag_hash' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:333]
+INFO: [Synth 8-6155] done synthesizing module 'rvbtb_tag_hash' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:333]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized10' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized10' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvbtb_ghr_hash' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:368]
+INFO: [Synth 8-6155] done synthesizing module 'rvbtb_ghr_hash' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:368]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_bp_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_bp_ctl.sv:27]
+INFO: [Synth 8-6157] synthesizing module 'ifu_aln_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'rveven_paritycheck' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:416]
+INFO: [Synth 8-6155] done synthesizing module 'rveven_paritycheck' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:416]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized4' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized9' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized11' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized11' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized9' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized4' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized5' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized10' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized12' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized12' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized10' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized5' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized13' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized13' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized6' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized11' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized11' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized6' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized7' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized12' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized14' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized14' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized12' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized7' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'ifu_compress_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_compress_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_compress_ctl.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_aln_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_aln_ctl.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'ifu_mem_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'rveven_paritygen' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:407]
+INFO: [Synth 8-6155] done synthesizing module 'rveven_paritygen' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:407]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs_fpga__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs_fpga__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:100]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized15' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized15' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized13' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized13' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff_fpga__parameterized3' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff_fpga__parameterized3' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized16' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized16' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized8' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized14' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized14' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized8' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized9' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized15' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized17' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized17' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized15' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized9' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'ifu_mem_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'ifu' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'dec' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'dec_ib_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized10' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized16' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized18' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized18' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized16' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized10' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized11' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized17' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized19' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized19' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized17' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized11' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'dec_ib_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_ib_ctl.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'dec_decode_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized20' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized20' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'dec_dec_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:2497]
+INFO: [Synth 8-6155] done synthesizing module 'dec_dec_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:2497]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized12' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized18' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized21' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized21' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized18' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized12' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized13' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized19' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized22' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized22' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized19' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized13' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'dec_decode_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_decode_ctl.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'dec_tlu_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'dec_timer_ctl' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:2644]
+INFO: [Synth 8-6155] done synthesizing module 'dec_timer_ctl' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dec/dec_tlu_ctl.sv:2644]
+INFO: [Synth 8-6157] synthesizing module 'rvsyncss' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:211]
+INFO: [Synth 8-6155] done synthesizing module 'rvsyncss' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:211]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized23' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized23' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized24' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized24' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized25' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized25' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized26' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized26' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized14' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized20' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized27' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized20' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized14' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized21' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized15' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
-INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized28' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized22' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
-INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized16' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized27' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized20' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized14' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized21' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized15' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized28' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized22' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized16' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:178]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3848] Net bus_clk in module/entity dbg does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:280]
-WARNING: [Synth 8-3848] Net axiclk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:940]
-WARNING: [Synth 8-3848] Net fetch_f1_f2_c1_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:289]
-WARNING: [Synth 8-3848] Net axiclk_reset in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:941]
-WARNING: [Synth 8-3848] Net tag_valid_w0_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1288]
-WARNING: [Synth 8-3848] Net tag_valid_w1_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1289]
-WARNING: [Synth 8-3848] Net tag_valid_w2_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1290]
-WARNING: [Synth 8-3848] Net tag_valid_w3_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1291]
-WARNING: [Synth 8-3848] Net way_status_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1230]
-WARNING: [Synth 8-3848] Net exu_mul_c1_e3_clk in module/entity exu_mul_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:43]
-WARNING: [Synth 8-3848] Net exu_mul_c1_e2_clk in module/entity exu_mul_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:43]
-WARNING: [Synth 8-3848] Net exu_mul_c1_e1_clk in module/entity exu_mul_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:43]
-WARNING: [Synth 8-3848] Net exu_mp_pkt[valid] in module/entity exu does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv:159]
-WARNING: [Synth 8-3848] Net exu_mp_pkt[br_error] in module/entity exu does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv:159]
-WARNING: [Synth 8-3848] Net exu_mp_pkt[br_start_error] in module/entity exu does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv:159]
-WARNING: [Synth 8-3848] Net exu_mp_pkt[prett] in module/entity exu does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv:159]
-WARNING: [Synth 8-3848] Net dma_bus_clk in module/entity dma_ctrl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dma/dma_ctrl.sv:187]
+WARNING: [Synth 8-3848] Net bus_clk in module/entity dbg does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv:280]
+WARNING: [Synth 8-3848] Net axiclk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:940]
+WARNING: [Synth 8-3848] Net fetch_f1_f2_c1_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:289]
+WARNING: [Synth 8-3848] Net axiclk_reset in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:941]
+WARNING: [Synth 8-3848] Net tag_valid_w0_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1288]
+WARNING: [Synth 8-3848] Net tag_valid_w1_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1289]
+WARNING: [Synth 8-3848] Net tag_valid_w2_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1290]
+WARNING: [Synth 8-3848] Net tag_valid_w3_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1291]
+WARNING: [Synth 8-3848] Net way_status_clk in module/entity ifu_mem_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/ifu/ifu_mem_ctl.sv:1230]
+WARNING: [Synth 8-3848] Net exu_mul_c1_e3_clk in module/entity exu_mul_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:43]
+WARNING: [Synth 8-3848] Net exu_mul_c1_e2_clk in module/entity exu_mul_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:43]
+WARNING: [Synth 8-3848] Net exu_mul_c1_e1_clk in module/entity exu_mul_ctl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:43]
+WARNING: [Synth 8-3848] Net exu_mp_pkt[valid] in module/entity exu does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv:159]
+WARNING: [Synth 8-3848] Net exu_mp_pkt[br_error] in module/entity exu does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv:159]
+WARNING: [Synth 8-3848] Net exu_mp_pkt[br_start_error] in module/entity exu does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv:159]
+WARNING: [Synth 8-3848] Net exu_mp_pkt[prett] in module/entity exu does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu.sv:159]
+WARNING: [Synth 8-3848] Net dma_bus_clk in module/entity dma_ctrl does not have driver. [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/dma/dma_ctrl.sv:187]
 WARNING: [Synth 8-7129] Port en in module rvoclkhdr is either unconnected or has no load
 WARNING: [Synth 8-7129] Port scan_mode in module rvoclkhdr is either unconnected or has no load
 WARNING: [Synth 8-7129] Port dec_tlu_core_ecc_disable in module IC_TAG is either unconnected or has no load
@@ -351,48 +352,48 @@ WARNING: [Synth 8-7129] Port dma_axi_arlen[0] in module dma_ctrl is either uncon
 WARNING: [Synth 8-7129] Port dma_axi_arburst[1] in module dma_ctrl is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1722.918 ; gain = 822.031
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1722.305 ; gain = 822.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1722.918 ; gain = 822.031
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1722.305 ; gain = 822.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1722.918 ; gain = 822.031
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1722.305 ; gain = 822.926
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1722.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1722.305 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1882.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1882.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2034.945 ; gain = 152.012
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2036.344 ; gain = 153.500
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:01:08 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:56 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:01:08 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:56 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:08 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:16 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'inst/swerv_eh1_2/swerv/dbg/axi_bready_ff' (rvdffs) to 'inst/swerv_eh1_2/swerv/dbg/axi_rready_ff'
 INFO: [Synth 8-223] decloning instance 'inst/swerv_eh1_2/swerv/exu/div_e1/dividend_c' (rvtwoscomp) to 'inst/swerv_eh1_2/swerv/exu/div_e1/q_ff_c'
@@ -597,7 +598,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pic_ctrl
 INFO: [Synth 8-3886] merging instance 'ifu/mem_ctl/ifu_pmu_sigs_ff/dout_reg[4]' (FDC) to 'ifu/mem_ctl/act_miss_ff/dout_reg[0]'
 INFO: [Synth 8-3886] merging instance 'ifu/mem_ctl/dma_ok_prev_ff/dout_reg[0]' (FDC) to 'ifu/mem_ctl/sbiccm_err_ff/dout_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (ifu/mem_ctl/\sbiccm_err_ff/dout_reg[0] )
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:108]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/exu/exu_mul_ctl.sv:108]
 DSP Report: Generating DSP prod_e20, operation Mode is: A*B.
 DSP Report: operator prod_e20 is absorbed into DSP prod_e20.
 DSP Report: operator prod_e20 is absorbed into DSP prod_e20.
@@ -611,7 +612,7 @@ DSP Report: Generating DSP prod_e20, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator prod_e20 is absorbed into DSP prod_e20.
 DSP Report: operator prod_e20 is absorbed into DSP prod_e20.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:03:18 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:57 ; elapsed = 00:03:20 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -671,13 +672,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:03:30 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:05 ; elapsed = 00:03:29 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:14 ; elapsed = 00:04:03 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Timing Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:03:59 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -817,16 +818,16 @@ INFO: [Synth 8-3886] merging instance 'swervi_4/inst/swerv_eh1_2/swerv/ifu/aln/b
 INFO: [Synth 8-3886] merging instance 'inst/swerv_eh1_2/swerv/exu/i1_alu_e1/predictpacketff/genblock.dff/dffs/dout_reg[71]' (FDCE) to 'inst/swerv_eh1_2/swerv/exu/i1_alu_e1/pcff/genblock.dff/dffs/dout_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/swerv_eh1_2/swerv/exu/i0_alu_e1/predictpacketff/genblock.dff/dffs/dout_reg[71]' (FDCE) to 'inst/swerv_eh1_2/swerv/exu/i0_alu_e1/pcff/genblock.dff/dffs/dout_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/swerv_eh1_2/swerv/exu/div_e1/mff/genblock.dff/dffs/dout_reg[31]' (FDCE) to 'inst/swerv_eh1_2/swerv/exu/div_e1/miscf/dffs/dout_reg[2]'
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv:37]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:22 ; elapsed = 00:04:20 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Technology Mapping : Time (s): cpu = 00:02:34 ; elapsed = 00:04:24 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -881,37 +882,37 @@ INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instan
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:29 ; elapsed = 00:04:31 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished IO Insertion : Time (s): cpu = 00:02:40 ; elapsed = 00:04:34 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:30 ; elapsed = 00:04:31 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:40 ; elapsed = 00:04:35 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:35 ; elapsed = 00:04:38 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:44 ; elapsed = 00:04:41 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:36 ; elapsed = 00:04:39 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:45 ; elapsed = 00:04:43 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:37 ; elapsed = 00:04:41 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:46 ; elapsed = 00:04:44 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:38 ; elapsed = 00:04:42 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:46 ; elapsed = 00:04:45 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -953,32 +954,32 @@ Report Cell Usage:
 |14    |FDCE     | 13157|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:38 ; elapsed = 00:04:42 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:46 ; elapsed = 00:04:45 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 225 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:04 ; elapsed = 00:04:21 . Memory (MB): peak = 2034.945 ; gain = 822.031
-Synthesis Optimization Complete : Time (s): cpu = 00:02:38 ; elapsed = 00:04:43 . Memory (MB): peak = 2034.945 ; gain = 1134.059
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:04:26 . Memory (MB): peak = 2036.344 ; gain = 822.926
+Synthesis Optimization Complete : Time (s): cpu = 00:02:46 ; elapsed = 00:04:46 . Memory (MB): peak = 2036.344 ; gain = 1136.965
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2034.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2036.344 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1042 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2034.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2036.344 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: e6edb778
 INFO: [Common 17-83] Releasing license: Synthesis
-383 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered.
+384 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:52 ; elapsed = 00:05:07 . Memory (MB): peak = 2034.945 ; gain = 1530.277
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2034.945 ; gain = 0.000
-write_vhdl: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2034.945 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:59 ; elapsed = 00:05:09 . Memory (MB): peak = 2036.344 ; gain = 1532.180
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2036.344 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2036.344 ; gain = 0.000
 INFO: [Coretcl 2-1174] Renamed 3376 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2034.945 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_swerv_wrapper_verilog_0_0_synth_1/swerv_soc_swerv_wrapper_verilog_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2036.344 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_swerv_wrapper_verilog_0_0_utilization_synth.rpt -pb swerv_soc_swerv_wrapper_verilog_0_0_utilization_synth.pb
-write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2034.945 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 15:02:54 2023...
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2036.344 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 13:43:38 2023...

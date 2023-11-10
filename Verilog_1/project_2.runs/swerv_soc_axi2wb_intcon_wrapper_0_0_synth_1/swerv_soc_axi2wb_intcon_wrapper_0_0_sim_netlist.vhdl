@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Tue Oct 31 14:59:34 2023
+-- Date        : Fri Nov 10 13:40:00 2023
 -- Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ swerv_soc_axi2wb_intcon_wrapper_0_0_sim_netlist.vhdl
@@ -81850,7 +81850,8 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute X_INTERFACE_INFO of i_sb_awvalid : signal is "xilinx.com:interface:aximm:1.0 i_sb_axi4 AWVALID";
   attribute X_INTERFACE_INFO of i_sb_bready : signal is "xilinx.com:interface:aximm:1.0 i_sb_axi4 BREADY";
   attribute X_INTERFACE_INFO of i_sb_rready : signal is "xilinx.com:interface:aximm:1.0 i_sb_axi4 RREADY";
-  attribute X_INTERFACE_PARAMETER of i_sb_rready : signal is "XIL_INTERFACENAME i_sb_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of i_sb_rready : signal is "XIL_INTERFACENAME i_sb_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INS" & LF &
+ "ERT_VIP 0";
   attribute X_INTERFACE_INFO of i_sb_wlast : signal is "xilinx.com:interface:aximm:1.0 i_sb_axi4 WLAST";
   attribute X_INTERFACE_INFO of i_sb_wvalid : signal is "xilinx.com:interface:aximm:1.0 i_sb_axi4 WVALID";
   attribute X_INTERFACE_INFO of i_user_arready : signal is "xilinx.com:interface:aximm:1.0 o_user_axi4 ARREADY";
@@ -81862,13 +81863,15 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute X_INTERFACE_INFO of o_ifu_arready : signal is "xilinx.com:interface:aximm:1.0 i_ifu_axi4 ARREADY";
   attribute X_INTERFACE_INFO of o_ifu_rlast : signal is "xilinx.com:interface:aximm:1.0 i_ifu_axi4 RLAST";
   attribute X_INTERFACE_INFO of o_ifu_rvalid : signal is "xilinx.com:interface:aximm:1.0 i_ifu_axi4 RVALID";
-  attribute X_INTERFACE_PARAMETER of o_ifu_rvalid : signal is "XIL_INTERFACENAME i_ifu_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 3, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of o_ifu_rvalid : signal is "XIL_INTERFACENAME i_ifu_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 3, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INS" & LF &
+ "ERT_VIP 0";
   attribute X_INTERFACE_INFO of o_lsu_arready : signal is "xilinx.com:interface:aximm:1.0 i_lsu_axi4 ARREADY";
   attribute X_INTERFACE_INFO of o_lsu_awready : signal is "xilinx.com:interface:aximm:1.0 i_lsu_axi4 AWREADY";
   attribute X_INTERFACE_INFO of o_lsu_bvalid : signal is "xilinx.com:interface:aximm:1.0 i_lsu_axi4 BVALID";
   attribute X_INTERFACE_INFO of o_lsu_rlast : signal is "xilinx.com:interface:aximm:1.0 i_lsu_axi4 RLAST";
   attribute X_INTERFACE_INFO of o_lsu_rvalid : signal is "xilinx.com:interface:aximm:1.0 i_lsu_axi4 RVALID";
-  attribute X_INTERFACE_PARAMETER of o_lsu_rvalid : signal is "XIL_INTERFACENAME i_lsu_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 4, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of o_lsu_rvalid : signal is "XIL_INTERFACENAME i_lsu_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 4, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, IN" & LF &
+ "SERT_VIP 0";
   attribute X_INTERFACE_INFO of o_lsu_wready : signal is "xilinx.com:interface:aximm:1.0 i_lsu_axi4 WREADY";
   attribute X_INTERFACE_INFO of o_ram_arlock : signal is "xilinx.com:interface:aximm:1.0 o_ram_axi4 ARLOCK";
   attribute X_INTERFACE_INFO of o_ram_arvalid : signal is "xilinx.com:interface:aximm:1.0 o_ram_axi4 ARVALID";
@@ -81876,7 +81879,8 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute X_INTERFACE_INFO of o_ram_awvalid : signal is "xilinx.com:interface:aximm:1.0 o_ram_axi4 AWVALID";
   attribute X_INTERFACE_INFO of o_ram_bready : signal is "xilinx.com:interface:aximm:1.0 o_ram_axi4 BREADY";
   attribute X_INTERFACE_INFO of o_ram_rready : signal is "xilinx.com:interface:aximm:1.0 o_ram_axi4 RREADY";
-  attribute X_INTERFACE_PARAMETER of o_ram_rready : signal is "XIL_INTERFACENAME o_ram_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of o_ram_rready : signal is "XIL_INTERFACENAME o_ram_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, IN" & LF &
+ "SERT_VIP 0";
   attribute X_INTERFACE_INFO of o_ram_wlast : signal is "xilinx.com:interface:aximm:1.0 o_ram_axi4 WLAST";
   attribute X_INTERFACE_INFO of o_ram_wvalid : signal is "xilinx.com:interface:aximm:1.0 o_ram_axi4 WVALID";
   attribute X_INTERFACE_INFO of o_sb_arready : signal is "xilinx.com:interface:aximm:1.0 i_sb_axi4 ARREADY";
@@ -81891,7 +81895,8 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute X_INTERFACE_INFO of o_user_awvalid : signal is "xilinx.com:interface:aximm:1.0 o_user_axi4 AWVALID";
   attribute X_INTERFACE_INFO of o_user_bready : signal is "xilinx.com:interface:aximm:1.0 o_user_axi4 BREADY";
   attribute X_INTERFACE_INFO of o_user_rready : signal is "xilinx.com:interface:aximm:1.0 o_user_axi4 RREADY";
-  attribute X_INTERFACE_PARAMETER of o_user_rready : signal is "XIL_INTERFACENAME o_user_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of o_user_rready : signal is "XIL_INTERFACENAME o_user_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, I" & LF &
+ "NSERT_VIP 0";
   attribute X_INTERFACE_INFO of o_user_wlast : signal is "xilinx.com:interface:aximm:1.0 o_user_axi4 WLAST";
   attribute X_INTERFACE_INFO of o_user_wvalid : signal is "xilinx.com:interface:aximm:1.0 o_user_axi4 WVALID";
   attribute X_INTERFACE_INFO of rst_ni_wrapper : signal is "xilinx.com:signal:reset:1.0 rst_ni_wrapper RST";

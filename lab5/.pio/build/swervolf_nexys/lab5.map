@@ -1,0 +1,238 @@
+Archive member included to satisfy reference by file (symbol)
+
+.pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+                              .pio\build\swervolf_nexys\src\CustomIP.o (uartInit)
+.pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+                              (_start)
+c:/users/miles/.platformio/packages/toolchain-riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32\libc.a(lib_a-init.o)
+                              .pio\build\swervolf_nexys\libBoardBSP.a(startup.o) (__libc_init_array)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 .pio\build\swervolf_nexys\src\CustomIP.o
+ .data          0x0000000000000000        0x0 .pio\build\swervolf_nexys\src\CustomIP.o
+ .bss           0x0000000000000000        0x0 .pio\build\swervolf_nexys\src\CustomIP.o
+ .text.uart_inbyte
+                0x0000000000000000       0x16 .pio\build\swervolf_nexys\src\CustomIP.o
+ .text          0x0000000000000000        0x0 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .data          0x0000000000000000        0x0 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .bss           0x0000000000000000        0x0 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .text.puts     0x0000000000000000       0x2c .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .text.putchar  0x0000000000000000       0x1e .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .text          0x0000000000000000        0x0 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+ .data          0x0000000000000000        0x0 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+ .bss           0x0000000000000000        0x0 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+ .data          0x0000000000000000        0x0 c:/users/miles/.platformio/packages/toolchain-riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32\libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 c:/users/miles/.platformio/packages/toolchain-riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32\libc.a(lib_a-init.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x0000000000000000 0x0000000004000000 axw !rl
+ram2             0x0000000004000000 0x0000000004000000 axw !rl
+dccm             0x00000000f0040000 0x0000000000010000 axw !rl
+ovl              0x00000000e0000000 0x0000000000002000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                __comrv_cache_size = 0x0
+LOAD .pio\build\swervolf_nexys\src\CustomIP.o
+START GROUP
+LOAD .pio\build\swervolf_nexys\libBoardBSP.a
+LOAD .pio\build\swervolf_nexys\libPSP.a
+LOAD c:/users/miles/.platformio/packages/toolchain-riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32\libc.a
+LOAD c:/users/miles/.platformio/packages/toolchain-riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/rv32imac/ilp32\libgcc.a
+END GROUP
+                0x0000000000001000                __stack_size = DEFINED (__stack_size)?__stack_size:0x1000
+                0x0000000000000000                __comrv_align_size = (__comrv_cache_size != 0x0)?__comrv_cache_alignment_size:0x0
+
+.text.init      0x0000000000000000       0x90
+ *(.text.init)
+ .text.init     0x0000000000000000       0x8a .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+                0x0000000000000000                _start
+                0x0000000000000090                . = ALIGN (0x8)
+ *fill*         0x000000000000008a        0x6 
+
+.text           0x0000000000000090      0x4f8
+ *(.text.unlikely .text.unlikely.*)
+ *(.text.startup .text.startup.*)
+ *(.text .text.*)
+ .text.delay    0x0000000000000090       0x1e .pio\build\swervolf_nexys\src\CustomIP.o
+                0x0000000000000090                delay
+ .text.main     0x00000000000000ae       0x5a .pio\build\swervolf_nexys\src\CustomIP.o
+                0x00000000000000ae                main
+ .text.getnum   0x0000000000000108       0x30 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .text.bsp_strlen
+                0x0000000000000138       0x12 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+                0x0000000000000138                bsp_strlen
+ .text.printUartPutchar
+                0x000000000000014a       0x30 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+                0x000000000000014a                printUartPutchar
+ .text.padding  0x000000000000017a       0x34 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .text.outnum   0x00000000000001ae      0x124 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .text.outs     0x00000000000002d2       0x52 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .text.uartInit
+                0x0000000000000324       0x24 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+                0x0000000000000324                uartInit
+ .text.uart_printf
+                0x0000000000000348      0x1a4 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+                0x0000000000000348                uart_printf
+ .text.printfNexys
+                0x00000000000004ec       0x30 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+                0x00000000000004ec                printfNexys
+ .text          0x000000000000051c       0x6a c:/users/miles/.platformio/packages/toolchain-riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32\libc.a(lib_a-init.o)
+                0x000000000000051c                __libc_init_array
+ *(COMRV_TEXT_SEC)
+ *(COMRV_TEXT_ASM)
+ *(.gnu.linkonce.t.*)
+                0x0000000000000588                . = ALIGN (0x4)
+ *fill*         0x0000000000000586        0x2 
+
+.rodata         0x0000000000000588      0x188
+ *(.rdata)
+ *(.rodata .rodata.*)
+ .rodata.main.str1.4
+                0x0000000000000588        0xd .pio\build\swervolf_nexys\src\CustomIP.o
+ *fill*         0x0000000000000595        0x3 
+ .rodata.uart_printf
+                0x0000000000000598      0x150 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .rodata.outnum.str1.4
+                0x00000000000006e8       0x28 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+                                         0x25 (size before relaxing)
+ *(.gnu.linkonce.r.*)
+ *(COMRV_RODATA_SEC)
+                0x0000000000000710                . = ALIGN (0x4)
+
+.rela.dyn       0x0000000000000710        0x0
+ .rela.text.init
+                0x0000000000000710        0x0 .pio\build\swervolf_nexys\src\CustomIP.o
+ .rela.text     0x0000000000000710        0x0 .pio\build\swervolf_nexys\src\CustomIP.o
+
+.reserved_ovl   0x0000000000000710     0x2000
+                0x0000000000000710                _OVERLAY_STORAGE_START_ADDRESS_ = .
+                0x0000000000002000                . = 0x2000
+ *fill*         0x0000000000000710     0x2000 
+
+.lalign         0x0000000000002710        0x0
+                0x0000000000002710                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_data_lma = .)
+
+.dalign         0x0000000000002710        0x0
+                0x0000000000002710                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_data = .)
+
+.data           0x0000000000002710       0x10
+ *(.data .data.*)
+ *(.gnu.linkonce.d.*)
+                0x000000000000271a                . = (. + 0xa)
+ *fill*         0x0000000000002710        0xa 
+                0x0000000000002720                . = ALIGN (0x8)
+ *fill*         0x000000000000271a        0x6 
+
+SW_INT          0x0000000004000000        0x4
+                0x0000000004000000                _sw_int_mem_ctrl = .
+                0x0000000000000004                . = 0x4
+ *fill*         0x0000000004000000        0x4 
+
+COMRV_DATA_SEC
+
+PSP_DATA_SEC
+
+.sdata          0x0000000000002720        0x0
+                0x0000000000002720                . = ALIGN (0x8)
+                0x0000000000002f20                __global_pointer$ = (. + 0x800)
+ *(.sdata .sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x0000000000002720                . = ALIGN (0x8)
+ *(.srodata .srodata.*)
+                0x0000000000002720                . = ALIGN (0x8)
+                0x0000000000002720                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                [!provide]                        PROVIDE (_fbss = .)
+                0x0000000000002720                PROVIDE (__bss_start = .)
+
+.bss            0x0000000000002720        0x0
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+ *(.bss)
+                0x0000000000002720                . = ALIGN (0x8)
+                0x0000000000002720                _end = .
+
+.stack          0x0000000000002720     0x1000
+                0x0000000000002720                _heap_end = .
+                0x0000000000003720                . = (. + __stack_size)
+ *fill*         0x0000000000002720     0x1000 
+                0x0000000000003720                _sp = .
+
+.overlay_sec    0x0000000000003720        0x0
+                0x0000000000003720                __OVERLAY_CACHE_START__ = .
+                0x0000000000000000                . = __comrv_cache_size
+                0x0000000000003720                __OVERLAY_CACHE_END__ = .
+
+.ovlgrps        0x00000000e0000000        0x0
+                0x00000000e0000000                OVERLAY_START_OF_OVERLAYS = .
+ *(.ovlinput.*)
+                0x00000000e0000000                OVERLAY_END_OF_OVERLAYS = .
+OUTPUT(.pio\build\swervolf_nexys\firmware.elf elf32-littleriscv)
+
+.debug_info     0x0000000000000000      0x85f
+ .debug_info    0x0000000000000000      0x168 .pio\build\swervolf_nexys\src\CustomIP.o
+ .debug_info    0x0000000000000168      0x6d1 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .debug_info    0x0000000000000839       0x26 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+
+.debug_abbrev   0x0000000000000000      0x324
+ .debug_abbrev  0x0000000000000000       0xd3 .pio\build\swervolf_nexys\src\CustomIP.o
+ .debug_abbrev  0x00000000000000d3      0x23d .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .debug_abbrev  0x0000000000000310       0x14 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+
+.debug_loc      0x0000000000000000      0x641
+ .debug_loc     0x0000000000000000       0xad .pio\build\swervolf_nexys\src\CustomIP.o
+ .debug_loc     0x00000000000000ad      0x594 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+
+.debug_aranges  0x0000000000000000       0xc0
+ .debug_aranges
+                0x0000000000000000       0x30 .pio\build\swervolf_nexys\src\CustomIP.o
+ .debug_aranges
+                0x0000000000000030       0x70 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .debug_aranges
+                0x00000000000000a0       0x20 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+
+.debug_ranges   0x0000000000000000       0x80
+ .debug_ranges  0x0000000000000000       0x20 .pio\build\swervolf_nexys\src\CustomIP.o
+ .debug_ranges  0x0000000000000020       0x60 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+
+.debug_line     0x0000000000000000     0x103e
+ .debug_line    0x0000000000000000      0x27e .pio\build\swervolf_nexys\src\CustomIP.o
+ .debug_line    0x000000000000027e      0xc1e .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .debug_line    0x0000000000000e9c      0x1a2 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+
+.debug_str      0x0000000000000000      0x36a
+ .debug_str     0x0000000000000000      0x162 .pio\build\swervolf_nexys\src\CustomIP.o
+                                        0x19b (size before relaxing)
+ .debug_str     0x0000000000000162      0x1a4 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+                                        0x317 (size before relaxing)
+ .debug_str     0x0000000000000306       0x64 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+                                         0x95 (size before relaxing)
+
+.comment        0x0000000000000000       0x28
+ .comment       0x0000000000000000       0x28 .pio\build\swervolf_nexys\src\CustomIP.o
+                                         0x29 (size before relaxing)
+ .comment       0x0000000000000028       0x29 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .comment       0x0000000000000028       0x29 c:/users/miles/.platformio/packages/toolchain-riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32\libc.a(lib_a-init.o)
+
+.riscv.attributes
+                0x0000000000000000       0x2b
+ .riscv.attributes
+                0x0000000000000000       0x2b .pio\build\swervolf_nexys\src\CustomIP.o
+ .riscv.attributes
+                0x000000000000002b       0x2b .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)
+ .riscv.attributes
+                0x0000000000000056       0x29 .pio\build\swervolf_nexys\libBoardBSP.a(startup.o)
+ .riscv.attributes
+                0x000000000000007f       0x2b c:/users/miles/.platformio/packages/toolchain-riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib/rv32imac/ilp32\libc.a(lib_a-init.o)
+
+.debug_frame    0x0000000000000000      0x1c8
+ .debug_frame   0x0000000000000000       0x54 .pio\build\swervolf_nexys\src\CustomIP.o
+ .debug_frame   0x0000000000000054      0x174 .pio\build\swervolf_nexys\libBoardBSP.a(bsp_printf.o)

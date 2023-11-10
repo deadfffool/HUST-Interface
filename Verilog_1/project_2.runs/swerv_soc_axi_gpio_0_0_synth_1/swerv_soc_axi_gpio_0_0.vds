@@ -3,18 +3,19 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Oct 31 14:56:48 2023
-# Process ID: 23824
-# Current directory: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1
+# Start of session at: Fri Nov 10 13:37:32 2023
+# Process ID: 16672
+# Current directory: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1
 # Command line: vivado.exe -log swerv_soc_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_axi_gpio_0_0.tcl
-# Log file: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/swerv_soc_axi_gpio_0_0.vds
-# Journal file: C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1\vivado.jou
+# Log file: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/swerv_soc_axi_gpio_0_0.vds
+# Journal file: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1\vivado.jou
 # Running On: Chenxuan-RazerBlade, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
 #-----------------------------------------------------------
 source swerv_soc_axi_gpio_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 471.438 ; gain = 200.332
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 470.168 ; gain = 199.234
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_gpio_0_0
 WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID ca3827c8d196a25c) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips swerv_soc_axi_gpio_0_0]'
@@ -25,11 +26,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23876
+INFO: [Synth 8-7075] Helper process launched with PID 9560
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.535 ; gain = 409.008
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1309.211 ; gain = 409.520
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'swerv_soc_axi_gpio_0_0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/synth/swerv_soc_axi_gpio_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'swerv_soc_axi_gpio_0_0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/synth/swerv_soc_axi_gpio_0_0.vhd:85]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -45,255 +46,255 @@ INFO: [Synth 8-638] synthesizing module 'swerv_soc_axi_gpio_0_0' [c:/Users/Miles
 	Parameter C_IS_DUAL bound to: 1 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
-INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/synth/swerv_soc_axi_gpio_0_0.vhd:171]
-INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
-INFO: [Synth 8-226] default block is never used [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:835]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/synth/swerv_soc_axi_gpio_0_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
-INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
-INFO: [Synth 8-256] done synthesizing module 'swerv_soc_axi_gpio_0_0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/synth/swerv_soc_axi_gpio_0_0.vhd:85]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[6].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[7].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[8].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[9].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[10].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[11].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[12].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[13].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[14].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[15].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[0].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[1].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[2].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[3].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[4].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[5].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[6].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[7].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[8].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[9].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[10].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[11].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[12].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[13].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[14].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[15].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
-WARNING: [Synth 8-6014] Unused sequential element Dual.gpio_Data_In_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:882]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'swerv_soc_axi_gpio_0_0' (0#1) [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/synth/swerv_soc_axi_gpio_0_0.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[6].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[7].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[8].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[9].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[10].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[11].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[12].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[13].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[14].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[15].GPIO_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[0].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[1].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[2].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[3].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[4].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[5].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[6].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[7].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[8].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[9].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[10].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[11].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[12].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[13].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[14].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[15].GPIO2_DBus_i_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.gpio_Data_In_reg was removed.  [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:882]
 WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_in in module cdc_sync is either unconnected or has no load
@@ -321,57 +322,57 @@ WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1411.559 ; gain = 511.031
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1410.730 ; gain = 511.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1411.559 ; gain = 511.031
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1410.730 ; gain = 511.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1411.559 ; gain = 511.031
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1410.730 ; gain = 511.039
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1411.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1413.602 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 192 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_board.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1463.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1519.527 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 192 instances were transformed.
   FDR => FDRE: 192 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1472.125 ; gain = 8.391
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1519.551 ; gain = 0.023
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -384,7 +385,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -548,25 +549,25 @@ INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GEN
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -584,37 +585,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -641,29 +642,29 @@ Report Cell Usage:
 |9     |FDSE |    17|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1519.551 ; gain = 619.859
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:47 . Memory (MB): peak = 1472.125 ; gain = 511.031
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1472.125 ; gain = 571.598
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:39 . Memory (MB): peak = 1519.551 ; gain = 511.039
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1519.551 ; gain = 619.859
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1472.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1519.551 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1472.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1519.551 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 64 instances were transformed.
   FDR => FDRE: 64 instances
 
 Synth Design complete | Checksum: aa886864
 INFO: [Common 17-83] Releasing license: Synthesis
-245 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+246 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 1472.125 ; gain = 966.766
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/swerv_soc_axi_gpio_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 1519.551 ; gain = 1015.734
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/swerv_soc_axi_gpio_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/Verilog/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/swerv_soc_axi_gpio_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_axi_gpio_0_0_synth_1/swerv_soc_axi_gpio_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file swerv_soc_axi_gpio_0_0_utilization_synth.rpt -pb swerv_soc_axi_gpio_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 14:58:02 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 13:38:34 2023...

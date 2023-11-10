@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
 -- Date        : Thu Nov  2 21:25:17 2023
 -- Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_xbar_0/swerv_soc_xbar_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top swerv_soc_xbar_0 -prefix
+--               swerv_soc_xbar_0_ swerv_soc_xbar_0_stub.vhdl
 -- Design      : swerv_soc_xbar_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

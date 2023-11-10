@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1698931933" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpga.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1699594683" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpga.dcp">
   <File Type="PA-TCL" Name="rvfpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="rvfpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="rvfpga_reports.tcl"/>
@@ -424,20 +424,15 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_axi2wb_intcon_wrapper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_wb_gpio_wrapper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_swerv_wrapper_verilog_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_PWM_w_Int_v1_0_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_bootrom_wrapper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_syscon_wrapper_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_auto_ds_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_wb_uart_wrapper_0_0"/>
 </GenRun>

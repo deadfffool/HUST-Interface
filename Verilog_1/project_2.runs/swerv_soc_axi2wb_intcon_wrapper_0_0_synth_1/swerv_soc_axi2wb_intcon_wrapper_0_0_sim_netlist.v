@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Oct 31 14:59:34 2023
+// Date        : Fri Nov 10 13:40:00 2023
 // Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ swerv_soc_axi2wb_intcon_wrapper_0_0_sim_netlist.v
@@ -72148,7 +72148,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_ifu_axi4 RDATA" *) output [63:0]o_ifu_rdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_ifu_axi4 RRESP" *) output [1:0]o_ifu_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_ifu_axi4 RLAST" *) output o_ifu_rlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_ifu_axi4 RVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_ifu_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 3, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output o_ifu_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_ifu_axi4 RVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_ifu_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 3, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 0, HAS_BRESP 0, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INS\\nERT_VIP 0" *) output o_ifu_rvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_lsu_axi4 AWID" *) input [3:0]i_lsu_awid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_lsu_axi4 AWADDR" *) input [31:0]i_lsu_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_lsu_axi4 AWLEN" *) input [7:0]i_lsu_awlen;
@@ -72187,7 +72187,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_lsu_axi4 RDATA" *) output [63:0]o_lsu_rdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_lsu_axi4 RRESP" *) output [1:0]o_lsu_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_lsu_axi4 RLAST" *) output o_lsu_rlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_lsu_axi4 RVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_lsu_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 4, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output o_lsu_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_lsu_axi4 RVALID" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_lsu_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 4, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, IN\\nSERT_VIP 0" *) output o_lsu_rvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_sb_axi4 AWID" *) input [0:0]i_sb_awid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_sb_axi4 AWADDR" *) input [31:0]i_sb_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_sb_axi4 AWLEN" *) input [7:0]i_sb_awlen;
@@ -72226,7 +72226,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_sb_axi4 RRESP" *) output [1:0]o_sb_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_sb_axi4 RLAST" *) output o_sb_rlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_sb_axi4 RVALID" *) output o_sb_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_sb_axi4 RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_sb_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input i_sb_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 i_sb_axi4 RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_sb_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INS\\nERT_VIP 0" *) input i_sb_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_ram_axi4 AWID" *) output [5:0]o_ram_awid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_ram_axi4 AWADDR" *) output [31:0]o_ram_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_ram_axi4 AWLEN" *) output [7:0]o_ram_awlen;
@@ -72265,7 +72265,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_ram_axi4 RRESP" *) input [1:0]i_ram_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_ram_axi4 RLAST" *) input i_ram_rlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_ram_axi4 RVALID" *) input i_ram_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_ram_axi4 RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME o_ram_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output o_ram_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_ram_axi4 RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME o_ram_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, IN\\nSERT_VIP 0" *) output o_ram_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_user_axi4 AWID" *) output [5:0]o_user_awid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_user_axi4 AWADDR" *) output [31:0]o_user_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_user_axi4 AWLEN" *) output [7:0]o_user_awlen;
@@ -72304,7 +72304,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_user_axi4 RRESP" *) input [1:0]i_user_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_user_axi4 RLAST" *) input i_user_rlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_user_axi4 RVALID" *) input i_user_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_user_axi4 RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME o_user_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output o_user_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 o_user_axi4 RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME o_user_axi4, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 6, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN swerv_soc_clk_0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, I\\nNSERT_VIP 0" *) output o_user_rready;
   output [31:0]wb_rom_adr_o;
   output [31:0]wb_rom_dat_o;
   output [3:0]wb_rom_sel_o;

@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
 -- Date        : Thu Nov  2 18:59:34 2023
 -- Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Miles/Desktop/Verilog/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/swerv_soc_wb_uart_wrapper_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top swerv_soc_wb_uart_wrapper_0_0 -prefix
+--               swerv_soc_wb_uart_wrapper_0_0_ swerv_soc_wb_uart_wrapper_0_0_sim_netlist.vhdl
 -- Design      : swerv_soc_wb_uart_wrapper_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -36,8 +36,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_raminfr is
     bit_out_reg_0 : in STD_LOGIC;
     bit_out_reg_1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_raminfr : entity is "raminfr";
 end swerv_soc_wb_uart_wrapper_0_0_raminfr;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_raminfr is
@@ -653,8 +651,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_uart_sync_flops is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     \rshift_reg[7]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_uart_sync_flops : entity is "uart_sync_flops";
 end swerv_soc_wb_uart_wrapper_0_0_uart_sync_flops;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_uart_sync_flops is
@@ -736,8 +732,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_uart_wb is
     wb_adr_i : in STD_LOGIC_VECTOR ( 2 downto 0 );
     D : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_uart_wb : entity is "uart_wb";
 end swerv_soc_wb_uart_wrapper_0_0_uart_wb;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_uart_wb is
@@ -1442,8 +1436,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_uart_rfifo is
     \wb_dat_o_reg[1]\ : in STD_LOGIC;
     \wb_dat_o_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_uart_rfifo : entity is "uart_rfifo";
 end swerv_soc_wb_uart_wrapper_0_0_uart_rfifo;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_uart_rfifo is
@@ -4271,8 +4263,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_uart_tfifo is
     \FSM_sequential_tstate_reg[0]_0\ : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_uart_tfifo : entity is "uart_tfifo";
 end swerv_soc_wb_uart_wrapper_0_0_uart_tfifo;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_uart_tfifo is
@@ -4779,8 +4769,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_uart_receiver is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \counter_b_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_uart_receiver : entity is "uart_receiver";
 end swerv_soc_wb_uart_wrapper_0_0_uart_receiver;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_uart_receiver is
@@ -6524,8 +6512,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_uart_transmitter is
     \counter_b_reg[7]_1\ : in STD_LOGIC;
     lsr5_d_reg_0 : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_uart_transmitter : entity is "uart_transmitter";
 end swerv_soc_wb_uart_wrapper_0_0_uart_transmitter;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_uart_transmitter is
@@ -7184,8 +7170,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_uart_regs is
     \block_cnt_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     fcr0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_uart_regs : entity is "uart_regs";
 end swerv_soc_wb_uart_wrapper_0_0_uart_regs;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_uart_regs is
@@ -9311,8 +9295,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_uart_top is
     i_uart_rx : in STD_LOGIC;
     wb_rst_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_uart_top : entity is "uart_top";
 end swerv_soc_wb_uart_wrapper_0_0_uart_top;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_uart_top is
@@ -9467,8 +9449,6 @@ entity swerv_soc_wb_uart_wrapper_0_0_wb_uart_wrapper is
     i_uart_rx : in STD_LOGIC;
     wb_rst_i : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_wb_uart_wrapper_0_0_wb_uart_wrapper : entity is "wb_uart_wrapper";
 end swerv_soc_wb_uart_wrapper_0_0_wb_uart_wrapper;
 
 architecture STRUCTURE of swerv_soc_wb_uart_wrapper_0_0_wb_uart_wrapper is

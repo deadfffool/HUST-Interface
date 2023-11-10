@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
 -- Date        : Thu Nov  2 21:25:08 2023
 -- Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_PWM_w_Int_v1_0_0_1/swerv_soc_PWM_w_Int_v1_0_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top swerv_soc_PWM_w_Int_v1_0_0_1 -prefix
+--               swerv_soc_PWM_w_Int_v1_0_0_1_ swerv_soc_PWM_w_Int_v1_0_0_1_sim_netlist.vhdl
 -- Design      : swerv_soc_PWM_w_Int_v1_0_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -33,8 +33,6 @@ entity swerv_soc_PWM_w_Int_v1_0_0_1_PWM_Controller_Int is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     s00_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_PWM_w_Int_v1_0_0_1_PWM_Controller_Int : entity is "PWM_Controller_Int";
 end swerv_soc_PWM_w_Int_v1_0_0_1_PWM_Controller_Int;
 
 architecture STRUCTURE of swerv_soc_PWM_w_Int_v1_0_0_1_PWM_Controller_Int is
@@ -888,8 +886,6 @@ entity swerv_soc_PWM_w_Int_v1_0_0_1_PWM_w_Int_v1_0_S00_AXI is
     s00_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_PWM_w_Int_v1_0_0_1_PWM_w_Int_v1_0_S00_AXI : entity is "PWM_w_Int_v1_0_S00_AXI";
 end swerv_soc_PWM_w_Int_v1_0_0_1_PWM_w_Int_v1_0_S00_AXI;
 
 architecture STRUCTURE of swerv_soc_PWM_w_Int_v1_0_0_1_PWM_w_Int_v1_0_S00_AXI is
@@ -3174,8 +3170,6 @@ entity swerv_soc_PWM_w_Int_v1_0_0_1_PWM_w_Int_v1_0 is
     s00_axi_bready : in STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of swerv_soc_PWM_w_Int_v1_0_0_1_PWM_w_Int_v1_0 : entity is "PWM_w_Int_v1_0";
 end swerv_soc_PWM_w_Int_v1_0_0_1_PWM_w_Int_v1_0;
 
 architecture STRUCTURE of swerv_soc_PWM_w_Int_v1_0_0_1_PWM_w_Int_v1_0 is
