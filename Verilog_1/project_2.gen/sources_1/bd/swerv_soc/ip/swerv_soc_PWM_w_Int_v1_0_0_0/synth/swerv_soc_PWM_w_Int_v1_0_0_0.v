@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:PWM_w_Int_v1_0:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 (* X_CORE_INFO = "PWM_w_Int_v1_0,Vivado 2023.1" *)
 (* CHECK_LICENSE_TYPE = "swerv_soc_PWM_w_Int_v1_0_0_0,PWM_w_Int_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "swerv_soc_PWM_w_Int_v1_0_0_0,PWM_w_Int_v1_0,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=PWM_w_Int_v1_0,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,PWM_PERIOD=20,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
+(* CORE_GENERATION_INFO = "swerv_soc_PWM_w_Int_v1_0_0_0,PWM_w_Int_v1_0,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=PWM_w_Int_v1_0,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,PWM_PERIOD=20,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=4}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module swerv_soc_PWM_w_Int_v1_0_0_0 (

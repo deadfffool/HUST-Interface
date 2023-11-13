@@ -155,11 +155,15 @@ vlog -work xlconcat_v2_1_4  -v2k5 "+incdir+../../../bd/swerv_soc/ipshared/64dd/s
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" -l xpm -l xil_defaultlib -l generic_baseblocks_v2_1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_28 -l fifo_generator_v13_2_8 -l axi_data_fifo_v2_1_27 -l axi_crossbar_v2_1_29 -l axi_lite_ipif_v3_0_4 -l lib_cdc_v1_0_2 -l interrupt_control_v3_1_4 -l axi_gpio_v2_0_30 -l xlconcat_v2_1_4 -l axi_protocol_converter_v2_1_28 -l axi_clock_converter_v2_1_27 -l blk_mem_gen_v8_4_6 -l axi_dwidth_converter_v2_1_28 \
 "../../../bd/swerv_soc/ip/swerv_soc_xlconcat_0_0/sim/swerv_soc_xlconcat_0_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/sim/swerv_soc_syscon_wrapper_0_0.v" \
-"../../../bd/swerv_soc/ipshared/8c72/PWM_Controller_Int.v" \
-"../../../bd/swerv_soc/ipshared/8c72/PWM_1_0/hdl/PWM_v1_0_S00_AXI.v" \
-"../../../bd/swerv_soc/ipshared/8c72/PWM_1_0/hdl/PWM_v1_0.v" \
+"../../../bd/swerv_soc/ipshared/c014/PWM_Controller_Int.v" \
+"../../../bd/swerv_soc/ipshared/c014/PWM_1_0/hdl/PWM_v1_0_S00_AXI.v" \
+"../../../bd/swerv_soc/ipshared/c014/PWM_1_0/hdl/PWM_v1_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_PWM_w_Int_v1_0_0_0/sim/swerv_soc_PWM_w_Int_v1_0_0_0.v" \
 "../../../bd/swerv_soc/sim/swerv_soc.v" \
+"../../../bd/swerv_soc/ipshared/2eb6/PWM_Controller_Int.v" \
+"../../../bd/swerv_soc/ipshared/2eb6/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0_S00_AXI.v" \
+"../../../bd/swerv_soc/ipshared/2eb6/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_Display_0_0/sim/swerv_soc_Display_0_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_28  -v2k5 "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" -l xpm -l xil_defaultlib -l generic_baseblocks_v2_1_0 -l axi_infrastructure_v1_1_0 -l axi_register_slice_v2_1_28 -l fifo_generator_v13_2_8 -l axi_data_fifo_v2_1_27 -l axi_crossbar_v2_1_29 -l axi_lite_ipif_v3_0_4 -l lib_cdc_v1_0_2 -l interrupt_control_v3_1_4 -l axi_gpio_v2_0_30 -l xlconcat_v2_1_4 -l axi_protocol_converter_v2_1_28 -l axi_clock_converter_v2_1_27 -l blk_mem_gen_v8_4_6 -l axi_dwidth_converter_v2_1_28 \
 "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

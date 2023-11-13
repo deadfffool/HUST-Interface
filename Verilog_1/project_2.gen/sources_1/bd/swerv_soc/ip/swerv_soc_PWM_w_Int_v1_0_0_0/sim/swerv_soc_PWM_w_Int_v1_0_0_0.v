@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:PWM_w_Int_v1_0:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
