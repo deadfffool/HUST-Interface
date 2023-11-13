@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Fri Nov 10 13:37:13 2023
+//Date        : Mon Nov 13 12:30:24 2023
 //Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 //Command     : generate_target swerv_soc.bd
 //Design      : swerv_soc
@@ -706,10 +706,11 @@ module s00_couplers_imp_RRH9HC
         .s_axi_wvalid(auto_ds_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "swerv_soc,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=swerv_soc,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "swerv_soc.hwdef" *) 
+(* CORE_GENERATION_INFO = "swerv_soc,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=swerv_soc,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=16,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "swerv_soc.hwdef" *) 
 module swerv_soc
    (AN,
     Digits_Bits,
+    PWMs,
     bidir,
     clk_0,
     dmi_hard_reset_0,
@@ -718,7 +719,6 @@ module swerv_soc
     dmi_reg_rdata_0,
     dmi_reg_wdata_0,
     dmi_reg_wr_en_0,
-    extintsrc_req_0,
     i_ram_init_done_0,
     i_ram_init_error_0,
     i_sw,
@@ -767,6 +767,7 @@ module swerv_soc
     rst_0);
   output [7:0]AN;
   output [6:0]Digits_Bits;
+  output [1:0]PWMs;
   output [31:0]bidir;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_0, ASSOCIATED_BUSIF ram, ASSOCIATED_RESET rst_0, CLK_DOMAIN swerv_soc_clk_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.DMI_HARD_RESET_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.DMI_HARD_RESET_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input dmi_hard_reset_0;
@@ -775,7 +776,6 @@ module swerv_soc
   output [31:0]dmi_reg_rdata_0;
   input [31:0]dmi_reg_wdata_0;
   input dmi_reg_wr_en_0;
-  input [8:1]extintsrc_req_0;
   input i_ram_init_done_0;
   input i_ram_init_error_0;
   input [15:0]i_sw;
@@ -823,8 +823,8 @@ module swerv_soc
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 ram WVALID" *) output ram_wvalid;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RST_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RST_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input rst_0;
 
-  wire [7:0]PWM_w_Int_v1_0_0_AN;
-  wire [6:0]PWM_w_Int_v1_0_0_Digits_Bits;
+  wire PWM_w_Int_v1_0_0_Interrupt_out;
+  wire [1:0]PWM_w_Int_v1_0_0_LEDs;
   wire [31:0]S00_AXI_1_ARADDR;
   wire [1:0]S00_AXI_1_ARBURST;
   wire [3:0]S00_AXI_1_ARCACHE;
@@ -927,6 +927,7 @@ module swerv_soc
   wire [3:0]axi2wb_intcon_wrapper_0_wb_uart_sel_o;
   wire axi2wb_intcon_wrapper_0_wb_uart_stb_o;
   wire axi2wb_intcon_wrapper_0_wb_uart_we_o;
+  wire axi_gpio_0_ip2intc_irpt;
   wire [31:0]axi_interconnect_0_M00_AXI_ARADDR;
   wire axi_interconnect_0_M00_AXI_ARREADY;
   wire axi_interconnect_0_M00_AXI_ARVALID;
@@ -971,7 +972,6 @@ module swerv_soc
   wire dmi_reg_en_0_1;
   wire [31:0]dmi_reg_wdata_0_1;
   wire dmi_reg_wr_en_0_1;
-  wire [8:1]extintsrc_req_0_1;
   wire i_ram_init_done_0_1;
   wire i_ram_init_error_0_1;
   wire [15:0]i_sw;
@@ -1075,8 +1075,12 @@ module swerv_soc
   wire swerv_wrapper_verilog_0_sb_axi_WREADY;
   wire [7:0]swerv_wrapper_verilog_0_sb_axi_WSTRB;
   wire swerv_wrapper_verilog_0_sb_axi_WVALID;
+  wire [7:0]syscon_wrapper_0_AN;
+  wire [6:0]syscon_wrapper_0_Digits_Bits;
   wire syscon_wrapper_0_o_nmi_int;
   wire [31:0]syscon_wrapper_0_o_nmi_vec;
+  wire syscon_wrapper_0_o_sw_irq3;
+  wire syscon_wrapper_0_o_sw_irq4;
   wire syscon_wrapper_0_o_timer_irq;
   wire syscon_wrapper_0_o_wb_ack;
   wire [31:0]syscon_wrapper_0_o_wb_rdt;
@@ -1084,13 +1088,15 @@ module swerv_soc
   wire wb_gpio_wrapper_0_wb_ack_o;
   wire [31:0]wb_gpio_wrapper_0_wb_dat_o;
   wire wb_gpio_wrapper_0_wb_err_o;
-  wire wb_gpio_wrapper_0_wb_inta_o;
   wire wb_uart_wrapper_0_o_uart_tx;
+  wire wb_uart_wrapper_0_uart_irq;
   wire wb_uart_wrapper_0_wb_ack_o;
   wire [31:0]wb_uart_wrapper_0_wb_dat_o;
+  wire [7:0]xlconcat_0_dout;
 
-  assign AN[7:0] = PWM_w_Int_v1_0_0_AN;
-  assign Digits_Bits[6:0] = PWM_w_Int_v1_0_0_Digits_Bits;
+  assign AN[7:0] = syscon_wrapper_0_AN;
+  assign Digits_Bits[6:0] = syscon_wrapper_0_Digits_Bits;
+  assign PWMs[1:0] = PWM_w_Int_v1_0_0_LEDs;
   assign axi2wb_intcon_wrapper_0_o_ram_axi4_ARREADY = ram_arready;
   assign axi2wb_intcon_wrapper_0_o_ram_axi4_AWREADY = ram_awready;
   assign axi2wb_intcon_wrapper_0_o_ram_axi4_BID = ram_bid[5:0];
@@ -1110,7 +1116,6 @@ module swerv_soc
   assign dmi_reg_rdata_0[31:0] = swerv_wrapper_verilog_0_dmi_reg_rdata;
   assign dmi_reg_wdata_0_1 = dmi_reg_wdata_0[31:0];
   assign dmi_reg_wr_en_0_1 = dmi_reg_wr_en_0;
-  assign extintsrc_req_0_1 = extintsrc_req_0[8:1];
   assign i_ram_init_done_0_1 = i_ram_init_done_0;
   assign i_ram_init_error_0_1 = i_ram_init_error_0;
   assign i_uart_rx_0_1 = i_uart_rx;
@@ -1144,9 +1149,9 @@ module swerv_soc
   assign ram_wstrb[7:0] = axi2wb_intcon_wrapper_0_o_ram_axi4_WSTRB;
   assign ram_wvalid = axi2wb_intcon_wrapper_0_o_ram_axi4_WVALID;
   assign rst_0_1 = rst_0;
-  swerv_soc_PWM_w_Int_v1_0_0_1 PWM_w_Int_v1_0_0
-       (.AN(PWM_w_Int_v1_0_0_AN),
-        .Digits_Bits(PWM_w_Int_v1_0_0_Digits_Bits),
+  swerv_soc_PWM_w_Int_v1_0_0_0 PWM_w_Int_v1_0_0
+       (.Interrupt_out(PWM_w_Int_v1_0_0_Interrupt_out),
+        .LEDs(PWM_w_Int_v1_0_0_LEDs),
         .s00_axi_aclk(clk_0_1),
         .s00_axi_araddr(axi_interconnect_0_M01_AXI_ARADDR[3:0]),
         .s00_axi_aresetn(rst_0_1),
@@ -1397,6 +1402,7 @@ module swerv_soc
   swerv_soc_axi_gpio_0_0 axi_gpio_0
        (.gpio2_io_i(i_sw),
         .gpio_io_o(o_led),
+        .ip2intc_irpt(axi_gpio_0_ip2intc_irpt),
         .s_axi_aclk(clk_0_1),
         .s_axi_araddr(axi_interconnect_0_M00_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_0_1),
@@ -1519,7 +1525,7 @@ module swerv_soc
         .dmi_reg_rdata(swerv_wrapper_verilog_0_dmi_reg_rdata),
         .dmi_reg_wdata(dmi_reg_wdata_0_1),
         .dmi_reg_wr_en(dmi_reg_wr_en_0_1),
-        .extintsrc_req(extintsrc_req_0_1),
+        .extintsrc_req(xlconcat_0_dout),
         .ifu_axi_araddr(swerv_wrapper_verilog_0_ifu_axi_ARADDR),
         .ifu_axi_arburst(swerv_wrapper_verilog_0_ifu_axi_ARBURST),
         .ifu_axi_arcache(swerv_wrapper_verilog_0_ifu_axi_ARCACHE),
@@ -1621,7 +1627,9 @@ module swerv_soc
         .sb_axi_wvalid(swerv_wrapper_verilog_0_sb_axi_WVALID),
         .timer_int(syscon_wrapper_0_o_timer_irq));
   swerv_soc_syscon_wrapper_0_0 syscon_wrapper_0
-       (.gpio_irq(wb_gpio_wrapper_0_wb_inta_o),
+       (.AN(syscon_wrapper_0_AN),
+        .Digits_Bits(syscon_wrapper_0_Digits_Bits),
+        .gpio_irq(axi_gpio_0_ip2intc_irpt),
         .i_clk(clk_0_1),
         .i_ram_init_done(i_ram_init_done_0_1),
         .i_ram_init_error(i_ram_init_error_0_1),
@@ -1634,6 +1642,8 @@ module swerv_soc
         .i_wb_we(axi2wb_intcon_wrapper_0_wb_sys_we_o),
         .o_nmi_int(syscon_wrapper_0_o_nmi_int),
         .o_nmi_vec(syscon_wrapper_0_o_nmi_vec),
+        .o_sw_irq3(syscon_wrapper_0_o_sw_irq3),
+        .o_sw_irq4(syscon_wrapper_0_o_sw_irq4),
         .o_timer_irq(syscon_wrapper_0_o_timer_irq),
         .o_wb_ack(syscon_wrapper_0_o_wb_ack),
         .o_wb_rdt(syscon_wrapper_0_o_wb_rdt),
@@ -1647,7 +1657,6 @@ module swerv_soc
         .wb_dat_i(axi2wb_intcon_wrapper_0_wb_gpio_dat_o),
         .wb_dat_o(wb_gpio_wrapper_0_wb_dat_o),
         .wb_err_o(wb_gpio_wrapper_0_wb_err_o),
-        .wb_inta_o(wb_gpio_wrapper_0_wb_inta_o),
         .wb_rst_i(rst_0_1),
         .wb_sel_i(axi2wb_intcon_wrapper_0_wb_gpio_sel_o),
         .wb_stb_i(axi2wb_intcon_wrapper_0_wb_gpio_stb_o),
@@ -1655,6 +1664,7 @@ module swerv_soc
   swerv_soc_wb_uart_wrapper_0_0 wb_uart_wrapper_0
        (.i_uart_rx(i_uart_rx_0_1),
         .o_uart_tx(wb_uart_wrapper_0_o_uart_tx),
+        .uart_irq(wb_uart_wrapper_0_uart_irq),
         .wb_ack_o(wb_uart_wrapper_0_wb_ack_o),
         .wb_adr_i(axi2wb_intcon_wrapper_0_wb_uart_adr_o),
         .wb_clk_i(clk_0_1),
@@ -1665,6 +1675,16 @@ module swerv_soc
         .wb_sel_i(axi2wb_intcon_wrapper_0_wb_uart_sel_o),
         .wb_stb_i(axi2wb_intcon_wrapper_0_wb_uart_stb_o),
         .wb_we_i(axi2wb_intcon_wrapper_0_wb_uart_we_o));
+  swerv_soc_xlconcat_0_0 xlconcat_0
+       (.In0(wb_uart_wrapper_0_uart_irq),
+        .In1(PWM_w_Int_v1_0_0_Interrupt_out),
+        .In2(syscon_wrapper_0_o_sw_irq3),
+        .In3(syscon_wrapper_0_o_sw_irq4),
+        .In4(1'b0),
+        .In5(1'b0),
+        .In6(1'b0),
+        .In7(1'b0),
+        .dout(xlconcat_0_dout));
 endmodule
 
 module swerv_soc_axi_interconnect_0_0

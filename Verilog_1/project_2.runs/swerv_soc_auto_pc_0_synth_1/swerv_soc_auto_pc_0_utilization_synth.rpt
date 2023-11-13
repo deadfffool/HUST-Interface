@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Fri Nov 10 13:38:44 2023
+| Date         : Mon Nov 13 12:31:20 2023
 | Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 | Command      : report_utilization -file swerv_soc_auto_pc_0_utilization_synth.rpt -pb swerv_soc_auto_pc_0_utilization_synth.pb
 | Design       : swerv_soc_auto_pc_0

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Fri Nov 10 13:56:53 2023
+| Date         : Mon Nov 13 12:51:05 2023
 | Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 | Command      : report_methodology -file rvfpga_methodology_drc_routed.rpt -pb rvfpga_methodology_drc_routed.pb -rpx rvfpga_methodology_drc_routed.rpx
 | Design       : rvfpga
@@ -912,11 +912,7 @@ Related violations: <none>
 
 LUTAR-1#6 Warning
 LUT drives async reset alert  
-LUT cell swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dmcontrolff/dffs/dout[0]_i_2__151, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_add_flop/dout_reg[7]/CLR,
-swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_add_flop/dout_reg[8]/CLR,
-swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_add_flop/dout_reg[9]/CLR,
-swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_dat_flop/dout_reg[0]/CLR,
-swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_dat_flop/dout_reg[1]/CLR,
+LUT cell swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/dbg/dmcontrolff/dffs/dout[0]_i_2__151, with 2 or more inputs, drives asynchronous preset/clear pin(s) swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_dat_flop/dout_reg[1]/CLR,
 swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_dat_flop/dout_reg[2]/CLR,
 swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_dat_flop/dout_reg[3]/CLR,
 swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/picm_mke_flop/dout_reg[0]/CLR,
@@ -926,8 +922,12 @@ swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_ins
 swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/pl_ff/dout_reg[1]/CLR,
 swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/pl_ff/dout_reg[2]/CLR,
 swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/pl_ff/dout_reg[3]/CLR,
+swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/sync_inst/sync_ff1/dout_reg[0]/CLR,
+swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/sync_inst/sync_ff1/dout_reg[1]/CLR,
+swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/sync_inst/sync_ff2/dout_reg[0]/CLR,
+swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/sync_inst/sync_ff2/dout_reg[1]/CLR,
 swervolf/swerv_soc_i/swerv_wrapper_verilog_0/inst/swerv_eh1_2/swerv/pic_ctrl_inst/wake_up_ff/dout_reg[0]/CLR
- (the first 15 of 3823 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+ (the first 15 of 3827 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#7 Warning

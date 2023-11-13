@@ -13,6 +13,7 @@ vlib questa_lib/msim/axi_lite_ipif_v3_0_4
 vlib questa_lib/msim/lib_cdc_v1_0_2
 vlib questa_lib/msim/interrupt_control_v3_1_4
 vlib questa_lib/msim/axi_gpio_v2_0_30
+vlib questa_lib/msim/xlconcat_v2_1_4
 vlib questa_lib/msim/axi_protocol_converter_v2_1_28
 vlib questa_lib/msim/axi_clock_converter_v2_1_27
 vlib questa_lib/msim/blk_mem_gen_v8_4_6
@@ -30,6 +31,7 @@ vmap axi_lite_ipif_v3_0_4 questa_lib/msim/axi_lite_ipif_v3_0_4
 vmap lib_cdc_v1_0_2 questa_lib/msim/lib_cdc_v1_0_2
 vmap interrupt_control_v3_1_4 questa_lib/msim/interrupt_control_v3_1_4
 vmap axi_gpio_v2_0_30 questa_lib/msim/axi_gpio_v2_0_30
+vmap xlconcat_v2_1_4 questa_lib/msim/xlconcat_v2_1_4
 vmap axi_protocol_converter_v2_1_28 questa_lib/msim/axi_protocol_converter_v2_1_28
 vmap axi_clock_converter_v2_1_27 questa_lib/msim/axi_clock_converter_v2_1_27
 vmap blk_mem_gen_v8_4_6 questa_lib/msim/blk_mem_gen_v8_4_6
@@ -115,7 +117,6 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/
 "../../../bd/swerv_soc/ipshared/736f/wb_gpio_wrapper.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_wb_gpio_wrapper_0_0/sim/swerv_soc_wb_gpio_wrapper_0_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_bootrom_wrapper_0_0/sim/swerv_soc_bootrom_wrapper_0_0.v" \
-"../../../bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/sim/swerv_soc_syscon_wrapper_0_0.v" \
 
 vlog -work generic_baseblocks_v2_1_0  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" \
 "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -161,10 +162,18 @@ vcom -work xil_defaultlib  -93  \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" \
 "../../../bd/swerv_soc/ip/swerv_soc_wb_uart_wrapper_0_0/sim/swerv_soc_wb_uart_wrapper_0_0.v" \
-"../../../bd/swerv_soc/ipshared/03cb/PWM_Controller_Int.v" \
-"../../../bd/swerv_soc/ipshared/03cb/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0_S00_AXI.v" \
-"../../../bd/swerv_soc/ipshared/03cb/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0.v" \
-"../../../bd/swerv_soc/ip/swerv_soc_PWM_w_Int_v1_0_0_1/sim/swerv_soc_PWM_w_Int_v1_0_0_1.v" \
+
+vlog -work xlconcat_v2_1_4  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" \
+"../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" \
+"../../../bd/swerv_soc/ip/swerv_soc_xlconcat_0_0/sim/swerv_soc_xlconcat_0_0.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/sim/swerv_soc_syscon_wrapper_0_0.v" \
+"../../../bd/swerv_soc/ipshared/8c72/PWM_Controller_Int.v" \
+"../../../bd/swerv_soc/ipshared/8c72/PWM_1_0/hdl/PWM_v1_0_S00_AXI.v" \
+"../../../bd/swerv_soc/ipshared/8c72/PWM_1_0/hdl/PWM_v1_0.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_PWM_w_Int_v1_0_0_0/sim/swerv_soc_PWM_w_Int_v1_0_0_0.v" \
+"../../../bd/swerv_soc/sim/swerv_soc.v" \
 
 vlog -work axi_protocol_converter_v2_1_28  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" \
 "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/8c02/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -181,7 +190,6 @@ vlog -work axi_dwidth_converter_v2_1_28  -incr -mfcu  "+incdir+../../../bd/swerv
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../bd/swerv_soc/ipshared/9426" "+incdir+../../../bd/swerv_soc/ipshared/736f" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" "+incdir+../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" \
 "../../../bd/swerv_soc/ip/swerv_soc_auto_ds_0/sim/swerv_soc_auto_ds_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_auto_pc_0/sim/swerv_soc_auto_pc_0.v" \
-"../../../bd/swerv_soc/sim/swerv_soc.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Nov 13 11:30:02 2023
+# Process ID: 24520
+# Current directory: C:/Users/Miles/Desktop/Interface_Technology/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30600 C:\Users\Miles\Desktop\Interface_Technology\PWM\edit_PWM_v1_0.xpr
+# Log file: C:/Users/Miles/Desktop/Interface_Technology/PWM/vivado.log
+# Journal file: C:/Users/Miles/Desktop/Interface_Technology/PWM\vivado.jou
+# Running On: Chenxuan-RazerBlade, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Miles/Desktop/Interface_Technology/PWM/edit_PWM_v1_0.xpr
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir C:/Users/Miles/Desktop/Interface_Technology/PWM/../ip_repo -vendor xilinx.com -library user -taxonomy /UserIP -import_files -force
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {c:/Users/Miles/Desktop/Interface_Technology/ip_repo c:/Users/Miles/Desktop/Interface_Technology/lab_src} [current_project]
+update_ip_catalog

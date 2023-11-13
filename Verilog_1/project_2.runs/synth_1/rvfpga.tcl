@@ -86,6 +86,7 @@ set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 set_property ip_repo_paths {
   c:/Users/Miles/Desktop/Interface_Technology/lab_src
   c:/Users/Miles/Desktop/Interface_Technology/ip_repo
+  c:/Users/Miles/Desktop/Interface_Technology/PWM
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.cache/ip [current_project]

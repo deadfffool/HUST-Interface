@@ -1,20 +1,20 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2434A49CBBA2256",
+      "boundary_crc": "0xC7A05587E29408FF",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../project_2.gen/sources_1/bd/swerv_soc",
       "name": "swerv_soc",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.1"
+      "tool_version": "2023.1",
+      "validated": "true"
     },
     "design_tree": {
       "swerv_wrapper_verilog_0": "",
       "axi2wb_intcon_wrapper_0": "",
       "wb_gpio_wrapper_0": "",
       "bootrom_wrapper_0": "",
-      "syscon_wrapper_0": "",
       "axi_interconnect_0": {
         "xbar": "",
         "s00_couplers": {
@@ -26,6 +26,8 @@
       },
       "axi_gpio_0": "",
       "wb_uart_wrapper_0": "",
+      "xlconcat_0": "",
+      "syscon_wrapper_0": "",
       "PWM_w_Int_v1_0_0": ""
     },
     "interface_ports": {
@@ -370,7 +372,17 @@
     "ports": {
       "dmi_hard_reset_0": {
         "type": "rst",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
       },
       "dmi_reg_addr_0": {
         "direction": "I",
@@ -393,14 +405,19 @@
       "dmi_reg_wr_en_0": {
         "direction": "I"
       },
-      "extintsrc_req_0": {
-        "direction": "I",
-        "left": "8",
-        "right": "1"
-      },
       "rst_0": {
         "type": "rst",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
       },
       "bidir": {
         "direction": "O",
@@ -409,7 +426,37 @@
       },
       "clk_0": {
         "type": "clk",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "ram",
+            "value_src": "default"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "swerv_soc_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
       },
       "i_ram_init_done_0": {
         "direction": "I"
@@ -432,6 +479,11 @@
       },
       "o_uart_tx": {
         "direction": "O"
+      },
+      "PWMs": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
       },
       "AN": {
         "direction": "O",
@@ -604,131 +656,6 @@
           "o_wb_rdt": {
             "direction": "O",
             "left": "31",
-            "right": "0"
-          }
-        }
-      },
-      "syscon_wrapper_0": {
-        "vlnv": "xilinx.com:module_ref:syscon_wrapper:1.0",
-        "xci_name": "swerv_soc_syscon_wrapper_0_0",
-        "xci_path": "ip\\swerv_soc_syscon_wrapper_0_0\\swerv_soc_syscon_wrapper_0_0.xci",
-        "inst_hier_path": "syscon_wrapper_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "syscon_wrapper",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "i_clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "i_rst",
-                "value_src": "constant"
-              },
-              "CLK_DOMAIN": {
-                "value": "swerv_soc_clk_0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "i_rst": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "gpio_irq": {
-            "type": "intr",
-            "direction": "I",
-            "parameters": {
-              "SENSITIVITY": {
-                "value": "LEVEL_HIGH",
-                "value_src": "constant"
-              },
-              "PortWidth": {
-                "value": "1",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "ptc_irq": {
-            "type": "intr",
-            "direction": "I",
-            "parameters": {
-              "SENSITIVITY": {
-                "value": "LEVEL_HIGH",
-                "value_src": "constant"
-              }
-            }
-          },
-          "o_timer_irq": {
-            "type": "intr",
-            "direction": "O",
-            "parameters": {
-              "SENSITIVITY": {
-                "value": "LEVEL_HIGH",
-                "value_src": "constant"
-              },
-              "PortWidth": {
-                "value": "1",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "i_ram_init_done": {
-            "direction": "I"
-          },
-          "i_ram_init_error": {
-            "direction": "I"
-          },
-          "o_nmi_vec": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "o_nmi_int": {
-            "direction": "O"
-          },
-          "i_wb_adr": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "i_wb_dat": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "i_wb_sel": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "i_wb_we": {
-            "direction": "I"
-          },
-          "i_wb_cyc": {
-            "direction": "I"
-          },
-          "i_wb_stb": {
-            "direction": "I"
-          },
-          "o_wb_rdt": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "o_wb_ack": {
-            "direction": "O"
-          },
-          "AN": {
-            "direction": "O",
-            "left": "7",
-            "right": "0"
-          },
-          "Digits_Bits": {
-            "direction": "O",
-            "left": "6",
             "right": "0"
           }
         }
@@ -1269,15 +1196,157 @@
               "SENSITIVITY": {
                 "value": "LEVEL_HIGH",
                 "value_src": "constant"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
               }
             }
           }
         }
       },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "swerv_soc_xlconcat_0_0",
+        "xci_path": "ip\\swerv_soc_xlconcat_0_0\\swerv_soc_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "8"
+          }
+        }
+      },
+      "syscon_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:syscon_wrapper:1.0",
+        "xci_name": "swerv_soc_syscon_wrapper_0_0",
+        "xci_path": "ip\\swerv_soc_syscon_wrapper_0_0\\swerv_soc_syscon_wrapper_0_0.xci",
+        "inst_hier_path": "syscon_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "syscon_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "i_rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "swerv_soc_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "gpio_irq": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "ptc_irq": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "o_timer_irq": {
+            "type": "intr",
+            "direction": "O",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "o_sw_irq3": {
+            "direction": "O"
+          },
+          "o_sw_irq4": {
+            "direction": "O"
+          },
+          "i_ram_init_done": {
+            "direction": "I"
+          },
+          "i_ram_init_error": {
+            "direction": "I"
+          },
+          "o_nmi_vec": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "o_nmi_int": {
+            "direction": "O"
+          },
+          "i_wb_adr": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_wb_dat": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "i_wb_sel": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "i_wb_we": {
+            "direction": "I"
+          },
+          "i_wb_cyc": {
+            "direction": "I"
+          },
+          "i_wb_stb": {
+            "direction": "I"
+          },
+          "o_wb_rdt": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "o_wb_ack": {
+            "direction": "O"
+          },
+          "AN": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "Digits_Bits": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
       "PWM_w_Int_v1_0_0": {
         "vlnv": "xilinx.com:user:PWM_w_Int_v1_0:1.0",
-        "xci_name": "swerv_soc_PWM_w_Int_v1_0_0_1",
-        "xci_path": "ip\\swerv_soc_PWM_w_Int_v1_0_0_1\\swerv_soc_PWM_w_Int_v1_0_0_1.xci",
+        "xci_name": "swerv_soc_PWM_w_Int_v1_0_0_0",
+        "xci_path": "ip\\swerv_soc_PWM_w_Int_v1_0_0_0\\swerv_soc_PWM_w_Int_v1_0_0_0.xci",
         "inst_hier_path": "PWM_w_Int_v1_0_0",
         "interface_ports": {
           "s00_axi": {
@@ -1333,16 +1402,16 @@
       }
     },
     "nets": {
-      "PWM_w_Int_v1_0_0_AN": {
+      "PWM_w_Int_v1_0_0_Interrupt_out": {
         "ports": [
-          "PWM_w_Int_v1_0_0/AN",
-          "AN"
+          "PWM_w_Int_v1_0_0/Interrupt_out",
+          "xlconcat_0/In1"
         ]
       },
-      "PWM_w_Int_v1_0_0_Digits_Bits": {
+      "PWM_w_Int_v1_0_0_LEDs": {
         "ports": [
-          "PWM_w_Int_v1_0_0/Digits_Bits",
-          "Digits_Bits"
+          "PWM_w_Int_v1_0_0/LEDs",
+          "PWMs"
         ]
       },
       "axi2wb_intcon_wrapper_0_wb_gpio_adr_o": {
@@ -1489,6 +1558,12 @@
           "wb_uart_wrapper_0/wb_we_i"
         ]
       },
+      "axi_gpio_0_ip2intc_irpt": {
+        "ports": [
+          "axi_gpio_0/ip2intc_irpt",
+          "syscon_wrapper_0/gpio_irq"
+        ]
+      },
       "bootrom_wrapper_0_o_wb_ack": {
         "ports": [
           "bootrom_wrapper_0/o_wb_ack",
@@ -1508,14 +1583,14 @@
           "wb_gpio_wrapper_0/wb_clk_i",
           "axi2wb_intcon_wrapper_0/clk_i_wrapper",
           "bootrom_wrapper_0/i_clk",
-          "syscon_wrapper_0/i_clk",
           "axi_interconnect_0/ACLK",
           "axi_interconnect_0/S00_ACLK",
           "axi_interconnect_0/M00_ACLK",
           "axi_gpio_0/s_axi_aclk",
           "wb_uart_wrapper_0/wb_clk_i",
-          "PWM_w_Int_v1_0_0/s00_axi_aclk",
-          "axi_interconnect_0/M01_ACLK"
+          "axi_interconnect_0/M01_ACLK",
+          "syscon_wrapper_0/i_clk",
+          "PWM_w_Int_v1_0_0/s00_axi_aclk"
         ]
       },
       "dmi_hard_reset_0_1": {
@@ -1546,12 +1621,6 @@
         "ports": [
           "dmi_reg_wr_en_0",
           "swerv_wrapper_verilog_0/dmi_reg_wr_en"
-        ]
-      },
-      "extintsrc_req_0_1": {
-        "ports": [
-          "extintsrc_req_0",
-          "swerv_wrapper_verilog_0/extintsrc_req"
         ]
       },
       "i_ram_init_done_0_1": {
@@ -1591,20 +1660,32 @@
           "wb_gpio_wrapper_0/wb_rst_i",
           "axi2wb_intcon_wrapper_0/rst_ni_wrapper",
           "bootrom_wrapper_0/i_rst",
-          "syscon_wrapper_0/i_rst",
           "axi_interconnect_0/ARESETN",
           "axi_interconnect_0/S00_ARESETN",
           "axi_interconnect_0/M00_ARESETN",
           "axi_gpio_0/s_axi_aresetn",
           "wb_uart_wrapper_0/wb_rst_i",
-          "PWM_w_Int_v1_0_0/s00_axi_aresetn",
-          "axi_interconnect_0/M01_ARESETN"
+          "axi_interconnect_0/M01_ARESETN",
+          "syscon_wrapper_0/i_rst",
+          "PWM_w_Int_v1_0_0/s00_axi_aresetn"
         ]
       },
       "swerv_wrapper_verilog_0_dmi_reg_rdata": {
         "ports": [
           "swerv_wrapper_verilog_0/dmi_reg_rdata",
           "dmi_reg_rdata_0"
+        ]
+      },
+      "syscon_wrapper_0_AN": {
+        "ports": [
+          "syscon_wrapper_0/AN",
+          "AN"
+        ]
+      },
+      "syscon_wrapper_0_Digits_Bits": {
+        "ports": [
+          "syscon_wrapper_0/Digits_Bits",
+          "Digits_Bits"
         ]
       },
       "syscon_wrapper_0_o_nmi_int": {
@@ -1617,6 +1698,18 @@
         "ports": [
           "syscon_wrapper_0/o_nmi_vec",
           "swerv_wrapper_verilog_0/nmi_vec"
+        ]
+      },
+      "syscon_wrapper_0_o_sw_irq3": {
+        "ports": [
+          "syscon_wrapper_0/o_sw_irq3",
+          "xlconcat_0/In2"
+        ]
+      },
+      "syscon_wrapper_0_o_sw_irq4": {
+        "ports": [
+          "syscon_wrapper_0/o_sw_irq4",
+          "xlconcat_0/In3"
         ]
       },
       "syscon_wrapper_0_o_timer_irq": {
@@ -1667,6 +1760,12 @@
           "o_uart_tx"
         ]
       },
+      "wb_uart_wrapper_0_uart_irq": {
+        "ports": [
+          "wb_uart_wrapper_0/uart_irq",
+          "xlconcat_0/In0"
+        ]
+      },
       "wb_uart_wrapper_0_wb_ack_o": {
         "ports": [
           "wb_uart_wrapper_0/wb_ack_o",
@@ -1677,6 +1776,12 @@
         "ports": [
           "wb_uart_wrapper_0/wb_dat_o",
           "axi2wb_intcon_wrapper_0/wb_uart_dat_i"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "swerv_wrapper_verilog_0/extintsrc_req"
         ]
       }
     },

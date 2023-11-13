@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Nov 10 13:37:26 2023
-# Process ID: 23540
+# Start of session at: Mon Nov 13 12:30:30 2023
+# Process ID: 23028
 # Current directory: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1
 # Command line: vivado.exe -log swerv_soc_auto_ds_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swerv_soc_auto_ds_0.tcl
 # Log file: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/swerv_soc_auto_ds_0.vds

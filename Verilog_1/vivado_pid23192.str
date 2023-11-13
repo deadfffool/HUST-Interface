@@ -1,0 +1,667 @@
+/*
+
+AMD Vivado v2023.1 (64-bit) [Major: 2023, Minor: 1]
+SW Build: 3865809 on Sun May  7 15:05:29 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+
+Process ID (PID): 23192
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Nov 13 12:07:05 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 3840x2160
+Screen resolution (DPI): 200
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=24
+Scale size: 48
+OS font scaling: 200%
+
+Java version: 	17.0.3 64-bit
+JavaFX version: 17.0.1
+Java home: 	C:/APP/Vivado/Vivado/2023.1/tps/win64/jre17.0.3_7
+Java executable: 	C:/APP/Vivado/Vivado/2023.1/tps/win64/jre17.0.3_7/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	Miles
+User home directory: C:/Users/Miles
+User working directory: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/APP/Vivado/Vivado
+HDI_APPROOT: C:/APP/Vivado/Vivado/2023.1
+RDI_DATADIR: C:/APP/Vivado/Vivado/2023.1/data
+RDI_BINDIR: C:/APP/Vivado/Vivado/2023.1/bin
+
+Vivado preferences file: C:/Users/Miles/AppData/Roaming/Xilinx/Vivado/2023.1/vivado.xml
+Vivado preferences directory: C:/Users/Miles/AppData/Roaming/Xilinx/Vivado/2023.1/
+Vivado layouts directory: C:/Users/Miles/AppData/Roaming/Xilinx/Vivado/2023.1/data/layouts
+PlanAhead jar file: 	C:/APP/Vivado/Vivado/2023.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/vivado.log
+Vivado journal file: 	C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/vivado.jou
+Engine tmp dir: 	C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/.Xil/Vivado-23192-Chenxuan-RazerBlade
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/APP/Vivado/Vivado/2023.1
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent22624 "C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/APP/Vivado/Vivado
+RDI_BINDIR: C:/APP/Vivado/Vivado/2023.1/bin
+RDI_BINROOT: C:/APP/Vivado/Vivado/2023.1/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/APP/Vivado/Vivado/2023.1/data
+RDI_INSTALLROOT: C:/APP/Vivado
+RDI_INSTALLVER: 2023.1
+RDI_INSTALLVERSION: 2023.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/APP/Vivado/Vivado/2023.1/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/APP/Vivado/Vivado/2023.1/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: C:/APP/Vivado/Vivado/2023.1/tps/win64/jre17.0.3_7
+RDI_JAVA_VERSION: 17.0.3_7
+RDI_LIBDIR: C:/APP/Vivado/Vivado/2023.1/lib/win64.o
+RDI_MINGW_LIB: C:/APP/Vivado/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\bin;C:/APP/Vivado/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/APP/Vivado/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/APP/Vivado/Vivado/2023.1/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/APP/Vivado/Vivado/2023.1/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3;C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3\bin;C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3\lib;C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: C:\Users\Miles\Desktop\Interface_Technology\Verilog_1:CHENXUAN-RAZERB-2023-11-13÷‹“ª_12-06-52.76
+RDI_SHARED_DATA: C:/APP/Vivado/SharedData/2023.1/data
+RDI_TPS_ROOT: C:/APP/Vivado/Vivado/2023.1/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX: C:/APP/Vivado/Vivado/2023.1/ids_lite/ISE
+XILINX_DSP: C:/APP/Vivado/Vivado/2023.1/ids_lite/ISE
+XILINX_HLS: C:/APP/Vivado/Vitis_HLS/2023.1
+XILINX_PLANAHEAD: C:/APP/Vivado/Vivado/2023.1
+XILINX_VIVADO: C:/APP/Vivado/Vivado/2023.1
+XILINX_VIVADO_HLS: C:/APP/Vivado/Vivado/2023.1
+_RDI_BINROOT: C:\APP\Vivado\Vivado\2023.1\bin
+_RDI_CWD: C:\Users\Miles\Desktop\Interface_Technology\Verilog_1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 915 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.xpr. Version: Vivado v2023.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 986 MB. GUI used memory: 98 MB. Current time: 11/13/23, 12:07:06 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 144 MB (+148510kb) [00:00:16]
+// [Engine Memory]: 1,191 MB (+1097353kb) [00:00:16]
+// [GUI Memory]: 161 MB (+9773kb) [00:00:17]
+// [Engine Memory]: 1,280 MB (+31244kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  2810 ms.
+// Tcl Message: open_project C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'. 
+// [GUI Memory]: 174 MB (+5561kb) [00:00:18]
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1638.293 ; gain = 552.262 
+// Project name: project_2; location: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bq
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1293 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 219 MB (+38167kb) [00:00:29]
+// [Engine Memory]: 1,367 MB (+23757kb) [00:00:29]
+// TclEventType: DG_GRAPH_STALE
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 7); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 8, false); // s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,367 MB. GUI used memory: 133 MB. Current time: 11/13/23, 12:07:26 PM CST
+// Tcl Message: update_compile_order -fileset sources_1 
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0", 1); // ab
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Miles/Desktop/Interface_Technology/ip_repo", 3); // ab
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Miles/Desktop/Interface_Technology/lab_src", 2); // ab
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Miles/Desktop/Interface_Technology/Display/Display_1_0", 0); // ab
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0 c:/Users/Miles/Desktop/Interface_Technology/lab_src c:/Users/Miles/Desktop/Interface_Technology/ip_repo} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'. 
+dismissDialog("Refresh All IP Repositories"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd} 
+// Tcl Message: Reading block design file <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:user:swerv_wrapper_verilog:1.0 - swerv_wrapper_verilog_0 Adding component instance block -- xilinx.com:user:axi2wb_intcon_wrapper:1.0 - axi2wb_intcon_wrapper_0 Adding component instance block -- xilinx.com:user:wb_gpio_wrapper:1.0 - wb_gpio_wrapper_0 Adding component instance block -- xilinx.com:module_ref:bootrom_wrapper:1.0 - bootrom_wrapper_0 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,499 MB (+66528kb) [00:00:47]
+// WARNING: HEventQueue.dispatchEvent() is taking  2057 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,505 MB. GUI used memory: 141 MB. Current time: 11/13/23, 12:07:43 PM CST
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1734.082 ; gain = 66.473 
+// 'bE' command handler elapsed time: 10 seconds
+dismissDialog("Open Block Design"); // bq
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Miles/Desktop/Interface_Technology/Display/Display_1_0 c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0 c:/Users/Miles/Desktop/Interface_Technology/lab_src c:/Users/Miles/Desktop/Interface_Technology/ip_repo} [current_project] 
+dismissDialog("Settings"); // d
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'. 
+// [GUI Memory]: 237 MB (+6997kb) [00:00:50]
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aa
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization - Synth Design ; report_utilization ;  ; Mon Nov 13 10:24:22 CST 2023 ; 8097", 19, "Utilization - Synth Design", 0, false); // J
+// [GUI Memory]: 249 MB (+913kb) [00:01:02]
+// Tcl Command: 'set_property location {1.5 126 66} [get_bd_cells xlconcat_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1.5 126 66} [get_bd_cells xlconcat_0] 
+// Tcl Command: 'set_property location {1 153 83} [get_bd_cells xlconcat_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 153 83} [get_bd_cells xlconcat_0] 
+// Tcl Command: 'set_property location {1.5 229 67} [get_bd_cells xlconcat_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1.5 229 67} [get_bd_cells xlconcat_0] 
+// Tcl Command: 'set_property location {3.5 1632 -473} [get_bd_cells bootrom_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 1632 -473} [get_bd_cells bootrom_wrapper_0] 
+// Tcl Command: 'set_property location {4 1659 -32} [get_bd_cells wb_gpio_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1659 -32} [get_bd_cells wb_gpio_wrapper_0] 
+// Tcl Command: 'set_property location {4 1639 413} [get_bd_cells wb_uart_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1639 413} [get_bd_cells wb_uart_wrapper_0] 
+// Elapsed time: 42 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 976, 825, 2499, 1112, false, false, false, true, false); // fQ - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // al
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ao
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "PWM"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "PWM_v1.0", 0, "PWM_v1.0", 0, false); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "PWM_v1.0", 0); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "PWM_v1.0", 0, "PWM_v1.0", 0, false, false, false, false, false, true); // z - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:PWM:1.0 PWM_0 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'L.f': 01m:26s
+// Elapsed Time for: 'L.f': 01m:28s
+// Tcl Command: 'set_property location {2 396 876} [get_bd_cells PWM_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 396 876} [get_bd_cells PWM_0] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 723, 803, 2499, 1112, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells PWM_0] 
+// Elapsed Time for: 'L.f': 01m:34s
+// Elapsed Time for: 'L.f': 01m:36s
+// Tcl Command: 'set_property location {2.5 957 207} [get_bd_cells axi2wb_intcon_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 957 207} [get_bd_cells axi2wb_intcon_wrapper_0] 
+// Tcl Command: 'set_property location {3.5 1461 584} [get_bd_cells wb_uart_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 1461 584} [get_bd_cells wb_uart_wrapper_0] 
+// Tcl Command: 'set_property location {4 1454 106} [get_bd_cells wb_gpio_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1454 106} [get_bd_cells wb_gpio_wrapper_0] 
+// Tcl Command: 'set_property location {4 1461 -411} [get_bd_cells bootrom_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1461 -411} [get_bd_cells bootrom_wrapper_0] 
+// [Engine Memory]: 1,574 MB (+106kb) [00:02:14]
+// Elapsed time: 515 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_PACKAGER_OPEN_COMPONENT, "Open IP-XACT File..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_PACKAGER_OPEN_COMPONENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,598 MB. GUI used memory: 143 MB. Current time: 11/13/23, 12:17:27 PM CST
+setFileChooser("C:/Users/Miles/Desktop/Interface_Technology/ip_repo/component.xml");
+// 'q' command handler elapsed time: 8 seconds
+dismissDialog("Open IP-XACT File"); // bq
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1124 ms.
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::open_ipxact_file C:/Users/Miles/Desktop/Interface_Technology/ip_repo/component.xml 
+// [Engine Memory]: 1,669 MB (+17248kb) [00:10:39]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Open IP-XACT File"); // bq
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // S
+// TclEventType: IP_LOCK_CHANGE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization GUI", 6); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // S
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // S
+selectButton((HResource) null, "Package IP_settings"); // v: TRUE
+// TclEventType: PACKAGER_UNLOAD_CORE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - PWM_w_Int_v1_0"); // H
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - PWM_w_Int_v1_0"); // H
+// Tcl Message: ipx::unload_core c:/Users/Miles/Desktop/Interface_Technology/ip_repo/component.xml 
+// Elapsed time: 31 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aa
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/APP/Vivado/Vivado/2023.1/data/boards/board_files/new/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available. ]", 2, true); // u.d - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/Display/Display_1_0'; Can't find the specified path.. If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.. ]", 4, false); // u.d
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Miles/Desktop/Interface_Technology/Display/Display_1_0'.. ]", 3, false); // u.d
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Miles/Desktop/Interface_Technology/Display/Display_1_0'.. ]", 3, false); // u.d
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Miles/Desktop/Interface_Technology/Display/Display_1_0'.. ]", 3, false, false, false, false, false, true); // u.d - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0 c:/Users/Miles/Desktop/Interface_Technology/lab_src c:/Users/Miles/Desktop/Interface_Technology/ip_repo} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Refresh All IP Repositories"); // bq
+selectButton("OptionPane.button", "OK"); // JButton
+// [GUI Memory]: 271 MB (+9589kb) [00:12:39]
+// Elapsed time: 103 seconds
+dismissDialog("Settings"); // d
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // g
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "IP definition 'Display_v1_0 (1.0)' changed on disk"); // p.d
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/Display_0 ; true ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ;  ; Display_v1_0 ; 1.0 (Rev. 2) ; 1.0 (Rev. 2) ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ; xc7a100tcsg324-1", 1, "swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk)", 2, false); // y
+// [GUI Memory]: 289 MB (+5067kb) [00:13:42]
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/Display_0 ; true ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ;  ; Display_v1_0 ; 1.0 (Rev. 2) ; 1.0 (Rev. 2) ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ; xc7a100tcsg324-1", 1, "1.0 (Rev. 2)", 7, false); // y
+expandTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/Display_0 ; true ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ;  ; Display_v1_0 ; 1.0 (Rev. 2) ; 1.0 (Rev. 2) ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ; xc7a100tcsg324-1", 1); // y
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/Display_0 ; true ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ;  ; Display_v1_0 ; 1.0 (Rev. 2) ; 1.0 (Rev. 2) ; swerv_soc_Display_0_0 [Display_v1_0] (IP definition 'Display_v1_0 (1.0)' changed on disk) ; xc7a100tcsg324-1", 1, "1.0 (Rev. 2)", 7, false, false, false, false, false, true); // y - Double Click
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 312 MB (+8885kb) [00:13:44]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:Display:1.0 [get_ips  swerv_soc_Display_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated swerv_soc_Display_0_0 to use current project options 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips swerv_soc_Display_0_0] -no_script -sync -force -quiet 
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed Time for: 'L.f': 13m:28s
+// Elapsed Time for: 'L.f': 13m:30s
+dismissDialog("Generate Output Products"); // W
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // g
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 885, 819, 2499, 1112, false, false, false, true, false); // fQ - Popup Trigger
+// Elapsed time: 32 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 890, 788, 2499, 1112, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ao
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "PWM"); // OverlayTextField
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // z
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:PWM:1.0 PWM_0 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'L.f': 14m:14s
+// Elapsed Time for: 'L.f': 14m:16s
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // m
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 964, 774, 2499, 1112, false, false, false, true, false); // fQ - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 985, 775, 2499, 1112, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells PWM_0] 
+// Elapsed Time for: 'L.f': 14m:23s
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Elapsed Time for: 'L.f': 14m:24s
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_PACKAGER_OPEN_COMPONENT, "Open IP-XACT File..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_PACKAGER_OPEN_COMPONENT
+setFileChooser("C:/Users/Miles/Desktop/Interface_Technology/PWM/component.xml");
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::open_ipxact_file C:/Users/Miles/Desktop/Interface_Technology/PWM/component.xml 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,690 MB. GUI used memory: 157 MB. Current time: 11/13/23, 12:21:48 PM CST
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// 'q' command handler elapsed time: 8 seconds
+dismissDialog("Open IP-XACT File"); // bq
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // S
+selectButton((HResource) null, "Package IP_settings"); // v: TRUE
+// TclEventType: PACKAGER_UNLOAD_CORE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - PWM_w_Int_v1_0"); // H
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - PWM_w_Int_v1_0"); // H
+// Tcl Message: ipx::unload_core c:/Users/Miles/Desktop/Interface_Technology/PWM/component.xml 
+// Elapsed time: 22 seconds
+closeView(PAResourceOtoP.PAViews_ADDRESS_EDITOR, "Address Editor"); // c
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Miles/Desktop/Interface_Technology/lab_src", 1); // ab
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/Miles/Desktop/Interface_Technology/ip_repo", 2); // ab
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0 c:/Users/Miles/Desktop/Interface_Technology/lab_src} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/PWM/PWM_1_0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. 
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Refresh All IP Repositories"); // bq
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  c:/Users/Miles/Desktop/Interface_Technology/lab_src [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // B
+dismissDialog("Refresh All IP Repositories"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 1,724 MB. GUI used memory: 164 MB. Current time: 11/13/23, 12:22:32 PM CST
+setFolderChooser("C:/Users/Miles/Desktop/Interface_Technology/ip_repo");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Miles/Desktop/Interface_Technology/lab_src C:/Users/Miles/Desktop/Interface_Technology/ip_repo} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'. 
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a
+dismissDialog("Add Repository"); // b
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // B
+setFolderChooser("C:/Users/Miles/Desktop/Interface_Technology/PWM");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Miles/Desktop/Interface_Technology/lab_src c:/Users/Miles/Desktop/Interface_Technology/ip_repo C:/Users/Miles/Desktop/Interface_Technology/PWM} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: update_ip_catalog 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/PWM'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a
+dismissDialog("Add Repository"); // b
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Settings"); // d
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // g
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // g
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 369, 895, 2499, 1112, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ao
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "PW"); // OverlayTextField
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // z
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:PWM_w_Int_v1_0:1.0 PWM_w_Int_v1_0_0 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'L.f': 15m:46s
+// Elapsed Time for: 'L.f': 15m:49s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins PWM_w_Int_v1_0_0/s00_axi_aclk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins PWM_w_Int_v1_0_0/s00_axi_aresetn] 

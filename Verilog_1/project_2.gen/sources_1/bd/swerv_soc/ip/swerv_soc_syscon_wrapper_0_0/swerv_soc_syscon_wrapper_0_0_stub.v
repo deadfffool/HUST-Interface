@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Fri Nov 10 13:38:34 2023
+// Date        : Mon Nov 13 12:29:19 2023
 // Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_syscon_wrapper_0_0/swerv_soc_syscon_wrapper_0_0_stub.v
@@ -16,15 +16,17 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "syscon_wrapper,Vivado 2023.1" *)
 module swerv_soc_syscon_wrapper_0_0(i_clk, i_rst, gpio_irq, ptc_irq, o_timer_irq, 
-  i_ram_init_done, i_ram_init_error, o_nmi_vec, o_nmi_int, i_wb_adr, i_wb_dat, i_wb_sel, i_wb_we, 
-  i_wb_cyc, i_wb_stb, o_wb_rdt, o_wb_ack, AN, Digits_Bits)
-/* synthesis syn_black_box black_box_pad_pin="i_rst,gpio_irq,ptc_irq,o_timer_irq,i_ram_init_done,i_ram_init_error,o_nmi_vec[31:0],o_nmi_int,i_wb_adr[31:0],i_wb_dat[31:0],i_wb_sel[3:0],i_wb_we,i_wb_cyc,i_wb_stb,o_wb_rdt[31:0],o_wb_ack,AN[7:0],Digits_Bits[6:0]" */
+  o_sw_irq3, o_sw_irq4, i_ram_init_done, i_ram_init_error, o_nmi_vec, o_nmi_int, i_wb_adr, 
+  i_wb_dat, i_wb_sel, i_wb_we, i_wb_cyc, i_wb_stb, o_wb_rdt, o_wb_ack, AN, Digits_Bits)
+/* synthesis syn_black_box black_box_pad_pin="i_rst,gpio_irq,ptc_irq,o_timer_irq,o_sw_irq3,o_sw_irq4,i_ram_init_done,i_ram_init_error,o_nmi_vec[31:0],o_nmi_int,i_wb_adr[31:0],i_wb_dat[31:0],i_wb_sel[3:0],i_wb_we,i_wb_cyc,i_wb_stb,o_wb_rdt[31:0],o_wb_ack,AN[7:0],Digits_Bits[6:0]" */
 /* synthesis syn_force_seq_prim="i_clk" */;
   input i_clk /* synthesis syn_isclock = 1 */;
   input i_rst;
   input gpio_irq;
   input ptc_irq;
   output o_timer_irq;
+  output o_sw_irq3;
+  output o_sw_irq4;
   input i_ram_init_done;
   input i_ram_init_error;
   output [31:0]o_nmi_vec;

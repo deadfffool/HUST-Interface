@@ -136,6 +136,7 @@ OPTRACE "set parameters" START { }
   set_property ip_repo_paths {
   C:/Users/Miles/Desktop/Interface_Technology/lab_src
   C:/Users/Miles/Desktop/Interface_Technology/ip_repo
+  C:/Users/Miles/Desktop/Interface_Technology/PWM
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.cache/ip [current_project]

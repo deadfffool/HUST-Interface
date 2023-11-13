@@ -1,5 +1,5 @@
 `timescale 1 ns / 1 ps
-	module PWM_w_Int_v1_0 #
+	module Display #
 	(
 		// Users to add parameters here
 

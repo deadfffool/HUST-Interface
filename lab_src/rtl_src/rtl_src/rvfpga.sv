@@ -52,7 +52,8 @@ module rvfpga(
     output wire        		o_accel_cs_n,
     output wire        		o_accel_mosi,
     input  wire         	i_accel_miso,
-    output wire        		accel_sclk
+    output wire        		accel_sclk,
+    output wire [1:0]       PWMs
 );
 
 	localparam RAM_SIZE = 32'h10000;

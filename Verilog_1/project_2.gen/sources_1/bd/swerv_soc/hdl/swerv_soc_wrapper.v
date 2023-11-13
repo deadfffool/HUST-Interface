@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Fri Nov 10 13:37:13 2023
+//Date        : Mon Nov 13 12:30:24 2023
 //Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 //Command     : generate_target swerv_soc_wrapper.bd
 //Design      : swerv_soc_wrapper
@@ -13,6 +13,7 @@
 module swerv_soc_wrapper
    (AN,
     Digits_Bits,
+    PWMs,
     bidir,
     clk_0,
     dmi_hard_reset_0,
@@ -21,7 +22,6 @@ module swerv_soc_wrapper
     dmi_reg_rdata_0,
     dmi_reg_wdata_0,
     dmi_reg_wr_en_0,
-    extintsrc_req_0,
     i_ram_init_done_0,
     i_ram_init_error_0,
     i_sw,
@@ -70,6 +70,7 @@ module swerv_soc_wrapper
     rst_0);
   output [7:0]AN;
   output [6:0]Digits_Bits;
+  output [1:0]PWMs;
   output [31:0]bidir;
   input clk_0;
   input dmi_hard_reset_0;
@@ -78,7 +79,6 @@ module swerv_soc_wrapper
   output [31:0]dmi_reg_rdata_0;
   input [31:0]dmi_reg_wdata_0;
   input dmi_reg_wr_en_0;
-  input [8:1]extintsrc_req_0;
   input i_ram_init_done_0;
   input i_ram_init_error_0;
   input [15:0]i_sw;
@@ -128,6 +128,7 @@ module swerv_soc_wrapper
 
   wire [7:0]AN;
   wire [6:0]Digits_Bits;
+  wire [1:0]PWMs;
   wire [31:0]bidir;
   wire clk_0;
   wire dmi_hard_reset_0;
@@ -136,7 +137,6 @@ module swerv_soc_wrapper
   wire [31:0]dmi_reg_rdata_0;
   wire [31:0]dmi_reg_wdata_0;
   wire dmi_reg_wr_en_0;
-  wire [8:1]extintsrc_req_0;
   wire i_ram_init_done_0;
   wire i_ram_init_error_0;
   wire [15:0]i_sw;
@@ -187,6 +187,7 @@ module swerv_soc_wrapper
   swerv_soc swerv_soc_i
        (.AN(AN),
         .Digits_Bits(Digits_Bits),
+        .PWMs(PWMs),
         .bidir(bidir),
         .clk_0(clk_0),
         .dmi_hard_reset_0(dmi_hard_reset_0),
@@ -195,7 +196,6 @@ module swerv_soc_wrapper
         .dmi_reg_rdata_0(dmi_reg_rdata_0),
         .dmi_reg_wdata_0(dmi_reg_wdata_0),
         .dmi_reg_wr_en_0(dmi_reg_wr_en_0),
-        .extintsrc_req_0(extintsrc_req_0),
         .i_ram_init_done_0(i_ram_init_done_0),
         .i_ram_init_error_0(i_ram_init_error_0),
         .i_sw(i_sw),

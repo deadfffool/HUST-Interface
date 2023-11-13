@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Fri Nov 10 13:45:15 2023
+| Date         : Mon Nov 13 12:36:55 2023
 | Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rvfpga_utilization_synth.rpt -pb rvfpga_utilization_synth.pb
 | Design       : rvfpga
@@ -96,7 +96,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   86 |     0 |          0 |       210 | 40.95 |
+| Bonded IOB                  |   88 |     0 |          0 |       210 | 41.90 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         6 |  0.00 |
@@ -170,7 +170,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | CARRY4     |   96 |          CarryLogic |
 | OBUF       |   56 |                  IO |
 | OSERDESE2  |   44 |                  IO |
-| OBUFT      |   21 |                  IO |
+| OBUFT      |   23 |                  IO |
 | IBUF       |   19 |                  IO |
 | ISERDESE2  |   16 |                  IO |
 | IDELAYE2   |   16 |                  IO |
@@ -207,7 +207,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | swerv_soc_axi2wb_intcon_wrapper_0_0 |    1 |
 | swerv_soc_auto_pc_0                 |    1 |
 | swerv_soc_auto_ds_0                 |    1 |
-| swerv_soc_PWM_w_Int_v1_0_0_1        |    1 |
+| swerv_soc_PWM_w_Int_v1_0_0_0        |    1 |
 +-------------------------------------+------+
 
 
