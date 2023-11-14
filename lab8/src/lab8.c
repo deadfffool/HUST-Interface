@@ -7,28 +7,27 @@
 #endif
 #include <psp_api.h>
 
-#define SegEn_ADDR      0x80001038
-#define SegDig_ADDR     0x8000103C
-
 #define RPTC_CNTR       0x80001200
 #define RPTC_HRC        0x80001204
 #define RPTC_LRC        0x80001208
 #define RPTC_CTRL       0x8000120c
 
 // Register addresses for SPI Peripheral 
-#define SPCR            0x80161100
-#define SPSR            0x80161108
-#define SPDR            0x80161110
-#define SPER            0x80161118
-#define SPCS            0x80161120
+#define SPCR            0x80001100
+#define SPSR            0x80001108
+#define SPDR            0x80001110
+#define SPER            0x80001118
+#define SPCS            0x80001120
 
 #define PWM_BASE        0x80140000
 #define DIGIT_BASE      0x80120000
 
 #define DELAY           50000000    
 
-#define READ_IO(dir) (*(volatile unsigned *)dir)
-#define WRITE_IO(dir, value) { (*(volatile unsigned *)dir) = (value); }
+void WRITE_REG_BYTE(unsigned int addr, char data)
+{ 
+    (*(volatile unsigned *)addr) = (data); 
+}
 
 void delay(int num)
 {
@@ -39,21 +38,26 @@ void delay(int num)
 // Function: Initialize SPI peripheral
 void spiInit(void)
 {
-    M_PSP_WRITE_REGISTER_32(SPCR, 0x53);    // 01010011, no ints, core enabled
+    WRITE_REG_BYTE(SPCR, 0x53); 
+    WRITE_REG_BYTE(SPER, 0x02);
+
+    //M_PSP_WRITE_REGISTER_32(SPCR, 0x53);    // 01010011, no ints, core enabled
                                             // cpol=0, cpha=0, clock divisor 11 for 4096
-    M_PSP_WRITE_REGISTER_32(SPER, 0x02);    // int count(7:6), clock divisor 10 for 4096
+    //M_PSP_WRITE_REGISTER_32(SPER, 0x02);    // int count(7:6), clock divisor 10 for 4096
 }
 
 // Function: spiCSUp
 void spiCSUp(void)
 {
-    M_PSP_WRITE_REGISTER_32(SPCS, 0x00);
+    WRITE_REG_BYTE(SPCS, 0x00);
+    //M_PSP_WRITE_REGISTER_32(SPCS, 0x00);
 }
 
 // Function: spiCSDown
 void spiCSDown(void)
 {
-    M_PSP_WRITE_REGISTER_32(SPCS, 0xFF);
+    WRITE_REG_BYTE(SPCS, 0xFF);
+    //M_PSP_WRITE_REGISTER_32(SPCS, 0xFF);
 }
 
 // Function: Send byte through SPI and get the peripheral data back
@@ -64,10 +68,12 @@ unsigned char spiSendGetData(unsigned char sendData)
     // internal clear interrupt flag
     getData = M_PSP_READ_REGISTER_32(SPSR);
     getData = getData | 0x80;
-    M_PSP_WRITE_REGISTER_32(SPSR, getData);
+    WRITE_REG_BYTE(SPSR, getData);
+    //M_PSP_WRITE_REGISTER_32(SPSR, getData);
 
     // send data
-    M_PSP_WRITE_REGISTER_32(SPDR, sendData);
+    WRITE_REG_BYTE(SPDR, sendData);
+    //M_PSP_WRITE_REGISTER_32(SPDR, sendData);
     do {
         getData = M_PSP_READ_REGISTER_32(SPSR);
         getData = getData & 0x80;
@@ -108,7 +114,7 @@ void accelerometerInit(void)
 
 void digitInit(void)
 {
-    WRITE_IO(DIGIT_BASE, 0x0);
+    M_PSP_WRITE_REGISTER_32(DIGIT_BASE, 0x00);      // 0x2d POWER_CTL  Measurement mode.
 }
 
 int main(void)
@@ -121,7 +127,7 @@ int main(void)
    uartInit();
 
    // Initialize 7-Seg Display
-   digitInit();
+    digitInit();
 
    // Initialize spi
    spiInit();
@@ -146,9 +152,8 @@ int main(void)
 
         printfNexys("X-axis = %d, Y-axis = %d, Z-axis = %d", xdata, ydata, zdata);
 
-        displayData = xdata | (ydata << 12) | (zdata << 24); 
-
-        WRITE_IO(DIGIT_BASE, displayData);
+        displayData = xdata | (ydata << 12) | (zdata << 24);
+        M_PSP_WRITE_REGISTER_32(DIGIT_BASE, displayData);    
 
         M_PSP_WRITE_REGISTER_32(RPTC_CTRL, 0xC0);
         M_PSP_WRITE_REGISTER_32(RPTC_CTRL, 0x21);
