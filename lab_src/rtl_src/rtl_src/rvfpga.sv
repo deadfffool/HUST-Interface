@@ -53,7 +53,9 @@ module rvfpga(
     output wire        		o_accel_mosi,
     input  wire         	i_accel_miso,
     output wire        		accel_sclk,
-    output wire [1:0]       PWMs
+    output wire [1:0]       PWMs,
+    inout  wire             temp_sensor_scl_io,
+    inout  wire             temp_sensor_sda_io
 );
 
 	localparam RAM_SIZE = 32'h10000;
@@ -260,10 +262,12 @@ module rvfpga(
 		.bidir				({gpio_out, gpio_out2}),
 		.AN            	    (AN),
 		.Digits_Bits   	    ({CA,CB,CC,CD,CE,CF,CG}),
-//      .o_accel_sclk   (accel_sclk),
-//      .o_accel_cs_n   (o_accel_cs_n),
-//      .o_accel_mosi   (o_accel_mosi),
-//      .i_accel_miso   (i_accel_miso)
+		.temp_sensor_sda_io (temp_sensor_sda_io),
+		.temp_sensor_scl_io (temp_sensor_scl_io),
+        .o_accel_sclk       (accel_sclk),
+        .o_accel_cs_n       (o_accel_cs_n),
+        .o_accel_mosi       (o_accel_mosi),
+        .i_accel_miso       (i_accel_miso),
         .PWMs               (PWMs)
 	);
 

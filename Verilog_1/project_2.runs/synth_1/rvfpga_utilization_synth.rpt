@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Mon Nov 13 22:15:40 2023
+| Date         : Tue Nov 14 12:56:53 2023
 | Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rvfpga_utilization_synth.rpt -pb rvfpga_utilization_synth.pb
 | Design       : rvfpga
@@ -96,7 +96,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   88 |     0 |          0 |       210 | 41.90 |
+| Bonded IOB                  |   91 |     0 |          0 |       210 | 43.33 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         6 |  0.00 |
@@ -168,10 +168,10 @@ Warning! LUT value is adjusted to account for LUT combining.
 | RAMS32     |  100 |  Distributed Memory |
 | MUXF7      |   97 |               MuxFx |
 | CARRY4     |   96 |          CarryLogic |
-| OBUF       |   58 |                  IO |
+| OBUF       |   61 |                  IO |
 | OSERDESE2  |   44 |                  IO |
-| OBUFT      |   21 |                  IO |
-| IBUF       |   19 |                  IO |
+| IBUF       |   22 |                  IO |
+| OBUFT      |   20 |                  IO |
 | ISERDESE2  |   16 |                  IO |
 | IDELAYE2   |   16 |                  IO |
 | RAMB36E1   |   12 |        Block Memory |
@@ -199,10 +199,13 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-------------------------------------+------+
 | swerv_soc_xbar_0                    |    1 |
 | swerv_soc_wb_uart_wrapper_0_0       |    1 |
+| swerv_soc_wb_spi_wrapper_0_0        |    1 |
 | swerv_soc_wb_gpio_wrapper_0_0       |    1 |
 | swerv_soc_syscon_wrapper_0_0        |    1 |
 | swerv_soc_swerv_wrapper_verilog_0_0 |    1 |
+| swerv_soc_ptc_wrapper_0_0           |    1 |
 | swerv_soc_bootrom_wrapper_0_0       |    1 |
+| swerv_soc_axi_iic_0_0               |    1 |
 | swerv_soc_axi_gpio_0_0              |    1 |
 | swerv_soc_axi2wb_intcon_wrapper_0_0 |    1 |
 | swerv_soc_auto_pc_0                 |    1 |

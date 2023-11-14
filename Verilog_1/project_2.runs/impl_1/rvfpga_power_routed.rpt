@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Mon Nov 13 22:27:20 2023
+| Date             : Tue Nov 14 13:08:05 2023
 | Host             : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpga_power_routed.rpt -pb rvfpga_power_summary_routed.pb -rpx rvfpga_power_routed.rpx
 | Design           : rvfpga
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.935        |
+| Total On-Chip Power (W)  | 0.937        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.825        |
+| Dynamic (W)              | 0.827        |
 | Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 80.7         |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.046 |       13 |       --- |             --- |
-| Slice Logic              |     0.015 |    64690 |       --- |             --- |
-|   LUT as Logic           |     0.014 |    34964 |     63400 |           55.15 |
-|   CARRY4                 |    <0.001 |      889 |     15850 |            5.61 |
-|   LUT as Distributed RAM |    <0.001 |      270 |     19000 |            1.42 |
-|   Register               |    <0.001 |    20734 |    126800 |           16.35 |
-|   F7/F8 Muxes            |    <0.001 |      484 |     63400 |            0.76 |
-|   LUT as Shift Register  |    <0.001 |       46 |     19000 |            0.24 |
-|   Others                 |     0.000 |     1295 |       --- |             --- |
-| Signals                  |     0.022 |    52619 |       --- |             --- |
-| Block RAM                |     0.066 |       44 |       135 |           32.59 |
+| Clocks                   |     0.047 |       13 |       --- |             --- |
+| Slice Logic              |     0.016 |    66111 |       --- |             --- |
+|   LUT as Logic           |     0.014 |    35584 |     63400 |           56.13 |
+|   CARRY4                 |    <0.001 |      919 |     15850 |            5.80 |
+|   LUT as Distributed RAM |    <0.001 |      282 |     19000 |            1.48 |
+|   Register               |    <0.001 |    21290 |    126800 |           16.79 |
+|   F7/F8 Muxes            |    <0.001 |      496 |     63400 |            0.78 |
+|   LUT as Shift Register  |    <0.001 |       56 |     19000 |            0.29 |
+|   Others                 |     0.000 |     1329 |       --- |             --- |
+| Signals                  |     0.022 |    53613 |       --- |             --- |
+| Block RAM                |     0.067 |       44 |       135 |           32.59 |
 | PLL                      |     0.278 |        2 |         6 |           33.33 |
 | DSPs                     |    <0.001 |        4 |       240 |            1.67 |
-| I/O                      |     0.397 |       88 |       210 |           41.90 |
+| I/O                      |     0.397 |       91 |       210 |           43.33 |
 | Static Power             |     0.110 |          |           |                 |
-| Total                    |     0.935 |          |           |                 |
+| Total                    |     0.937 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.195 |       0.176 |      0.019 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.197 |       0.178 |      0.019 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.198 |       0.180 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -156,10 +156,10 @@ Table of Contents
 +-------------------------------+-----------+
 | Name                          | Power (W) |
 +-------------------------------+-----------+
-| rvfpga                        |     0.825 |
+| rvfpga                        |     0.827 |
 |   cdc                         |     0.005 |
 |     i_axi_cdc                 |     0.005 |
-|       i_cdc_fifo_gray_r       |     0.004 |
+|       i_cdc_fifo_gray_r       |     0.003 |
 |   clk_gen                     |     0.146 |
 |   ddr2                        |     0.409 |
 |     ldc                       |     0.409 |
@@ -183,11 +183,12 @@ Table of Contents
 |       IOBUF_9                 |     0.008 |
 |       OBUFDS                  |     0.008 |
 |       serv_rf_top             |     0.004 |
-|   swervolf                    |     0.088 |
-|     swerv_soc_i               |     0.088 |
+|   swervolf                    |     0.091 |
+|     swerv_soc_i               |     0.091 |
 |       axi2wb_intcon_wrapper_0 |     0.005 |
 |       axi_interconnect_0      |     0.003 |
 |       bootrom_wrapper_0       |     0.001 |
+|       ptc_wrapper_0           |     0.001 |
 |       swerv_wrapper_verilog_0 |     0.075 |
 +-------------------------------+-----------+
 

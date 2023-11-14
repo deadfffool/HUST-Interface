@@ -1,0 +1,2140 @@
+/*
+
+AMD Vivado v2023.1 (64-bit) [Major: 2023, Minor: 1]
+SW Build: 3865809 on Sun May  7 15:05:29 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+
+Process ID (PID): 10404
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Nov 14 10:15:31 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+OS font scaling: 125%
+
+Java version: 	17.0.3 64-bit
+JavaFX version: 17.0.1
+Java home: 	C:/APP/Vivado/Vivado/2023.1/tps/win64/jre17.0.3_7
+Java executable: 	C:/APP/Vivado/Vivado/2023.1/tps/win64/jre17.0.3_7/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	Miles
+User home directory: C:/Users/Miles
+User working directory: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/APP/Vivado/Vivado
+HDI_APPROOT: C:/APP/Vivado/Vivado/2023.1
+RDI_DATADIR: C:/APP/Vivado/Vivado/2023.1/data
+RDI_BINDIR: C:/APP/Vivado/Vivado/2023.1/bin
+
+Vivado preferences file: C:/Users/Miles/AppData/Roaming/Xilinx/Vivado/2023.1/vivado.xml
+Vivado preferences directory: C:/Users/Miles/AppData/Roaming/Xilinx/Vivado/2023.1/
+Vivado layouts directory: C:/Users/Miles/AppData/Roaming/Xilinx/Vivado/2023.1/data/layouts
+PlanAhead jar file: 	C:/APP/Vivado/Vivado/2023.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/vivado.log
+Vivado journal file: 	C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/vivado.jou
+Engine tmp dir: 	C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/.Xil/Vivado-10404-Chenxuan-RazerBlade
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/APP/Vivado/Vivado/2023.1
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent32832 "C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/APP/Vivado/Vivado
+RDI_BINDIR: C:/APP/Vivado/Vivado/2023.1/bin
+RDI_BINROOT: C:/APP/Vivado/Vivado/2023.1/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/APP/Vivado/Vivado/2023.1/data
+RDI_INSTALLROOT: C:/APP/Vivado
+RDI_INSTALLVER: 2023.1
+RDI_INSTALLVERSION: 2023.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/APP/Vivado/Vivado/2023.1/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/APP/Vivado/Vivado/2023.1/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: C:/APP/Vivado/Vivado/2023.1/tps/win64/jre17.0.3_7
+RDI_JAVA_VERSION: 17.0.3_7
+RDI_LIBDIR: C:/APP/Vivado/Vivado/2023.1/lib/win64.o
+RDI_MINGW_LIB: C:/APP/Vivado/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\bin;C:/APP/Vivado/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/APP/Vivado/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/APP/Vivado/Vivado/2023.1/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/APP/Vivado/Vivado/2023.1/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3;C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3\bin;C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3\lib;C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/APP/Vivado/Vivado/2023.1\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: C:\Users\Miles\Desktop\Interface_Technology\Verilog_1:CHENXUAN-RAZERB-2023-11-14ÖÜ¶þ_10-15-07.11
+RDI_SHARED_DATA: C:/APP/Vivado/SharedData/2023.1/data
+RDI_TPS_ROOT: C:/APP/Vivado/Vivado/2023.1/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX: C:/APP/Vivado/Vivado/2023.1/ids_lite/ISE
+XILINX_DSP: C:/APP/Vivado/Vivado/2023.1/ids_lite/ISE
+XILINX_HLS: C:/APP/Vivado/Vitis_HLS/2023.1
+XILINX_PLANAHEAD: C:/APP/Vivado/Vivado/2023.1
+XILINX_VIVADO: C:/APP/Vivado/Vivado/2023.1
+XILINX_VIVADO_HLS: C:/APP/Vivado/Vivado/2023.1
+_RDI_BINROOT: C:\APP\Vivado\Vivado\2023.1\bin
+_RDI_CWD: C:\Users\Miles\Desktop\Interface_Technology\Verilog_1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 732 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.xpr. Version: Vivado v2023.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 744 MB. GUI used memory: 69 MB. Current time: 11/14/23, 10:15:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,041 MB. GUI used memory: 68 MB. Current time: 11/14/23, 10:15:47 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+115382kb) [00:00:39]
+// [Engine Memory]: 1,182 MB (+1088440kb) [00:00:39]
+// [GUI Memory]: 133 MB (+15956kb) [00:00:42]
+// [Engine Memory]: 1,244 MB (+2748kb) [00:00:43]
+// WARNING: HEventQueue.dispatchEvent() is taking  7536 ms.
+// Tcl Message: open_project C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/lab_src'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/ip_repo'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miles/Desktop/Interface_Technology/PWM'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/APP/Vivado/Vivado/2023.1/data/ip'. 
+// [GUI Memory]: 143 MB (+3288kb) [00:00:46]
+// [GUI Memory]: 151 MB (+860kb) [00:00:46]
+// WARNING: HEventQueue.dispatchEvent() is taking  2913 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1130 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 1625.875 ; gain = 504.266 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,292 MB. GUI used memory: 87 MB. Current time: 11/14/23, 10:16:06 AM CST
+// Project name: project_2; location: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bq
+// Elapsed Time for: 'L.f': 28s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 32s
+// Elapsed time: 26 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a
+// Elapsed Time for: 'L.f': 42s
+// Tcl Message: update_compile_order -fileset sources_1 
+setFolderChooser("C:/Users/Miles/Desktop/Interface_Technology/lab_src/spi");
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -scan_for_includes {C:/Users/Miles/Desktop/Interface_Technology/lab_src/spi/simple_spi_top.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/spi/fifo4.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/spi/wb_spi_wrapper.v} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files {C:/Users/Miles/Desktop/Interface_Technology/lab_src/spi/simple_spi_top.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/spi/fifo4.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/spi/wb_spi_wrapper.v} 
+dismissDialog("Add Sources"); // bq
+// Elapsed Time for: 'L.f': 50s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 56s
+// Elapsed Time for: 'L.f': 01m:00s
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd} 
+// Tcl Message: Reading block design file <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,312 MB (+5915kb) [00:02:17]
+// Tcl Message: Adding component instance block -- xilinx.com:user:PWM_w_Int_v1_0:1.0 - PWM_w_Int_v1_0_0 Adding component instance block -- xilinx.com:user:Display:1.0 - Display_0 Successfully read diagram <swerv_soc> from block design file <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 91 MB. Current time: 11/14/23, 10:17:37 AM CST
+// [Engine Memory]: 1,378 MB (+165kb) [00:02:24]
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  4131 ms.
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1747.137 ; gain = 93.703 
+// 'bE' command handler elapsed time: 17 seconds
+// WARNING: HTimer (Open addressing views timer) is taking 133ms to process. Increasing delay to 1300 ms.
+dismissDialog("Open Block Design"); // bq
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 5, true); // E - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 5); // E
+// [GUI Memory]: 169 MB (+10353kb) [00:02:35]
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 5); // E
+// Tcl Command: 'set_property location {4 1577 264} [get_bd_cells wb_gpio_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1577 264} [get_bd_cells wb_gpio_wrapper_0] 
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 517, 141, 1058, 596, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ao
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI IIC", 0, "AXI IIC", 0, false); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI IIC", 0); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI IIC", 0, "AXI IIC", 0, false, false, false, false, false, true); // z - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_iic:2.1 axi_iic_0 
+// Tcl Message: endgroup 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,455 MB. GUI used memory: 94 MB. Current time: 11/14/23, 10:18:12 AM CST
+// [Engine Memory]: 1,462 MB (+16245kb) [00:02:56]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 527, 228, 1058, 596, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao
+// HOptionPane Warning: 'Module references are still updating. Please try again after Sources | Hierarchy view is up-to-date. (Add Module)'
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed Time for: 'L.f': 02m:20s
+// Elapsed Time for: 'L.f': 02m:24s
+// Elapsed time: 19 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 526, 218, 1058, 596, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao
+// Elapsed time: 13 seconds
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", "wb_spi_w"); // OverlayTextField
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "wb_spi_wrapper (wb_spi_wrapper.v)", 0); // ce
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Add Module"); // cb
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: create_bd_cell -type module -reference wb_spi_wrapper wb_spi_wrapper_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'spi_irq' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'spi_irq': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Add Module"); // bq
+// Elapsed Time for: 'L.f': 02m:56s
+// Elapsed Time for: 'L.f': 03m:00s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins wb_spi_wrapper_0/wb_clk_i] 
+// PAPropertyPanels.initPanels (clk_0_1) elapsed time: 0.2s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins wb_spi_wrapper_0/wb_rst_i] 
+// Tcl Command: 'set_property location {4 1629 913} [get_bd_cells wb_spi_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1629 913} [get_bd_cells wb_spi_wrapper_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_adr_o] [get_bd_pins wb_spi_wrapper_0/wb_adr_i] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_we_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_we_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_dat_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_dat_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_sel_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_sel_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_cyc_o] [get_bd_pins wb_spi_wrapper_0/wb_cyc_i] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 96 MB. Current time: 11/14/23, 10:20:27 AM CST
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_stb_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_stb_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_dat_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_ack_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 136 seconds
+dismissDialog("Re-customize IP"); // C
+selectComboBox("Number of Master Interfaces (NUM_MI)", "4", 3); // bN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // m
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: startgroup 
+// Tcl Message: set_property CONFIG.NUM_MI {4} [get_bd_cells axi_interconnect_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bq
+// Elapsed Time for: 'L.f': 05m:22s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,496 MB. GUI used memory: 99 MB. Current time: 11/14/23, 10:21:22 AM CST
+// Tcl Command: 'set_property location {2 403 1063} [get_bd_cells axi_iic_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 403 1063} [get_bd_cells axi_iic_0] 
+// Tcl Command: 'set_property location {4 1650 -81} [get_bd_cells wb_gpio_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1650 -81} [get_bd_cells wb_gpio_wrapper_0] 
+// Elapsed Time for: 'L.f': 05m:28s
+// Tcl Command: 'set_property location {4 1668 232} [get_bd_cells wb_uart_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1668 232} [get_bd_cells wb_uart_wrapper_0] 
+// Tcl Command: 'set_property location {4 1626 551} [get_bd_cells wb_spi_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1626 551} [get_bd_cells wb_spi_wrapper_0] 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M03_AXI] [get_bd_intf_pins axi_iic_0/S_AXI] 
+// Elapsed time: 44 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 817, 417, 1468, 761, false, false, false, true, false); // fQ - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins wb_spi_wrapper_0/o_accel_sclk] 
+// Tcl Message: endgroup 
+// [GUI Memory]: 179 MB (+2110kb) [00:06:54]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 817, 435, 1468, 761, false, false, false, true, false); // fQ - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins wb_spi_wrapper_0/o_accel_cs_n] 
+// Tcl Message: endgroup 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 819, 450, 1468, 761, false, false, false, true, false); // fQ - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins wb_spi_wrapper_0/o_accel_mosi] 
+// Tcl Message: endgroup 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 668, 491, 1468, 761, false, false, false, true, false); // fQ - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins wb_spi_wrapper_0/i_accel_miso] 
+// Tcl Message: endgroup 
+// Elapsed time: 19 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 454, 581, 1468, 761, false, false, false, true, false); // fQ - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_intf_pins_external  [get_bd_intf_pins axi_iic_0/IIC] 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property name temp [get_bd_intf_ports IIC_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name temp [get_bd_intf_ports IIC_0] 
+// Elapsed time: 13 seconds
+setText(PAResourceQtoS.RSBExternalInterfacePropPanels_NAME, "temp_sensor"); // Q
+// Tcl Command: 'set_property name temp_sensor [get_bd_intf_ports temp]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name temp_sensor [get_bd_intf_ports temp] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlconcat_0/In5] [get_bd_pins axi_iic_0/gpo] 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 28 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins xlconcat_0/In5] [get_bd_pins axi_iic_0/gpo]' 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_iic_0/iic2intc_irpt] [get_bd_pins xlconcat_0/In5] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,531 MB. GUI used memory: 101 MB. Current time: 11/14/23, 10:23:32 AM CST
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins wb_spi_wrapper_0/spi_irq] [get_bd_pins xlconcat_0/In4] 
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // o
+// PAPropertyPanels.initPanels (/axi_iic_0/S_AXI) elapsed time: 0.4s
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_iic_0/S_AXI ; S_AXI ; Reg ;  ;  ; ", 11, (String) null, 3, false); // q
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_iic_0/S_AXI ; S_AXI ; Reg ;  ;  ; ", 11, (String) null, 3, false, false, false, false, true, false); // q - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ASSIGN, "Assign"); // ao
+// Tcl Command: 'assign_bd_address -target_address_space /axi2wb_intcon_wrapper_0/o_user_axi4 [get_bd_addr_segs axi_iic_0/S_AXI/Reg] -force'
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,537 MB (+1432kb) [00:08:55]
+// Tcl Message: assign_bd_address -target_address_space /axi2wb_intcon_wrapper_0/o_user_axi4 [get_bd_addr_segs axi_iic_0/S_AXI/Reg] -force 
+// Tcl Message: Slave segment '/axi_iic_0/S_AXI/Reg' is being assigned into address space '/axi2wb_intcon_wrapper_0/o_user_axi4' at <0x4080_0000 [ 64K ]>. 
+selectButton(RDIResource.HFilterToolBar_HIDE_ALL, "Hide All"); // a
+selectButton(RDIResource.HFilterToolBar_SHOW_ALL, "Show All"); // a
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_iic_0/S_AXI ; S_AXI ; Reg ; 0x4080_0000 ; 64K ; 0x4080_FFFF", 8, "0x4080_0000", 3, false); // q
+// Tcl Command: 'set_property offset 0x80160000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_iic_0_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property offset 0x80160000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_iic_0_Reg}] 
+// Elapsed time: 11 seconds
+selectButton(RDIResource.HFilterToolBar_HIDE_ALL, "Hide All"); // a
+selectButton(RDIResource.HFilterToolBar_SHOW_ALL, "Show All"); // a
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+dismissDialog("Save Design"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 1,550 MB. GUI used memory: 103 MB. Current time: 11/14/23, 10:24:37 AM CST
+// Elapsed Time for: 'L.f': 08m:39s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 08m:49s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 08m:51s
+// Elapsed Time for: 'L.f': 08m:55s
+// Elapsed time: 27 seconds
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "valid", true); // OverlayTextField
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /axi_interconnect_0/M03_ACLK /axi_iic_0/s_axi_aclk  
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-758] The following clock pins are not connected to a valid clock source: . /axi_interconnect_0/M03_ACLK. /axi_iic_0/s_axi_aclk", 0); // b
+dismissDialog("Critical Messages"); // dv.a
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "Validate Design"); // OverlayTextField
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_iic_0/s_axi_aclk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_iic_0/s_axi_aresetn] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+// Elapsed Time for: 'L.f': 09m:19s
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /axi_interconnect_0/M03_ACLK  
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+// Elapsed Time for: 'L.f': 09m:23s
+// Elapsed time: 14 seconds
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-758] The following clock pins are not connected to a valid clock source: . /axi_interconnect_0/M03_ACLK", 0); // b
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dv.a
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_interconnect_0/M03_ACLK] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_interconnect_0/M03_ARESETN] 
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+dismissDialog("Validate Design"); // bq
+// Elapsed Time for: 'L.f': 09m:43s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dv.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // f
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// Elapsed Time for: 'L.f': 09m:47s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+// HMemoryUtils.trashcanNow. Engine heap size: 1,704 MB. GUI used memory: 103 MB. Current time: 11/14/23, 10:25:52 AM CST
+// Tcl Message: Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,787 MB (+181862kb) [00:10:38]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block wb_spi_wrapper_0 . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh Generated Hardware Definition File c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2111.355 ; gain = 233.039 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_xbar_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_axi_iic_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_iic_0_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_wb_spi_wrapper_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_wb_spi_wrapper_0_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 swerv_soc_axi_iic_0_0_synth_1 swerv_soc_wb_spi_wrapper_0_0_synth_1 swerv_soc_xbar_0_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_axi_iic_0_0 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_wb_spi_wrapper_0_0 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_xbar_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,814 MB. GUI used memory: 104 MB. Current time: 11/14/23, 10:26:12 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,819 MB. GUI used memory: 104 MB. Current time: 11/14/23, 10:26:18 AM CST
+// Elapsed Time for: 'W.b': 37s
+// 'bv' command handler elapsed time: 39 seconds
+// Elapsed time: 37 seconds
+dismissDialog("Managing Output Products"); // bq
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 10m:27s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, rvfpga (rvfpga.sv)]", 6, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, rvfpga (rvfpga.sv)]", 6, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, rvfpga (rvfpga.sv)]", 6, true, false, false, false, false, true); // E - Double Click - Node
+selectCodeEditor("rvfpga.sv", 284, 327); // ad
+selectCodeEditor("rvfpga.sv", 283, 320); // ad
+// Elapsed time: 26 seconds
+typeControlKey((HResource) null, "rvfpga.sv", 'c'); // ad
+selectCodeEditor("rvfpga.sv", 468, 339); // ad
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "rvfpga.sv", 'v'); // ad
+selectCodeEditor("rvfpga.sv", 400, 349); // ad
+selectCodeEditor("rvfpga.sv", 116, 386); // ad
+selectCodeEditor("rvfpga.sv", 100, 394); // ad
+selectCodeEditor("rvfpga.sv", 341, 351); // ad
+selectCodeEditor("rvfpga.sv", 609, 369); // ad
+selectCodeEditor("rvfpga.sv", 484, 345); // ad
+selectCodeEditor("rvfpga.sv", 459, 316); // ad
+// Elapsed time: 18 seconds
+selectCodeEditor("rvfpga.sv", 86, 329); // ad
+selectCodeEditor("rvfpga.sv", 124, 365); // ad
+selectCodeEditor("rvfpga.sv", 575, 211); // ad
+selectCodeEditor("rvfpga.sv", 557, 327); // ad
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("rvfpga.sv", 537, 412); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,880 MB (+3511kb) [00:12:45]
+// Elapsed Time for: 'L.f': 12m:03s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 116 MB. Current time: 11/14/23, 10:28:02 AM CST
+// Elapsed Time for: 'L.f': 12m:09s
+// [GUI Memory]: 191 MB (+3521kb) [00:12:52]
+// Elapsed time: 22 seconds
+selectCodeEditor("rvfpga.sv", 344, 384); // ad
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("rvfpga.sv", 394, 348); // ad
+selectCodeEditor("rvfpga.sv", 60, 305); // ad
+selectCodeEditor("rvfpga.sv", 311, 314); // ad
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("rvfpga.sv", 319, 384); // ad
+selectCodeEditor("rvfpga.sv", 16, 309); // ad
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 14 seconds
+selectCodeEditor("rvfpga.sv", 13, 340); // ad
+selectCodeEditor("rvfpga.sv", 471, 409); // ad
+selectCodeEditor("rvfpga.sv", 501, 284); // ad
+// Elapsed time: 20 seconds
+selectCodeEditor("rvfpga.sv", 404, 313); // ad
+typeControlKey((HResource) null, "rvfpga.sv", 'c'); // ad
+// [GUI Memory]: 203 MB (+2104kb) [00:13:57]
+selectCodeEditor("rvfpga.sv", 146, 299); // ad
+selectCodeEditor("rvfpga.sv", 140, 292); // ad
+typeControlKey((HResource) null, "rvfpga.sv", 'v'); // ad
+selectCodeEditor("rvfpga.sv", 247, 282); // ad
+typeControlKey((HResource) null, "rvfpga.sv", 'v'); // ad
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "rvfpga.sv", 'v'); // ad
+selectCodeEditor("rvfpga.sv", 369, 311); // ad
+typeControlKey((HResource) null, "rvfpga.sv", 'v'); // ad
+selectCodeEditor("rvfpga.sv", 518, 309); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("rvfpga.sv", 501, 208); // ad
+// Elapsed Time for: 'L.f': 14m:03s
+// Elapsed Time for: 'L.f': 14m:07s
+selectCodeEditor("rvfpga.sv", 377, 360); // ad
+selectCodeEditor("rvfpga.sv", 377, 360, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("rvfpga.sv", 566, 421); // ad
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "o_accel_sclk"); // Q
+// Tcl Command: 'set_property name o_accel_sclk [get_bd_ports o_accel_sclk_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name o_accel_sclk [get_bd_ports o_accel_sclk_0] 
+// Elapsed Time for: 'L.f': 14m:29s
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "o_accel_cs_n"); // Q
+// Tcl Command: 'set_property name o_accel_cs_n [get_bd_ports o_accel_cs_n_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name o_accel_cs_n [get_bd_ports o_accel_cs_n_0] 
+// Elapsed Time for: 'L.f': 14m:33s
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "o_accel_mosi"); // Q
+// Tcl Command: 'set_property name o_accel_mosi [get_bd_ports o_accel_mosi_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name o_accel_mosi [get_bd_ports o_accel_mosi_0] 
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "i_accel_miso"); // Q
+// Tcl Command: 'set_property name i_accel_miso [get_bd_ports i_accel_miso_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name i_accel_miso [get_bd_ports i_accel_miso_0] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, rvfpga (rvfpga.sv)]", 6, true); // E - Node
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+// Elapsed Time for: 'L.f': 14m:51s
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,928 MB. GUI used memory: 117 MB. Current time: 11/14/23, 10:30:53 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2224.305 ; gain = 19.168 
+// Elapsed time: 11 seconds
+dismissDialog("Validate Design"); // bq
+// Elapsed Time for: 'L.f': 14m:57s
+// Elapsed Time for: 'L.f': 15m:01s
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dv.a
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, rvfpga (rvfpga.sv)]", 6, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, rvfpga (rvfpga.sv), clk_gen : clk_gen_nexys (clk_gen_nexys.v)]", 7, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("rvfpga.sv", 369, 368); // ad
+selectCodeEditor("rvfpga.sv", 369, 368, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("rvfpga.sv", 335, 330); // ad
+selectCodeEditor("rvfpga.sv", 335, 330, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("rvfpga.sv", 418, 280); // ad
+selectCodeEditor("rvfpga.sv", 418, 280, false, false, false, false, true); // ad - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // f
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+// Tcl Message: Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh Generated Hardware Definition File c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 14 10:31:33 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1... Run output will be captured here: swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'W.b': 26s
+// 'bv' command handler elapsed time: 27 seconds
+// Elapsed time: 26 seconds
+dismissDialog("Managing Output Products"); // bq
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 15m:53s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectCodeEditor("rvfpga.sv", 392, 402); // ad
+selectCodeEditor("rvfpga.sv", 392, 402, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("rvfpga.sv", 526, 311); // ad
+selectCodeEditor("rvfpga.sv", 363, 440); // ad
+// Elapsed time: 71 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, rvfpga (rvfpga.sv)]", 6); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 2); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpga.xdc]", 4, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, rvfpga.xdc]", 4, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("rvfpga.xdc", 764, 617); // ad
+selectCodeEditor("rvfpga.xdc", 764, 617, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("rvfpga.xdc", 799, 585); // ad
+selectCodeEditor("rvfpga.xdc", 661, 556); // ad
+selectCodeEditor("rvfpga.xdc", 661, 556, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("rvfpga.xdc", 712, 536); // ad
+selectCodeEditor("rvfpga.xdc", 712, 535, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("rvfpga.xdc", 622, 525); // ad
+selectCodeEditor("rvfpga.xdc", 622, 525, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("rvfpga.xdc", 628, 552); // ad
+selectCodeEditor("rvfpga.xdc", 628, 552, false, false, false, false, true); // ad - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("rvfpga.xdc", 971, 470); // ad
+selectCodeEditor("rvfpga.xdc", 966, 489); // ad
+selectCodeEditor("rvfpga.xdc", 971, 483); // ad
+// TclEventType: FILE_SET_CHANGE
+typeControlKey((HResource) null, "rvfpga.xdc", 'c'); // ad
+selectCodeEditor("rvfpga.xdc", 232, 638); // ad
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+typeControlKey((HResource) null, "rvfpga.xdc", 'v'); // ad
+selectCodeEditor("rvfpga.xdc", 156, 565); // ad
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 10 seconds
+selectCodeEditor("rvfpga.xdc", 285, 586); // ad
+selectCodeEditor("rvfpga.xdc", 676, 610); // ad
+selectCodeEditor("rvfpga.xdc", 288, 583); // ad
+selectCodeEditor("rvfpga.xdc", 288, 583, false, false, false, false, true); // ad - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "C14"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "C14"); // d.c
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "C14"); // d.c
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // j
+selectCodeEditor("rvfpga.xdc", 904, 447); // ad
+selectCodeEditor("rvfpga.xdc", 671, 581); // ad
+selectCodeEditor("rvfpga.xdc", 966, 623); // ad
+selectCodeEditor("rvfpga.xdc", 642, 584); // ad
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+selectCodeEditor("rvfpga.xdc", 693, 386); // ad
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/utils_1/imports/synth_1/rvfpga.dcp with file C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/synth_1/rvfpga.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 14 10:35:25 2023] Launched synth_1... Run output will be captured here: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/synth_1/runme.log [Tue Nov 14 10:35:25 2023] Launched impl_1... Run output will be captured here: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 529 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // o
+selectButton(RDIResource.HFilterToolBar_HIDE_ALL, "Hide All"); // a
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi2wb_intcon_wrapper_0/i_ifu_axi4 ; i_ifu_axi4 ; reg0 ; 0x0 ; 4G ; 0xFFFF_FFFF", 14, "/axi2wb_intcon_wrapper_0/i_ifu_axi4", 0, false); // q
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi2wb_intcon_wrapper_0/i_lsu_axi4 ; i_lsu_axi4 ; reg0 ; 0x0 ; 4G ; 0xFFFF_FFFF", 18, "/axi2wb_intcon_wrapper_0/i_lsu_axi4", 0, false); // q
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi2wb_intcon_wrapper_0/i_sb_axi4 ; i_sb_axi4 ; reg0 ; 0x0 ; 4G ; 0xFFFF_FFFF", 22, "/axi2wb_intcon_wrapper_0/i_sb_axi4", 0, false); // q
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_gpio_0/S_AXI ; S_AXI ; Reg ; 0x8010_0000 ; 64K ; 0x8010_FFFF", 7, "/axi_gpio_0/S_AXI", 0, false); // q
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_iic_0/S_AXI ; S_AXI ; Reg ; 0x8016_0000 ; 64K ; 0x8016_FFFF", 8, "/axi_iic_0/S_AXI", 0, false); // q
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_gpio_0/S_AXI ; S_AXI ; Reg ; 0x8010_0000 ; 64K ; 0x8010_FFFF", 7, "/axi_gpio_0/S_AXI", 0, false); // q
+// Elapsed time: 416 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // f
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd} 
+dismissDialog("Open Block Design"); // bq
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,940 MB. GUI used memory: 122 MB. Current time: 11/14/23, 11:00:55 AM CST
+// Elapsed time: 1423 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a
+setFolderChooser("C:/Users/Miles/Desktop/Interface_Technology/lab_src/ptc");
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -scan_for_includes {C:/Users/Miles/Desktop/Interface_Technology/lab_src/ptc/ptc_defines.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/ptc/ptc_top.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/ptc/ptc_wrapper.v} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [filemgmt 56-200] Setting project included file 'C:/Users/Miles/Desktop/Interface_Technology/lab_src/ptc/ptc_defines.v' to type 'Verilog Header'. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files {C:/Users/Miles/Desktop/Interface_Technology/lab_src/ptc/ptc_defines.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/ptc/ptc_top.v C:/Users/Miles/Desktop/Interface_Technology/lab_src/ptc/ptc_wrapper.v} 
+dismissDialog("Add Sources"); // bq
+// Elapsed Time for: 'L.f': 59m:36s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 59m:40s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 59m:42s
+// Elapsed Time for: 'L.f': 59m:46s
+// Tcl Command: 'set_property location {4 1672 800} [get_bd_cells wb_spi_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1672 800} [get_bd_cells wb_spi_wrapper_0] 
+// Elapsed time: 40 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 650, 291, 1349, 762, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ao
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ptc"); // OverlayTextField
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // z
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 620, 304, 1349, 762, false, false, false, true, false); // fQ - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", "ptc"); // OverlayTextField
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "ptc_wrapper (ptc_wrapper.v)", 0); // ce
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Add Module"); // cb
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type module -reference ptc_wrapper ptc_wrapper_0 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Add Module"); // bq
+// Elapsed Time for: 'L.f': 01h:00m:30s
+// Tcl Command: 'set_property location {4 1698 512} [get_bd_cells ptc_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1698 512} [get_bd_cells ptc_wrapper_0] 
+// Tcl Command: 'set_property location {4 1698 537} [get_bd_cells ptc_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1698 537} [get_bd_cells ptc_wrapper_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Elapsed Time for: 'L.f': 01h:00m:34s
+// Tcl Message: connect_bd_net [get_bd_ports clk_0] [get_bd_pins ptc_wrapper_0/wb_clk_i] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports rst_0] [get_bd_pins ptc_wrapper_0/wb_rst_i] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_cyc_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_cyc_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_adr_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_adr_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_dat_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_dat_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_sel_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_sel_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_we_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_we_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_stb_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_stb_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_dat_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_dat_i] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_ack_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_ack_i] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins ptc_wrapper_0/wb_err_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_ptc_err_i] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins syscon_wrapper_0/ptc_irq] [get_bd_pins ptc_wrapper_0/wb_inta_o] 
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// Tcl Message: validate_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 108 seconds
+dismissDialog("Validate Design"); // bq
+// Elapsed Time for: 'L.f': 01h:02m:18s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dv.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // f
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block ptc_wrapper_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh Generated Hardware Definition File c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_ptc_wrapper_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_ptc_wrapper_0_0 
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 swerv_soc_ptc_wrapper_0_0_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_ptc_wrapper_0_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 14 11:18:32 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, swerv_soc_ptc_wrapper_0_0_synth_1... Run output will be captured here: swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log swerv_soc_ptc_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_ptc_wrapper_0_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2227.207 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,940 MB. GUI used memory: 122 MB. Current time: 11/14/23, 11:18:51 AM CST
+// Elapsed Time for: 'W.b': 33s
+// 'bv' command handler elapsed time: 35 seconds
+// Elapsed time: 33 seconds
+dismissDialog("Managing Output Products"); // bq
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:02m:57s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 01h:02m:58s
+// Elapsed Time for: 'L.f': 01h:03m:02s
+// Elapsed time: 17 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // f
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// Tcl Message: generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'swerv_soc' - hence not re-generating. 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_ptc_wrapper_0_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_ptc_wrapper_0_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: RUN_RESET
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 swerv_soc_ptc_wrapper_0_0_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_ptc_wrapper_0_0 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 14 11:19:25 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, swerv_soc_ptc_wrapper_0_0_synth_1... Run output will be captured here: swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log swerv_soc_ptc_wrapper_0_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_ptc_wrapper_0_0_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'W.b': 20s
+// 'bv' command handler elapsed time: 51 seconds
+// Elapsed time: 50 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/utils_1/imports/synth_1/rvfpga.dcp with file C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/synth_1/rvfpga.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_ds_0 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_pc_0 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_ptc_wrapper_0_0 INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork() INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1363 ms.
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 14 11:20:27 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, synth_1... Run output will be captured here: swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/synth_1/runme.log [Tue Nov 14 11:20:27 2023] Launched impl_1... Run output will be captured here: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 2233.762 ; gain = 0.000 
+// Elapsed time: 11 seconds
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:04m:31s
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'L.f': 01h:04m:37s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 214 MB (+1348kb) [01:05:43]
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // o
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O
+selectButton(RDIResource.HFilterToolBar_HIDE_ALL, "Hide All"); // a
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_iic_0/S_AXI ; S_AXI ; Reg ; 0x8016_0000 ; 64K ; 0x8016_FFFF", 8, "/axi_iic_0/S_AXI", 0, false); // q
+// [GUI Memory]: 234 MB (+9147kb) [01:06:45]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 219 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o
+// Tcl Command: 'set_property location {4 1700 498} [get_bd_cells ptc_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 1700 498} [get_bd_cells ptc_wrapper_0] 
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 857 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Cancel Implementation"); // aO
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aO
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bq
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets Display_0_Digits_Bits] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets Display_0_AN] 
+// Elapsed Time for: 'L.f': 01h:24m:04s
+// Elapsed Time for: 'L.f': 01h:24m:10s
+// Elapsed time: 67 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 605, 399, 1562, 762, false, false, false, true, false); // fQ - Popup Trigger
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports AN] [get_bd_pins syscon_wrapper_0/AN] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports Digits_Bits] [get_bd_pins syscon_wrapper_0/Digits_Bits] 
+// Elapsed time: 40 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1130, 152, 1562, 762, false, false, false, true, false); // fQ - Popup Trigger
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: validate_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+dismissDialog("Validate Design"); // bq
+// Elapsed Time for: 'L.f': 01h:25m:30s
+// Elapsed Time for: 'L.f': 01h:25m:34s
+// Elapsed time: 20 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dv.a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // f
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh Generated Hardware Definition File c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// TclEventType: RUN_ADD
+// Tcl Message: launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 14 11:42:01 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1... Run output will be captured here: swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'W.b': 28s
+// 'bv' command handler elapsed time: 29 seconds
+// Elapsed time: 28 seconds
+dismissDialog("Managing Output Products"); // bq
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:26m:23s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/utils_1/imports/synth_1/rvfpga.dcp with file C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/synth_1/rvfpga.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_RESET
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_ds_0 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_pc_0 INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork() INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Tue Nov 14 11:42:37 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, synth_1... Run output will be captured here: swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/synth_1/runme.log [Tue Nov 14 11:42:37 2023] Launched impl_1... Run output will be captured here: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 252 MB (+6451kb) [01:30:01]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,940 MB. GUI used memory: 111 MB. Current time: 11/14/23, 11:48:52 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1079083 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1080814 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,940 MB. GUI used memory: 115 MB. Current time: 11/14/23, 12:18:52 PM CST
+// Elapsed time: 2671 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+dismissDialog("Cancel Implementation"); // aO
+// Elapsed time: 39 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aO
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // f: TRUE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// 'ct' command handler elapsed time: 8 seconds
+dismissDialog("No Implementation Results Available"); // u
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Tue Nov 14 12:28:02 2023] Launched impl_1... Run output will be captured here: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,940 MB. GUI used memory: 117 MB. Current time: 11/14/23, 12:48:54 PM CST
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets syscon_wrapper_0_Digits_Bits] 
+// Elapsed Time for: 'L.f': 02h:37m:46s
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets syscon_wrapper_0_AN] 
+// Elapsed Time for: 'L.f': 02h:37m:50s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports AN] [get_bd_pins Display_0/AN] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports Digits_Bits] [get_bd_pins Display_0/Digits_Bits] 
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 1566 seconds
+dismissDialog("Validate Design"); // bq
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // dv.a
+// Elapsed Time for: 'L.f': 02h:38m:10s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // f
+// Elapsed Time for: 'L.f': 02h:38m:12s
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\Miles\Desktop\Interface_Technology\Verilog_1\project_2.srcs\sources_1\bd\swerv_soc\swerv_soc.bd>  Wrote  : <C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui>  
+dismissDialog("Save Design"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // f
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// Elapsed Time for: 'L.f': 02h:38m:18s
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Generate Output Products"); // W
+// Elapsed Time for: 'L.f': 02h:38m:20s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // f
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.v Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/sim/swerv_soc.v Verilog Output written to : c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh Generated Hardware Definition File c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] 
+// Tcl Message: launch_runs swerv_soc_auto_ds_0_synth_1 swerv_soc_auto_pc_0_synth_1 -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 14 12:54:27 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1... Run output will be captured here: swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// 'bv' command handler elapsed time: 16 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Managing Output Products"); // bq
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02h:38m:38s
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.srcs/utils_1/imports/synth_1/rvfpga.dcp with file C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/synth_1/rvfpga.dcp 
+dismissDialog("Resetting Runs"); // bq
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_ds_0 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP swerv_soc_auto_pc_0 INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork() INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_ds_0 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: swerv_soc_auto_pc_0 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 14 12:55:24 2023] Launched swerv_soc_auto_ds_0_synth_1, swerv_soc_auto_pc_0_synth_1, synth_1... Run output will be captured here: swerv_soc_auto_ds_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_ds_0_synth_1/runme.log swerv_soc_auto_pc_0_synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/swerv_soc_auto_pc_0_synth_1/runme.log synth_1: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/synth_1/runme.log [Tue Nov 14 12:55:24 2023] Launched impl_1... Run output will be captured here: C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1568, 271, 2042, 1031, false, false, false, true, false); // fQ - Popup Trigger
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,940 MB. GUI used memory: 124 MB. Current time: 11/14/23, 1:18:55 PM CST
+// Elapsed time: 1475 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // o
+selectButton(RDIResource.HFilterToolBar_HIDE_ALL, "Hide All"); // a
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/axi_iic_0/S_AXI ; S_AXI ; Reg ; 0x8016_0000 ; 64K ; 0x8016_FFFF", 8, "/axi_iic_0/S_AXI", 0, false); // q
+// Elapsed time: 795 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o

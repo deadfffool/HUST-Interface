@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1699884815" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpga.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1699937724" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpga.dcp">
   <File Type="PA-TCL" Name="rvfpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="rvfpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="rvfpga_reports.tcl"/>
@@ -132,6 +132,60 @@
     </File>
     <File Path="$PPRDIR/../lab_src/rtl_src/rtl_src/SystemController/syscon_wrapper.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/spi/fifo4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab_src/spi/fifo4.v"/>
+        <Attr Name="ImportTime" Val="1613459806"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/spi/simple_spi_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab_src/spi/simple_spi_top.v"/>
+        <Attr Name="ImportTime" Val="1613459806"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/spi/wb_spi_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab_src/spi/wb_spi_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1641860661"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ptc/ptc_defines.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab_src/ptc/ptc_defines.v"/>
+        <Attr Name="ImportTime" Val="1699863702"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ptc/ptc_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab_src/ptc/ptc_top.v"/>
+        <Attr Name="ImportTime" Val="1699863702"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ptc/ptc_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab_src/ptc/ptc_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1699863702"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -438,4 +492,6 @@
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_PWM_w_Int_v1_0_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_auto_ds_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_axi_iic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_wb_spi_wrapper_0_0"/>
 </GenRun>

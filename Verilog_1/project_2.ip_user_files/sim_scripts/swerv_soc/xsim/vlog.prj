@@ -79,11 +79,13 @@ verilog xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_s
 "../../../bd/swerv_soc/ipshared/c014/PWM_1_0/hdl/PWM_v1_0_S00_AXI.v" \
 "../../../bd/swerv_soc/ipshared/c014/PWM_1_0/hdl/PWM_v1_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_PWM_w_Int_v1_0_0_0/sim/swerv_soc_PWM_w_Int_v1_0_0_0.v" \
-"../../../bd/swerv_soc/sim/swerv_soc.v" \
 "../../../bd/swerv_soc/ipshared/2eb6/PWM_Controller_Int.v" \
 "../../../bd/swerv_soc/ipshared/2eb6/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0_S00_AXI.v" \
 "../../../bd/swerv_soc/ipshared/2eb6/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_Display_0_0/sim/swerv_soc_Display_0_0.v" \
+"../../../bd/swerv_soc/sim/swerv_soc.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_wb_spi_wrapper_0_0/sim/swerv_soc_wb_spi_wrapper_0_0.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_ptc_wrapper_0_0/sim/swerv_soc_ptc_wrapper_0_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_auto_ds_0/sim/swerv_soc_auto_ds_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_auto_pc_0/sim/swerv_soc_auto_pc_0.v" \
 

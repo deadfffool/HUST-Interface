@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Mon Nov 13 22:12:43 2023
+//Date        : Tue Nov 14 12:54:22 2023
 //Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 //Command     : generate_target swerv_soc_wrapper.bd
 //Design      : swerv_soc_wrapper
@@ -22,10 +22,14 @@ module swerv_soc_wrapper
     dmi_reg_rdata_0,
     dmi_reg_wdata_0,
     dmi_reg_wr_en_0,
+    i_accel_miso,
     i_ram_init_done_0,
     i_ram_init_error_0,
     i_sw,
     i_uart_rx,
+    o_accel_cs_n,
+    o_accel_mosi,
+    o_accel_sclk,
     o_led,
     o_uart_tx,
     ram_araddr,
@@ -67,7 +71,9 @@ module swerv_soc_wrapper
     ram_wready,
     ram_wstrb,
     ram_wvalid,
-    rst_0);
+    rst_0,
+    temp_sensor_scl_io,
+    temp_sensor_sda_io);
   output [7:0]AN;
   output [6:0]Digits_Bits;
   output [1:0]PWMs;
@@ -79,10 +85,14 @@ module swerv_soc_wrapper
   output [31:0]dmi_reg_rdata_0;
   input [31:0]dmi_reg_wdata_0;
   input dmi_reg_wr_en_0;
+  input i_accel_miso;
   input i_ram_init_done_0;
   input i_ram_init_error_0;
   input [15:0]i_sw;
   input i_uart_rx;
+  output o_accel_cs_n;
+  output o_accel_mosi;
+  output o_accel_sclk;
   output [15:0]o_led;
   output o_uart_tx;
   output [31:0]ram_araddr;
@@ -125,6 +135,8 @@ module swerv_soc_wrapper
   output [7:0]ram_wstrb;
   output ram_wvalid;
   input rst_0;
+  inout temp_sensor_scl_io;
+  inout temp_sensor_sda_io;
 
   wire [7:0]AN;
   wire [6:0]Digits_Bits;
@@ -137,10 +149,14 @@ module swerv_soc_wrapper
   wire [31:0]dmi_reg_rdata_0;
   wire [31:0]dmi_reg_wdata_0;
   wire dmi_reg_wr_en_0;
+  wire i_accel_miso;
   wire i_ram_init_done_0;
   wire i_ram_init_error_0;
   wire [15:0]i_sw;
   wire i_uart_rx;
+  wire o_accel_cs_n;
+  wire o_accel_mosi;
+  wire o_accel_sclk;
   wire [15:0]o_led;
   wire o_uart_tx;
   wire [31:0]ram_araddr;
@@ -183,6 +199,14 @@ module swerv_soc_wrapper
   wire [7:0]ram_wstrb;
   wire ram_wvalid;
   wire rst_0;
+  wire temp_sensor_scl_i;
+  wire temp_sensor_scl_io;
+  wire temp_sensor_scl_o;
+  wire temp_sensor_scl_t;
+  wire temp_sensor_sda_i;
+  wire temp_sensor_sda_io;
+  wire temp_sensor_sda_o;
+  wire temp_sensor_sda_t;
 
   swerv_soc swerv_soc_i
        (.AN(AN),
@@ -196,10 +220,14 @@ module swerv_soc_wrapper
         .dmi_reg_rdata_0(dmi_reg_rdata_0),
         .dmi_reg_wdata_0(dmi_reg_wdata_0),
         .dmi_reg_wr_en_0(dmi_reg_wr_en_0),
+        .i_accel_miso(i_accel_miso),
         .i_ram_init_done_0(i_ram_init_done_0),
         .i_ram_init_error_0(i_ram_init_error_0),
         .i_sw(i_sw),
         .i_uart_rx(i_uart_rx),
+        .o_accel_cs_n(o_accel_cs_n),
+        .o_accel_mosi(o_accel_mosi),
+        .o_accel_sclk(o_accel_sclk),
         .o_led(o_led),
         .o_uart_tx(o_uart_tx),
         .ram_araddr(ram_araddr),
@@ -241,5 +269,21 @@ module swerv_soc_wrapper
         .ram_wready(ram_wready),
         .ram_wstrb(ram_wstrb),
         .ram_wvalid(ram_wvalid),
-        .rst_0(rst_0));
+        .rst_0(rst_0),
+        .temp_sensor_scl_i(temp_sensor_scl_i),
+        .temp_sensor_scl_o(temp_sensor_scl_o),
+        .temp_sensor_scl_t(temp_sensor_scl_t),
+        .temp_sensor_sda_i(temp_sensor_sda_i),
+        .temp_sensor_sda_o(temp_sensor_sda_o),
+        .temp_sensor_sda_t(temp_sensor_sda_t));
+  IOBUF temp_sensor_scl_iobuf
+       (.I(temp_sensor_scl_o),
+        .IO(temp_sensor_scl_io),
+        .O(temp_sensor_scl_i),
+        .T(temp_sensor_scl_t));
+  IOBUF temp_sensor_sda_iobuf
+       (.I(temp_sensor_sda_o),
+        .IO(temp_sensor_sda_io),
+        .O(temp_sensor_sda_i),
+        .T(temp_sensor_sda_t));
 endmodule
