@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Nov 13 11:38:14 2023
+# Process ID: 30264
+# Current directory: C:/Users/Miles/Desktop/Interface_Technology/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6752 C:\Users\Miles\Desktop\Interface_Technology\ip_repo\edit_PWM_w_Int_v1_0.xpr
+# Log file: C:/Users/Miles/Desktop/Interface_Technology/ip_repo/vivado.log
+# Journal file: C:/Users/Miles/Desktop/Interface_Technology/ip_repo\vivado.jou
+# Running On: Chenxuan-RazerBlade, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Miles/Desktop/Interface_Technology/ip_repo/edit_PWM_w_Int_v1_0.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
