@@ -53,6 +53,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==swerv_soc_w
 # IP: bd/swerv_soc/ip/swerv_soc_ptc_wrapper_0_0/swerv_soc_ptc_wrapper_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==swerv_soc_ptc_wrapper_0_0 || ORIG_REF_NAME==swerv_soc_ptc_wrapper_0_0} -quiet] -quiet
 
+# IP: bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/swerv_soc_VGA_v1_0_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==swerv_soc_VGA_v1_0_0_0 || ORIG_REF_NAME==swerv_soc_VGA_v1_0_0_0} -quiet] -quiet
+
 # IP: bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==swerv_soc_auto_ds_0 || ORIG_REF_NAME==swerv_soc_auto_ds_0} -quiet] -quiet
 

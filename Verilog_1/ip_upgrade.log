@@ -1,6 +1,111 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Nov 14 22:12:19 2023
+| Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_VGA_v1_0_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_VGA_v1_0_0_0 (xilinx.com:user:VGA_v1_0:1.0) from (Rev. 6) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Nov 14 21:34:19 2023
+| Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_VGA_v1_0_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_VGA_v1_0_0_0 (xilinx.com:user:VGA_v1_0:1.0) from (Rev. 4) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Nov 14 20:44:10 2023
+| Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_VGA_v1_0_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_VGA_v1_0_0_0 (xilinx.com:user:VGA_v1_0:1.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Nov 14 19:43:49 2023
+| Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_VGA_v1_0_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of swerv_soc_VGA_v1_0_0_0 (xilinx.com:user:VGA_v1_0:1.0) from (Rev. 3) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Nov 14 19:29:10 2023
+| Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'swerv_soc_VGA_v1_0_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of swerv_soc_VGA_v1_0_0_0 (xilinx.com:user:VGA_v1_0:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
 | Date         : Mon Nov 13 18:06:14 2023
 | Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

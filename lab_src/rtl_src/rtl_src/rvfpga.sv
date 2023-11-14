@@ -55,7 +55,9 @@ module rvfpga(
     output wire        		accel_sclk,
     output wire [1:0]       PWMs,
     inout  wire             temp_sensor_scl_io,
-    inout  wire             temp_sensor_sda_io
+    inout  wire             temp_sensor_sda_io,
+    output wire             h_sync,v_sync, //VGA
+    output wire [11:0]      vga
 );
 
 	localparam RAM_SIZE = 32'h10000;
@@ -268,7 +270,10 @@ module rvfpga(
         .o_accel_cs_n       (o_accel_cs_n),
         .o_accel_mosi       (o_accel_mosi),
         .i_accel_miso       (i_accel_miso),
-        .PWMs               (PWMs)
+        .PWMs               (PWMs),
+        .vga                (vga),
+        .h_sync             (h_sync),
+        .v_sync             (v_sync)
 	);
 
 	always @(posedge clk_core) begin

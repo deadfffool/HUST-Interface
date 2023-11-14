@@ -1,4 +1,4 @@
-sv xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" \
+sv xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0" \
 "../../../bd/swerv_soc/ipshared/64dd/src/lib/beh_lib.sv" \
 "../../../bd/swerv_soc/ipshared/64dd/src/dbg/dbg.sv" \
 "../../../bd/swerv_soc/ipshared/64dd/src/swerv_types.sv" \
@@ -37,7 +37,7 @@ sv xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ip
 "../../../bd/swerv_soc/ipshared/64dd/src/swerv.sv" \
 "../../../bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_dmi.sv" \
 
-verilog xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" \
+verilog xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0" \
 "../../../bd/swerv_soc/ipshared/64dd/src/swerv_wrapper_verilog.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_swerv_wrapper_verilog_0_0/sim/swerv_soc_swerv_wrapper_verilog_0_0.v" \
 "../../../bd/swerv_soc/ipshared/9426/axi2wb.v" \
@@ -45,7 +45,7 @@ verilog xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_s
 "../../../bd/swerv_soc/ipshared/9426/wb_intercon.v" \
 "../../../bd/swerv_soc/ipshared/9426/wb_mux.v" \
 
-sv xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" \
+sv xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0" \
 "../../../bd/swerv_soc/ipshared/9426/cf_math_pkg.sv" \
 "../../../bd/swerv_soc/ipshared/9426/addr_decode.sv" \
 "../../../bd/swerv_soc/ipshared/9426/axi_pkg.sv" \
@@ -64,7 +64,7 @@ sv xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ip
 "../../../bd/swerv_soc/ipshared/9426/spill_register.sv" \
 "../../../bd/swerv_soc/ipshared/9426/stream_register.sv" \
 
-verilog xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" \
+verilog xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/64dd/src" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/9426" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/736f" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ipshared/ec67/hdl" --include "../../../../project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0" \
 "../../../bd/swerv_soc/ipshared/9426/axi2wb_intcon_wrapper.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_axi2wb_intcon_wrapper_0_0/sim/swerv_soc_axi2wb_intcon_wrapper_0_0.v" \
 "../../../bd/swerv_soc/ipshared/736f/gpio_top.v" \
@@ -83,11 +83,17 @@ verilog xil_defaultlib --include "../../../../project_2.gen/sources_1/bd/swerv_s
 "../../../bd/swerv_soc/ipshared/2eb6/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0_S00_AXI.v" \
 "../../../bd/swerv_soc/ipshared/2eb6/PWM_w_Int_1_0/hdl/PWM_w_Int_v1_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_Display_0_0/sim/swerv_soc_Display_0_0.v" \
-"../../../bd/swerv_soc/sim/swerv_soc.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_wb_spi_wrapper_0_0/sim/swerv_soc_wb_spi_wrapper_0_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_ptc_wrapper_0_0/sim/swerv_soc_ptc_wrapper_0_0.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../bd/swerv_soc/ipshared/0d58/VGA_1_0/hdl/VGA_v1_0_S00_AXI.v" \
+"../../../bd/swerv_soc/ipshared/0d58/vga_control.v" \
+"../../../bd/swerv_soc/ipshared/0d58/VGA_1_0/hdl/VGA_v1_0.v" \
+"../../../bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/sim/swerv_soc_VGA_v1_0_0_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_auto_ds_0/sim/swerv_soc_auto_ds_0.v" \
 "../../../bd/swerv_soc/ip/swerv_soc_auto_pc_0/sim/swerv_soc_auto_pc_0.v" \
+"../../../bd/swerv_soc/sim/swerv_soc.v" \
 
 verilog xil_defaultlib "glbl.v"
 

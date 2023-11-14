@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -87,6 +86,7 @@ set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 set_property ip_repo_paths {
   c:/Users/Miles/Desktop/Interface_Technology/lab_src
+  c:/Users/Miles/Desktop/Interface_Technology/VGA
   c:/Users/Miles/Desktop/Interface_Technology/ip_repo
   c:/Users/Miles/Desktop/Interface_Technology/PWM
 } [current_project]
@@ -143,6 +143,9 @@ set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop
 set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_gpio_0_0/swerv_soc_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_iic_0_0/swerv_soc_axi_iic_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_axi_iic_0_0/swerv_soc_axi_iic_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_VGA_v1_0_0_0/edit_VGA_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.gen/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_ooc.xdc]

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Nov 14 13:07:42 2023
+| Date         : Tue Nov 14 22:28:23 2023
 | Host         : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 | Command      : report_methodology -file rvfpga_methodology_drc_routed.rpt -pb rvfpga_methodology_drc_routed.pb -rpx rvfpga_methodology_drc_routed.rpx
 | Design       : rvfpga
@@ -23,38 +23,57 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 205
-+-----------+------------------+------------------------------------------------+------------+
-| Rule      | Severity         | Description                                    | Violations |
-+-----------+------------------+------------------------------------------------+------------+
-| TIMING-6  | Critical Warning | No common primary clock between related clocks | 2          |
-| TIMING-7  | Critical Warning | No common node between related clocks          | 2          |
-| TIMING-14 | Critical Warning | LUT on the clock tree                          | 3          |
-| DPIR-1    | Warning          | Asynchronous driver check                      | 152        |
-| LUTAR-1   | Warning          | LUT drives async reset alert                   | 7          |
-| TIMING-9  | Warning          | Unknown CDC Logic                              | 1          |
-| TIMING-18 | Warning          | Missing input or output delay                  | 22         |
-| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF              | 16         |
-+-----------+------------------+------------------------------------------------+------------+
+             Violations found: 246
++-----------+------------------+-----------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                               | Violations |
++-----------+------------------+-----------------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree        | 1          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks            | 3          |
+| TIMING-7  | Critical Warning | No common node between related clocks                     | 3          |
+| TIMING-14 | Critical Warning | LUT on the clock tree                                     | 3          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                 | 1          |
+| TIMING-51 | Critical Warning | No common phase between related clocks from parallel CMBs | 1          |
+| DPIR-1    | Warning          | Asynchronous driver check                                 | 152        |
+| LUTAR-1   | Warning          | LUT drives async reset alert                              | 7          |
+| TIMING-9  | Warning          | Unknown CDC Logic                                         | 1          |
+| TIMING-16 | Warning          | Large setup violation                                     | 36         |
+| TIMING-18 | Warning          | Missing input or output delay                             | 22         |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF                         | 16         |
++-----------+------------------+-----------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock swervolf/swerv_soc_i/VGA_v1_0_0/inst/clk_wiz/inst/clk_in1 is defined downstream of clock clk_core and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
 TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_core and clk_out1_clk_wiz_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_core] -to [get_clocks clk_out1_clk_wiz_0]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
 No common primary clock between related clocks  
 The clocks clk_core and tck_dtmcs are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_core] -to [get_clocks tck_dtmcs]
 Related violations: <none>
 
-TIMING-6#2 Critical Warning
+TIMING-6#3 Critical Warning
 No common primary clock between related clocks  
 The clocks tck_dtmcs and clk_core are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tck_dtmcs] -to [get_clocks clk_core]
 Related violations: <none>
 
 TIMING-7#1 Critical Warning
 No common node between related clocks  
-The clocks clk_core and tck_dtmcs are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_core] -to [get_clocks tck_dtmcs]
+The clocks clk_core and clk_out1_clk_wiz_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_core] -to [get_clocks clk_out1_clk_wiz_0]
 Related violations: <none>
 
 TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks clk_core and tck_dtmcs are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_core] -to [get_clocks tck_dtmcs]
+Related violations: <none>
+
+TIMING-7#3 Critical Warning
 No common node between related clocks  
 The clocks tck_dtmcs and clk_core are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks tck_dtmcs] -to [get_clocks clk_core]
 Related violations: <none>
@@ -72,6 +91,16 @@ Related violations: <none>
 TIMING-14#3 Critical Warning
 LUT on the clock tree  
 The LUT swervolf/swerv_soc_i/ptc_wrapper_0/inst/timer_ptc/rptc_lrc[31]_i_3 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock swervolf/swerv_soc_i/VGA_v1_0_0/inst/clk_wiz/inst/clk_in1 is created on an inappropriate internal pin swervolf/swerv_soc_i/VGA_v1_0_0/inst/clk_wiz/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-51#1 Critical Warning
+No common phase between related clocks from parallel CMBs  
+The clocks clk_core and clk_out1_clk_wiz_0 are timed together but have no phase relationship. The design could fail in hardware. The clocks originate from two parallel Clock Modifying Blocks and at least one of the MMCM or PLLs clock dividers is not set to 1. To be safely timed, all MMCMs or PLLs involved in parallel clocking must have the clock divider set to 1.
 Related violations: <none>
 
 DPIR-1#1 Warning
@@ -969,6 +998,186 @@ Related violations: <none>
 TIMING-9#1 Warning
 Unknown CDC Logic  
 One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -10.901 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[3]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num6_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -10.924 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[15]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num3_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -10.928 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[13]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num3_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -10.951 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[10]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num4_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -10.951 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[1]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num6_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -10.951 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[8]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num4_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -10.952 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[18]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num2_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -10.952 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[2]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num6_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -10.954 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[12]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num3_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -10.954 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[14]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num3_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -10.954 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[16]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num2_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -10.954 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[6]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num5_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -10.955 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[22]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num1_reg[2]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -10.961 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[19]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num2_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -10.963 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[11]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num4_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -10.963 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[20]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num1_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -10.963 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[21]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num1_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -10.964 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[23]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num1_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -10.969 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[9]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num4_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -10.983 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[17]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num2_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -11.023 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[0]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num6_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -11.028 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[4]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num5_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -11.028 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[5]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num5_reg[1]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -11.035 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/VGA_v1_0_S00_AXI_inst/slv_reg0_reg[7]/C (clocked by clk_core) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/num5_reg[3]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -3.248 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -3.348 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_7/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -3.371 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_10/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -3.392 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_3/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -3.392 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_8/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -3.411 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_9/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -3.421 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_11/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -3.451 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_5/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -3.536 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_2/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -3.536 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_6/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -3.546 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -3.624 ns between swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/x_counter_reg[0]/C (clocked by clk_out1_clk_wiz_0) and swervolf/swerv_soc_i/VGA_v1_0_0/inst/vga_control/vga_reg[0]_lopt_replica_4/D (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

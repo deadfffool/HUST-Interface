@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -136,6 +135,7 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path C:/Users/Miles/Desktop/Interface_Technology/Verilog_1/project_2.xpr [current_project]
   set_property ip_repo_paths {
   C:/Users/Miles/Desktop/Interface_Technology/lab_src
+  C:/Users/Miles/Desktop/Interface_Technology/VGA
   C:/Users/Miles/Desktop/Interface_Technology/ip_repo
   C:/Users/Miles/Desktop/Interface_Technology/PWM
 } [current_project]

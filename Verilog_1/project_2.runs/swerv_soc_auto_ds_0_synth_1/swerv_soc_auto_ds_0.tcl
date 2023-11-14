@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "swerv_soc_auto_ds_0_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -89,6 +88,7 @@ set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 set_property ip_repo_paths {
   c:/Users/Miles/Desktop/Interface_Technology/lab_src
+  c:/Users/Miles/Desktop/Interface_Technology/VGA
   c:/Users/Miles/Desktop/Interface_Technology/ip_repo
   c:/Users/Miles/Desktop/Interface_Technology/PWM
 } [current_project]

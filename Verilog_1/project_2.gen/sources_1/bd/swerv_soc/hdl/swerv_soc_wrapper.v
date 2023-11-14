@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-//Date        : Tue Nov 14 12:54:22 2023
+//Date        : Tue Nov 14 22:12:47 2023
 //Host        : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 //Command     : generate_target swerv_soc_wrapper.bd
 //Design      : swerv_soc_wrapper
@@ -22,6 +22,7 @@ module swerv_soc_wrapper
     dmi_reg_rdata_0,
     dmi_reg_wdata_0,
     dmi_reg_wr_en_0,
+    h_sync,
     i_accel_miso,
     i_ram_init_done_0,
     i_ram_init_error_0,
@@ -73,7 +74,9 @@ module swerv_soc_wrapper
     ram_wvalid,
     rst_0,
     temp_sensor_scl_io,
-    temp_sensor_sda_io);
+    temp_sensor_sda_io,
+    v_sync,
+    vga);
   output [7:0]AN;
   output [6:0]Digits_Bits;
   output [1:0]PWMs;
@@ -85,6 +88,7 @@ module swerv_soc_wrapper
   output [31:0]dmi_reg_rdata_0;
   input [31:0]dmi_reg_wdata_0;
   input dmi_reg_wr_en_0;
+  output h_sync;
   input i_accel_miso;
   input i_ram_init_done_0;
   input i_ram_init_error_0;
@@ -137,6 +141,8 @@ module swerv_soc_wrapper
   input rst_0;
   inout temp_sensor_scl_io;
   inout temp_sensor_sda_io;
+  output v_sync;
+  output [11:0]vga;
 
   wire [7:0]AN;
   wire [6:0]Digits_Bits;
@@ -149,6 +155,7 @@ module swerv_soc_wrapper
   wire [31:0]dmi_reg_rdata_0;
   wire [31:0]dmi_reg_wdata_0;
   wire dmi_reg_wr_en_0;
+  wire h_sync;
   wire i_accel_miso;
   wire i_ram_init_done_0;
   wire i_ram_init_error_0;
@@ -207,6 +214,8 @@ module swerv_soc_wrapper
   wire temp_sensor_sda_io;
   wire temp_sensor_sda_o;
   wire temp_sensor_sda_t;
+  wire v_sync;
+  wire [11:0]vga;
 
   swerv_soc swerv_soc_i
        (.AN(AN),
@@ -220,6 +229,7 @@ module swerv_soc_wrapper
         .dmi_reg_rdata_0(dmi_reg_rdata_0),
         .dmi_reg_wdata_0(dmi_reg_wdata_0),
         .dmi_reg_wr_en_0(dmi_reg_wr_en_0),
+        .h_sync(h_sync),
         .i_accel_miso(i_accel_miso),
         .i_ram_init_done_0(i_ram_init_done_0),
         .i_ram_init_error_0(i_ram_init_error_0),
@@ -275,7 +285,9 @@ module swerv_soc_wrapper
         .temp_sensor_scl_t(temp_sensor_scl_t),
         .temp_sensor_sda_i(temp_sensor_sda_i),
         .temp_sensor_sda_o(temp_sensor_sda_o),
-        .temp_sensor_sda_t(temp_sensor_sda_t));
+        .temp_sensor_sda_t(temp_sensor_sda_t),
+        .v_sync(v_sync),
+        .vga(vga));
   IOBUF temp_sensor_scl_iobuf
        (.I(temp_sensor_scl_o),
         .IO(temp_sensor_scl_io),

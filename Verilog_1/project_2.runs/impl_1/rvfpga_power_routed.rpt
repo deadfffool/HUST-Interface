@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Tue Nov 14 13:08:05 2023
+| Date             : Tue Nov 14 22:29:00 2023
 | Host             : Chenxuan-RazerBlade running 64-bit major release  (build 9200)
 | Command          : report_power -file rvfpga_power_routed.rpt -pb rvfpga_power_summary_routed.pb -rpx rvfpga_power_routed.rpx
 | Design           : rvfpga
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.937        |
+| Total On-Chip Power (W)  | 1.071        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.827        |
+| Dynamic (W)              | 0.961        |
 | Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 80.7         |
-| Junction Temperature (C) | 29.3         |
+| Max Ambient (C)          | 80.1         |
+| Junction Temperature (C) | 29.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.047 |       13 |       --- |             --- |
-| Slice Logic              |     0.016 |    66111 |       --- |             --- |
-|   LUT as Logic           |     0.014 |    35584 |     63400 |           56.13 |
-|   CARRY4                 |    <0.001 |      919 |     15850 |            5.80 |
+| Clocks                   |     0.048 |       16 |       --- |             --- |
+| Slice Logic              |     0.018 |    67649 |       --- |             --- |
+|   LUT as Logic           |     0.016 |    36384 |     63400 |           57.39 |
+|   CARRY4                 |    <0.001 |     1042 |     15850 |            6.57 |
+|   Register               |    <0.001 |    21691 |    126800 |           17.11 |
 |   LUT as Distributed RAM |    <0.001 |      282 |     19000 |            1.48 |
-|   Register               |    <0.001 |    21290 |    126800 |           16.79 |
 |   F7/F8 Muxes            |    <0.001 |      496 |     63400 |            0.78 |
 |   LUT as Shift Register  |    <0.001 |       56 |     19000 |            0.29 |
-|   Others                 |     0.000 |     1329 |       --- |             --- |
-| Signals                  |     0.022 |    53613 |       --- |             --- |
-| Block RAM                |     0.067 |       44 |       135 |           32.59 |
+|   Others                 |     0.000 |     1334 |       --- |             --- |
+| Signals                  |     0.025 |    54775 |       --- |             --- |
+| Block RAM                |     0.066 |       44 |       135 |           32.59 |
+| MMCM                     |     0.122 |        1 |         6 |           16.67 |
 | PLL                      |     0.278 |        2 |         6 |           33.33 |
 | DSPs                     |    <0.001 |        4 |       240 |            1.67 |
-| I/O                      |     0.397 |       91 |       210 |           43.33 |
+| I/O                      |     0.403 |      105 |       210 |           50.00 |
 | Static Power             |     0.110 |          |           |                 |
-| Total                    |     0.937 |          |           |                 |
+| Total                    |     1.071 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,11 +78,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.197 |       0.178 |      0.019 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.198 |       0.180 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.203 |       0.184 |      0.019 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.267 |       0.249 |      0.018 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     0.181 |       0.177 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.183 |       0.179 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -130,21 +131,24 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+---------------------+------------------------------+-----------------+
-| Clock               | Domain                       | Constraint (ns) |
-+---------------------+------------------------------+-----------------+
-| clk_core            | clk_gen/clk_core             |            20.0 |
-| clkfb               | clk_gen/clkfb                |            10.0 |
-| clkout0             | ddr2/ldc/clkout0             |             5.0 |
-| clkout1             | ddr2/ldc/clkout1             |            10.0 |
-| clkout2             | ddr2/ldc/clkout2             |             5.0 |
-| clkout3             | ddr2/ldc/clkout3             |             5.0 |
-| subfragments_pll_fb | ddr2/ldc/subfragments_pll_fb |            10.0 |
-| sys_clk_pin         | clk                          |            10.0 |
-| tck_dmi             | tap/dmi_tck                  |           100.0 |
-| tck_dtmcs           | tap/tap_dtmcs_0              |           100.0 |
-| tck_idcode          | tap/idcode_tck               |           100.0 |
-+---------------------+------------------------------+-----------------+
++---------------------+----------------------------------------------------------------------+-----------------+
+| Clock               | Domain                                                               | Constraint (ns) |
++---------------------+----------------------------------------------------------------------+-----------------+
+| clk_core            | clk_core_BUFG                                                        |            20.0 |
+| clk_core            | clk_gen/clk_core                                                     |            20.0 |
+| clk_out1_clk_wiz_0  | swervolf/swerv_soc_i/VGA_v1_0_0/inst/clk_wiz/inst/clk_out1_clk_wiz_0 |            15.4 |
+| clkfb               | clk_gen/clkfb                                                        |            10.0 |
+| clkfbout_clk_wiz_0  | swervolf/swerv_soc_i/VGA_v1_0_0/inst/clk_wiz/inst/clkfbout_clk_wiz_0 |            40.0 |
+| clkout0             | ddr2/ldc/clkout0                                                     |             5.0 |
+| clkout1             | ddr2/ldc/clkout1                                                     |            10.0 |
+| clkout2             | ddr2/ldc/clkout2                                                     |             5.0 |
+| clkout3             | ddr2/ldc/clkout3                                                     |             5.0 |
+| subfragments_pll_fb | ddr2/ldc/subfragments_pll_fb                                         |            10.0 |
+| sys_clk_pin         | clk                                                                  |            10.0 |
+| tck_dmi             | tap/dmi_tck                                                          |           100.0 |
+| tck_dtmcs           | tap/tap_dtmcs_0                                                      |           100.0 |
+| tck_idcode          | tap/idcode_tck                                                       |           100.0 |
++---------------------+----------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -156,40 +160,41 @@ Table of Contents
 +-------------------------------+-----------+
 | Name                          | Power (W) |
 +-------------------------------+-----------+
-| rvfpga                        |     0.827 |
+| rvfpga                        |     0.961 |
 |   cdc                         |     0.005 |
 |     i_axi_cdc                 |     0.005 |
 |       i_cdc_fifo_gray_r       |     0.003 |
 |   clk_gen                     |     0.146 |
-|   ddr2                        |     0.409 |
-|     ldc                       |     0.409 |
-|       IOBUF                   |     0.008 |
+|   ddr2                        |     0.413 |
+|     ldc                       |     0.413 |
+|       IOBUF                   |     0.009 |
 |       IOBUFDS                 |     0.007 |
 |       IOBUFDS_1               |     0.007 |
-|       IOBUF_1                 |     0.008 |
+|       IOBUF_1                 |     0.009 |
 |       IOBUF_10                |     0.009 |
-|       IOBUF_11                |     0.008 |
+|       IOBUF_11                |     0.009 |
 |       IOBUF_12                |     0.009 |
 |       IOBUF_13                |     0.009 |
 |       IOBUF_14                |     0.009 |
 |       IOBUF_15                |     0.009 |
 |       IOBUF_2                 |     0.009 |
-|       IOBUF_3                 |     0.008 |
+|       IOBUF_3                 |     0.009 |
 |       IOBUF_4                 |     0.009 |
 |       IOBUF_5                 |     0.009 |
 |       IOBUF_6                 |     0.009 |
 |       IOBUF_7                 |     0.009 |
-|       IOBUF_8                 |     0.008 |
-|       IOBUF_9                 |     0.008 |
+|       IOBUF_8                 |     0.009 |
+|       IOBUF_9                 |     0.009 |
 |       OBUFDS                  |     0.008 |
 |       serv_rf_top             |     0.004 |
-|   swervolf                    |     0.091 |
-|     swerv_soc_i               |     0.091 |
+|   swervolf                    |     0.219 |
+|     swerv_soc_i               |     0.219 |
+|       VGA_v1_0_0              |     0.129 |
 |       axi2wb_intcon_wrapper_0 |     0.005 |
 |       axi_interconnect_0      |     0.003 |
 |       bootrom_wrapper_0       |     0.001 |
-|       ptc_wrapper_0           |     0.001 |
 |       swerv_wrapper_verilog_0 |     0.075 |
+|       syscon_wrapper_0        |     0.001 |
 +-------------------------------+-----------+
 
 

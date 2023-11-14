@@ -331,6 +331,24 @@
                 "SV": "xilinx.com:ip:axi_iic:2.1",
                 "TM": "both",
                 "TU": "register"
+            },
+            "V11": {
+                "VT": "AC",
+                "BA": "0x80180000",
+                "HA": "0x8018FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "o_user_axi4",
+                "MX": "/axi2wb_intcon_wrapper_0",
+                "MI": "o_user_axi4",
+                "MS": "SEG_VGA_v1_0_0_reg0",
+                "MV": "xilinx.com:user:axi2wb_intcon_wrapper:1.0",
+                "SX": "/VGA_v1_0_0",
+                "SI": "s00_axi",
+                "SS": "reg0",
+                "SV": "xilinx.com:user:VGA_v1_0:1.0",
+                "TM": "both",
+                "TU": "register"
             }
         },
         "edges": [
@@ -379,6 +397,11 @@
             },
             {
                 "src": "V10",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V11",
                 "trg": "V2",
                 "EH": "2"
             }

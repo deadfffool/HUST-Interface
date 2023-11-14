@@ -21,6 +21,7 @@
 
 #define PWM_BASE        0x80140000
 #define DIGIT_BASE      0x80120000
+#define VGA_BASE        0x80180000
 
 #define DELAY           50000000    
 
@@ -152,8 +153,9 @@ int main(void)
 
         printfNexys("X-axis = %d, Y-axis = %d, Z-axis = %d", xdata, ydata, zdata);
 
-        displayData = xdata | (ydata << 12) | (zdata << 24);
-        M_PSP_WRITE_REGISTER_32(DIGIT_BASE, displayData);    
+        displayData = xdata | (ydata << 8) | (zdata << 16);
+        M_PSP_WRITE_REGISTER_32(DIGIT_BASE, displayData); 
+        M_PSP_WRITE_REGISTER_32(VGA_BASE, displayData);    
 
         M_PSP_WRITE_REGISTER_32(RPTC_CTRL, 0xC0);
         M_PSP_WRITE_REGISTER_32(RPTC_CTRL, 0x21);

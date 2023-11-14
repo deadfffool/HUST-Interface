@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1699937724" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpga.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1699971294" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/rvfpga.dcp">
   <File Type="PA-TCL" Name="rvfpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="rvfpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="rvfpga_reports.tcl"/>
@@ -494,4 +494,5 @@
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_axi_iic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="swerv_soc_wb_spi_wrapper_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="swerv_soc_VGA_v1_0_0_0"/>
 </GenRun>
